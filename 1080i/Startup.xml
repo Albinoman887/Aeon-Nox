@@ -1,0 +1,32 @@
+﻿<window>
+  <defaultcontrol always="true">10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <onload condition="Library.HasContent(tvshows) + System.HasAddon(script.tv.show.next.aired)">XBMC.AlarmClock(NextAired,XBMC.RunScript(script.tv.show.next.aired,silent=True),00:00:10,silent)</onload>
+  <onload condition="System.HasAddon(script.watchlist) + [Skin.HasSetting(HomeInProgress) | Skin.HasSetting(HomeWatchList)]">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=8)</onload>
+  <onload condition="System.HasAddon(script.xbmc.intro.movie)">RunScript(script.xbmc.intro.movie)</onload>
+  <controls>
+    <control type="button" id="10">
+      <description>trigger</description>
+      <onfocus condition="!System.HasAddon(script.xbmc.intro.movie)">ReplaceWindow(Home)</onfocus>
+      <texturenofocus>-</texturenofocus>
+      <texturefocus>-</texturefocus>
+      <visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
+    </control>
+    <control type="button" id="10">
+      <description>trigger with startup Playlist</description>
+      <onfocus>XBMC.PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)])</onfocus>
+      <onfocus condition="!System.HasAddon(script.xbmc.intro.movie)">ReplaceWindow(Home)</onfocus>
+      <texturenofocus>-</texturenofocus>
+      <texturefocus>-</texturefocus>
+      <visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
+    </control>
+    <control type="image">
+      <include>FullscreenDimensions</include>
+      <texture>common/black.png</texture>
+    </control>
+    <control type="videowindow">
+      <include>FullscreenDimensions</include>
+      <visible>Player.HasVideo</visible>
+    </control>
+  </controls>
+</window>

@@ -272,9 +272,8 @@
   <string id="31229">Navigation: [B]Horizontal[/B]</string>
   <string id="31230">Viewtypes</string>
   <string id="31231">BannerWall</string>
-  <string id="31233">Panel</string>
   <string id="31234">Wall</string>
-  <string id="31235">Info List</string>
+  <string id="31235">Shift</string>
   <string id="31236">BannerPlex</string>
   <string id="31237">Press LEFT to see trailer</string>
   <string id="31238">Trailer button</string>
@@ -337,7 +336,7 @@
   <string id="31295">Widget</string>
   <string id="31296">Animated weather icons</string>
   <string id="31297">Show fanart slideshow from your music collection</string>
-  <string id="31298">Set spot color</string>
+  <string id="31298">Set area color</string>
   <string id="31299">-</string>
   <string id="31358">LATEST ALBUM</string>
   <string id="31359">LATEST ALBUMS</string>
@@ -432,7 +431,7 @@
   <string id="31600">Customize Home window</string>
   <string id="31601">Lock main menu in current position</string>
   <string id="31602">Choose main menu style</string>
-  <string id="31603">Customize the look of the menu bar!</string>
+  <string id="31603">Press up to toggle font style.</string>
   <string id="31604">Press left or right to see the different styles.</string>
   <string id="31605">Press select to toggle menu items layout.</string>
   <string id="31606">Customize Home window furniture</string>
@@ -476,14 +475,15 @@
   <string id="31644">Press LEFT/RIGHT to browse in the highlighted item</string>
   <string id="31645">Disable auto rotation of widget content</string>
   <string id="31646">Do you want to download all available [CR]artwork without user interaction?</string>
-  <string id="31647">Show latest added custom movie playlist widget for</string>
-  <string id="31648">Show random custom movie playlist widget for</string>
+  <string id="31647">Show latest added custom playlist widget for</string>
+  <string id="31648">Show random custom playlist widget for</string>
   <string id="31649">Press RIGHT to refresh</string>
   <string id="31670">Show latest added custom movie playlist poster widget for</string>
   <string id="31671">Show random custom movie playlist poster widget for</string>
   <string id="31672">Include watched items in the custom playlist widgets</string>
-  <string id="31673">Enable autoscroll pop-up letter</string>
+  <string id="31673">Enable autoscroll pop-up letter</string> 
   <string id="31674">Switch panel layout</string>
+  <string id="31675">Press down to toggle neon glowbars.</string>
 
   <!-- Extra Unified PVR labels -->
   <string id="52502">Live TV</string>
