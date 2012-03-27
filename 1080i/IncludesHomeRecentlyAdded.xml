@@ -768,7 +768,7 @@
         <itemlayout width="340" height="34">
           <control type="image">
             <posx>6</posx>
-            <posy>2</posy>
+            <posy>1</posy>
             <width>30</width>
             <height>30</height>
             <texture>$INFO[ListItem.Icon]</texture>
@@ -800,7 +800,7 @@
         <focusedlayout width="340" height="34">
           <control type="image">
             <posx>6</posx>
-            <posy>2</posy>
+            <posy>1</posy>
             <width>30</width>
             <height>30</height>
             <texture>$INFO[ListItem.Icon]</texture>
@@ -1424,9 +1424,9 @@
           </itemlayout>
           <focusedlayout height="34" width="450">
             <control type="image">
-              <posx>-15</posx>
+              <posx>1</posx>
               <posy>0</posy>
-              <width>424</width>
+              <width>390</width>
               <height>34</height>
               <texture>views/tripanel/listselect_fo.png</texture>
               <colordiffuse>$VAR[HomeMenuWidgetTextVar]</colordiffuse>

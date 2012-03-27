@@ -3,6 +3,8 @@
   <allowoverlay>no</allowoverlay>
   <views>50,57,500,505,509,511,512,53</views>
   <onload>Skin.SetString(diffuse_bar,$INFO[Skin.String(diffuse_addons)])</onload>
+  <onload condition="Skin.HasSetting(colortext)">Skin.SetString(diffuse_text,$INFO[Skin.String(diffuse_addons)])</onload>
+  <onload condition="!Skin.HasSetting(colortext)">Skin.SetString(diffuse_text,grey)</onload>
   <controls>
     <include>CommonAddonsBackground</include>
     <control type="image">
@@ -29,7 +31,6 @@
       <onfocus>SetFocus(9000)</onfocus>
       <visible>Control.IsVisible(509)</visible>
     </control>
-    <include>ScrollOffsetLabel</include>
     <control type="group">
       <description>Breadcrumbs</description>
       <include>Animation_HideBreadCrumbs</include>
@@ -57,7 +58,6 @@
             <label>$LOCALIZE[24001]</label>
           </control>
           <control type="label">
-            <include>BreadcrumbsLabel</include>
             <label>$INFO[Container.FolderName, / ]</label>
             <include>BreadcrumbsLabel</include>
           </control>

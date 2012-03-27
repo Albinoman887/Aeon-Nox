@@ -4,6 +4,8 @@
   <allowoverlay>yes</allowoverlay>
   <views>50,53,57,500,509,506,512,513,505</views>
   <onload>Skin.SetString(diffuse_bar,$INFO[Skin.String(diffuse_musiclibrary)])</onload>
+  <onload condition="Skin.HasSetting(colortext)">Skin.SetString(diffuse_text,$INFO[Skin.String(diffuse_musiclibrary)])</onload>
+  <onload condition="!Skin.HasSetting(colortext)">Skin.SetString(diffuse_text,grey)</onload>
   <onload condition="System.HasAddon(script.song-to-musicvideo)">RunScript(script.song-to-musicvideo)</onload>
   <controls>
     <control type="group">
@@ -74,13 +76,15 @@
       <onleft condition="Control.IsVisible(513)">Control.Move(513,-1)</onleft>
       <onright condition="Control.IsVisible(509)">Control.Move(509,1)</onright>
       <onright condition="Control.IsVisible(513)">Control.Move(513,1)</onright>
+      <onleft>50</onleft>
+      <onright>50</onright>
       <ondown>50</ondown>
+      <onback>50</onback>
       <onclick>PlayMedia($ESCINFO[ListItem.FileNameAndPath])</onclick>
     </control>
     <include>MusicMediaFlags</include>
     <include>FloorLabels</include>
     <include>Furniture_DarkGradient</include>
-    <include>ScrollOffsetLabel</include>
     <control type="group">
       <description>Breadcrumbs</description>
       <include>Animation_HideBreadCrumbs</include>
