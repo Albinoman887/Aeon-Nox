@@ -463,13 +463,14 @@
                 <visible>[stringcompare(Skin.String(actualViewtype),lowlist)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
             </control>
             <!--BigFan Options-->
-            <control type="togglebutton" id="1707">
+            <control type="button" id="1707">
                 <description>Toggle Logo</description>
                 <include>Objects_MediaMenuButtonAlt2</include>
-                <label>$LOCALIZE[31193]</label>
-                <altlabel>$LOCALIZE[31192]</altlabel>
-                <onclick>Skin.ToggleSetting(bigfanlogo)</onclick>
-                <usealttexture>!Skin.HasSetting(bigfanlogo)</usealttexture>
+                <label>$LOCALIZE[41159]: [B]$VAR[BigFanIconLabelVar][/B]</label>
+                <onclick condition="!Skin.HasSetting(bigfanlogo) + !Skin.HasSetting(bigfanlandscape)">Skin.SetBool(bigfanlogo)</onclick>
+                <onclick condition="Skin.HasSetting(bigfanlogo)">Skin.SetBool(bigfanlandscape)</onclick>
+                <onclick condition="Skin.HasSetting(bigfanlogo)">Skin.Reset(bigfanlogo)</onclick>
+                <onclick condition="!Skin.HasSetting(bigfanlogo) + Skin.HasSetting(bigfanlandscape)">Skin.Reset(bigfanlandscape)</onclick>
                 <visible>Window.IsActive(videolibrary) + stringcompare(Skin.String(actualViewtype),bigfan) + !Container.Content(genres)</visible>
             </control>
             <!--Landscape Options-->
@@ -516,6 +517,7 @@
                 <label>$LOCALIZE[31184]</label>
                 <onclick>Skin.ToggleSetting(unwatchedicon)</onclick>
                 <selected>Skin.HasSetting(unwatchedicon)</selected>
+                <visible>![stringcompare(Skin.String(actualViewtype),landscape) + Skin.HasSetting(landscapelogo) + Container.Content(tvshows)]</visible>
                 <visible>[[stringcompare(Skin.String(actualViewtype),landscape) | Stringcompare(Skin.String(actualViewtype),shift) | Stringcompare(Skin.String(actualViewtype),wall) | Stringcompare(Skin.String(actualViewtype),addonwall) | Stringcompare(Skin.String(actualViewtype),episode)] + [Container.Content(tvshows) | Container.Content(seasons)] | [Container.Content(tvshows) + Skin.HasSetting(tripanelbanner) + StringCompare(Skin.String(actualViewtype),tripanel)]]</visible>
             </control>
             <control type="radiobutton" id="1643">

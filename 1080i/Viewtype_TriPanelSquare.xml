@@ -12,7 +12,7 @@
                 <include>Animation_TriPanelRight</include>
                 <visible>!Container.Content()</visible>
                 <control type="image">
-                    <texture border="0,100,0,200">views/tripanel/info_panel_alt_glow.png</texture>
+                    <texture border="0,100,0,170">views/tripanel/info_panel_alt_glow.png</texture>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <width>650</width>
                     <height>815</height>
@@ -301,7 +301,7 @@
                     <onleft>53</onleft>
                 </control>
                 <control type="list" id="53">
-                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Container.Content(songs) | [[Container.Content(years) | Container.Content(genres)] + Window.IsActive(musiclibrary)]</visible>
+                    <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Container.Content(songs) | [[Container.Content(years) | Container.Content(genres)] + Window.IsActive(musiclibrary)] | Window.IsActive(musicfiles)</visible>
                     <posx>54</posx>
                     <posy>120</posy>
                     <width>842</width>
