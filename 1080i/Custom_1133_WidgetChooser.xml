@@ -102,7 +102,7 @@
                     <onright>4</onright>
                     <onup>7</onup>
                     <ondown>4</ondown>
-            </control>
+                </control>
                 <control type="panel" id="4">
                     <description>Movie widgets</description>
                     <posx>647</posx>
@@ -505,8 +505,21 @@
                             <onclick>Dialog.Close(1133)</onclick>
                         </item>
                         <item>
+                            <label>$LOCALIZE[31326]</label>
+                            <visible>Library.HasContent(music)</visible>
+                            <onclick>SetProperty(CustomYesNoDialog,watchlistmusic,1124)</onclick>
+                            <onclick>ActivateWindow(1137)</onclick>
+                            <onclick>Dialog.Close(1133)</onclick>
+                        </item>
+                        <item>
                             <label>$LOCALIZE[31081]</label>
                             <onclick>SetProperty(CustomYesNoDialog,recentmusicvideos,1124)</onclick>
+                            <onclick>ActivateWindow(1137)</onclick>
+                            <visible>Library.HasContent(MusicVideos)</visible>
+                        </item>
+                       <item>
+                            <label>$LOCALIZE[31091]</label>
+                            <onclick>SetProperty(CustomYesNoDialog,randommusicvideos,1124)</onclick>
                             <onclick>ActivateWindow(1137)</onclick>
                             <visible>Library.HasContent(MusicVideos)</visible>
                         </item>

@@ -51,13 +51,13 @@
                 <description>Toggle Fanart</description>
                 <include>Objects_MediaMenuButtonAlt2</include>
                 <label>$LOCALIZE[20445]: [B]$VAR[VideoFanArtLabelVar][/B]</label>
-                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanart) + !Skin.HasSetting(extrafanartseasons) + !Skin.HasSetting(SeasonFanart)">Skin.SetBool(extrafanartseasons)</onclick>
-                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanart) + !Skin.HasSetting(extrafanartseasons) + !Skin.HasSetting(SeasonFanart)">Notification($LOCALIZE[42002],$LOCALIZE[42004])</onclick>
+                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanartTVShows) + !Skin.HasSetting(extrafanartseasons) + !Skin.HasSetting(SeasonFanart)">Skin.SetBool(extrafanartseasons)</onclick>
+                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanartTVShows) + !Skin.HasSetting(extrafanartseasons) + !Skin.HasSetting(SeasonFanart)">Notification($LOCALIZE[42002],$LOCALIZE[42004])</onclick>
                 <onclick condition="Skin.HasSetting(extrafanartseasons)">Skin.SetBool(SeasonFanart)</onclick>
                 <onclick condition="Skin.HasSetting(extrafanartseasons)">Skin.Reset(extrafanartseasons)</onclick>
-                <onclick condition="Skin.HasSetting(SeasonFanart)">Skin.SetBool(NoVideoLibraryFanart)</onclick>
+                <onclick condition="Skin.HasSetting(SeasonFanart)">Skin.SetBool(NoVideoLibraryFanartTVShows)</onclick>
                 <onclick condition="Skin.HasSetting(SeasonFanart)">Skin.Reset(SeasonFanart)</onclick>
-                <onclick condition="Skin.HasSetting(NoVideoLibraryFanart)">Skin.Reset(NoVideoLibraryFanart)</onclick>
+                <onclick condition="Skin.HasSetting(NoVideoLibraryFanartTVShows)">Skin.Reset(NoVideoLibraryFanartTVShows)</onclick>
                 <visible>Container.Content(seasons) + !stringcompare(Skin.String(actualViewtype),bigfan)</visible>
             </control>
             <control type="button" id="1692">
@@ -65,13 +65,13 @@
                 <description>Toggle Fanart</description>
                 <include>Objects_MediaMenuButtonAlt2</include>
                 <label>$LOCALIZE[20445]: [B]$VAR[VideoFanArtLabelVar][/B]</label>
-                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanart) + !Skin.HasSetting(extrafanartepisodes) + !Skin.HasSetting(SeasonFanart)">Skin.SetBool(extrafanartepisodes)</onclick>
-                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanart) + !Skin.HasSetting(extrafanartepisodes) + !Skin.HasSetting(SeasonFanart)">Notification($LOCALIZE[42002],$LOCALIZE[42004])</onclick>
+                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanartTVShows) + !Skin.HasSetting(extrafanartepisodes) + !Skin.HasSetting(SeasonFanart)">Skin.SetBool(extrafanartepisodes)</onclick>
+                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanartTVShows) + !Skin.HasSetting(extrafanartepisodes) + !Skin.HasSetting(SeasonFanart)">Notification($LOCALIZE[42002],$LOCALIZE[42004])</onclick>
                 <onclick condition="Skin.HasSetting(extrafanartepisodes)">Skin.SetBool(SeasonFanart)</onclick>
                 <onclick condition="Skin.HasSetting(extrafanartepisodes)">Skin.Reset(extrafanartepisodes)</onclick>
-                <onclick condition="Skin.HasSetting(SeasonFanart)">Skin.SetBool(NoVideoLibraryFanart)</onclick>
+                <onclick condition="Skin.HasSetting(SeasonFanart)">Skin.SetBool(NoVideoLibraryFanartTVShows)</onclick>
                 <onclick condition="Skin.HasSetting(SeasonFanart)">Skin.Reset(SeasonFanart)</onclick>
-                <onclick condition="Skin.HasSetting(NoVideoLibraryFanart)">Skin.Reset(NoVideoLibraryFanart)</onclick>
+                <onclick condition="Skin.HasSetting(NoVideoLibraryFanartTVShows)">Skin.Reset(NoVideoLibraryFanartTVShows)</onclick>
                 <visible>Container.Content(episodes) + !stringcompare(Skin.String(actualViewtype),bigfan)</visible>
             </control>
             <control type="button" id="1672">
@@ -100,11 +100,11 @@
                 <description>Fanart</description>
                 <include>Objects_MediaMenuButtonAlt2</include>
                 <label>$LOCALIZE[20445]: $VAR[VideoFanArtLabelVar]</label>
-                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanart) + !Skin.HasSetting(extrafanartseries)">Skin.SetBool(extrafanartseries)</onclick>
-                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanart) + !Skin.HasSetting(extrafanartseries)">Notification($LOCALIZE[42002],$LOCALIZE[42004])</onclick>
-                <onclick condition="Skin.HasSetting(extrafanartseries)">Skin.SetBool(NoVideoLibraryFanart)</onclick>
+                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanartTVShows) + !Skin.HasSetting(extrafanartseries)">Skin.SetBool(extrafanartseries)</onclick>
+                <onclick condition="!Skin.HasSetting(NoVideoLibraryFanartTVShows) + !Skin.HasSetting(extrafanartseries)">Notification($LOCALIZE[42002],$LOCALIZE[42004])</onclick>
+                <onclick condition="Skin.HasSetting(extrafanartseries)">Skin.SetBool(NoVideoLibraryFanartTVShows)</onclick>
                 <onclick condition="Skin.HasSetting(extrafanartseries)">Skin.Reset(extrafanartseries)</onclick>
-                <onclick condition="Skin.HasSetting(NoVideoLibraryFanart)">Skin.Reset(NoVideoLibraryFanart)</onclick>
+                <onclick condition="Skin.HasSetting(NoVideoLibraryFanartTVShows)">Skin.Reset(NoVideoLibraryFanartTVShows)</onclick>
                 <visible>Container.Content(tvshows) + !stringcompare(Skin.String(actualViewtype),bigfan)</visible>
             </control>
             <control type="togglebutton" id="1666">
@@ -123,7 +123,7 @@
                 <label>31387</label>
                 <onclick>Skin.ToggleSetting(darkinfopane)</onclick>
                 <selected>Skin.HasSetting(darkinfopane)</selected>
-                <visible>![stringcompare(Skin.String(actualViewtype),bigfan) | Stringcompare(Skin.String(actualViewtype),episode) | Stringcompare(Skin.String(actualViewtype),lowlist) | Stringcompare(Skin.String(actualViewtype),lowlistmusic)] + Skin.HasSetting(DisableGlowbar)</visible>
+                <visible>![stringcompare(Skin.String(actualViewtype),bigfan) | Stringcompare(Skin.String(actualViewtype),episode) | Stringcompare(Skin.String(actualViewtype),lowlist) | Stringcompare(Skin.String(actualViewtype),shift) | Stringcompare(Skin.String(actualViewtype),lowlistmusic)] + Skin.HasSetting(DisableGlowbar)</visible>
             </control>
             <control type="radiobutton" id="1703">
                 <description>Toggle Animated BG</description>
@@ -462,6 +462,14 @@
                 <selected>Skin.HasSetting(usecaseslowlist)</selected>
                 <visible>[stringcompare(Skin.String(actualViewtype),lowlist)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
             </control>
+            <control type="radiobutton" id="1687">
+                <description>Show plot only instead of extra info</description>
+                <include>Objects_MediaMenuButtonAlt2</include>
+                <label>$LOCALIZE[31396]</label>
+                <onclick>Skin.ToggleSetting(lowlistbanner)</onclick>
+                <selected>Skin.HasSetting(lowlistbanner)</selected>
+                <visible>stringcompare(Skin.String(actualViewtype),lowlist) + [Container.Content(tvshows) | Container.Content(episodes)]</visible>
+            </control>
             <!--BigFan Options-->
             <control type="button" id="1707">
                 <description>Toggle Logo</description>
@@ -474,6 +482,15 @@
                 <visible>Window.IsActive(videolibrary) + stringcompare(Skin.String(actualViewtype),bigfan) + !Container.Content(genres)</visible>
             </control>
             <!--Landscape Options-->
+            <control type="togglebutton" id="1639">
+                <description>Toggle Logo</description>
+                <include>Objects_MediaMenuButtonAlt2</include>
+                <label>$LOCALIZE[31192]</label>
+                <altlabel>$LOCALIZE[41159]: [B]Landscape.jpg[/B]</altlabel>
+                <onclick>Skin.ToggleSetting(SeasonLandscape)</onclick>
+                <usealttexture>Skin.HasSetting(SeasonLandscape)</usealttexture>
+                <visible>Container.Content(seasons) + stringcompare(Skin.String(actualViewtype),landscape)</visible>
+            </control>
             <control type="togglebutton" id="1633">
                 <description>Toggle Logo</description>
                 <include>Objects_MediaMenuButtonAlt2</include>
@@ -492,21 +509,16 @@
                 <visible>stringcompare(Skin.String(actualViewtype),landscape) + Container.Content(episodes)</visible>
             </control>
             <!--Watched/New Overlay-->
-            <control type="radiobutton" id="1636">
+            <control type="button" id="1637">
                 <description>Toggle Logo</description>
                 <include>Objects_MediaMenuButtonAlt2</include>
-                <label>$LOCALIZE[31240]</label>
-                <onclick>Skin.ToggleSetting(newstatus)</onclick>
-                <selected>Skin.HasSetting(newstatus)</selected>
-                <enable>![stringcompare(Skin.String(actualViewtype),landscape) + Skin.HasSetting(landscapelogo) + Container.Content(tvshows) + !Skin.HasSetting(showcaseinfoontv)]</enable>
-                <visible>[stringcompare(Skin.String(actualViewtype),episode) | Stringcompare(Skin.String(actualViewtype),banners) | Stringcompare(Skin.String(actualViewtype),showcasemovies) | Stringcompare(Skin.String(actualViewtype),showcasedvd) | Stringcompare(Skin.String(actualViewtype),posters) | Stringcompare(Skin.String(actualViewtype),landscape) | Stringcompare(Skin.String(actualViewtype),banners) | Stringcompare(Skin.String(actualViewtype),addonwall) | Stringcompare(Skin.String(actualViewtype),wall) | Stringcompare(Skin.String(actualViewtype),bigfan)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-            </control>
-            <control type="radiobutton" id="1637">
-                <description>Toggle Logo</description>
-                <include>Objects_MediaMenuButtonAlt2</include>
-                <label>$LOCALIZE[31241]</label>
-                <onclick>Skin.ToggleSetting(watchedoverlay)</onclick>
-                <selected>Skin.HasSetting(watchedoverlay)</selected>
+                <label>$LOCALIZE[31242]: [B]$VAR[FlagLabelVar][/B]</label>
+                <onclick condition="Skin.HasSetting(watchedoverlay) + !Skin.HasSetting(newstatus)">Skin.SetBool(newstatus)</onclick>
+                <onclick condition="Skin.HasSetting(watchedoverlay) + !Skin.HasSetting(newstatus)">Skin.Reset(watchedoverlay)</onclick>
+                <onclick condition="!Skin.HasSetting(watchedoverlay) + Skin.HasSetting(newstatus)">Skin.SetBool(watchedoverlay)</onclick>
+                <onclick condition="Skin.HasSetting(watchedoverlay) + Skin.HasSetting(newstatus)">Skin.Reset(watchedoverlay)</onclick>
+                <onclick condition="Skin.HasSetting(watchedoverlay) + Skin.HasSetting(newstatus)">Skin.Reset(newstatus)</onclick>
+                <onclick condition="!Skin.HasSetting(watchedoverlay) + !Skin.HasSetting(newstatus)">Skin.SetBool(watchedoverlay)</onclick>
                 <enable>![stringcompare(Skin.String(actualViewtype),landscape) + Skin.HasSetting(landscapelogo) + Container.Content(tvshows) + !Skin.HasSetting(showcaseinfoontv)]</enable>
                 <visible>[stringcompare(Skin.String(actualViewtype),episode) | Stringcompare(Skin.String(actualViewtype),banners) | Stringcompare(Skin.String(actualViewtype),showcasemovies) | Stringcompare(Skin.String(actualViewtype),showcasedvd) | Stringcompare(Skin.String(actualViewtype),posters) | Stringcompare(Skin.String(actualViewtype),landscape) | Stringcompare(Skin.String(actualViewtype),banners) | Stringcompare(Skin.String(actualViewtype),addonwall) | Stringcompare(Skin.String(actualViewtype),wall) | Stringcompare(Skin.String(actualViewtype),bigfan)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
             </control>
@@ -589,6 +601,34 @@
                 <onclick>Skin.ToggleSetting(wallgenre)</onclick>
                 <usealttexture>!Skin.HasSetting(wallgenre)</usealttexture>
                 <visible>[[stringcompare(Skin.String(actualViewtype),shift) | Stringcompare(Skin.String(actualViewtype),wall) | Stringcompare(Skin.String(actualViewtype),showcasemovies) | Stringcompare(Skin.String(actualViewtype),showcasedvd) | Stringcompare(Skin.String(actualViewtype),banners)] + Container.Content(movies)]</visible>
+            </control>
+            <!--Floor Label Options-->
+            <control type="radiobutton" id="16439">
+                <description>Toggle Info</description>
+                <include>Objects_MediaMenuButtonAlt2</include>
+                <label>$LOCALIZE[31631]</label>
+                <onclick>Skin.ToggleSetting(movielogosfloor)</onclick>
+                <selected>Skin.HasSetting(movielogosfloor)</selected>
+                <visible>[[stringcompare(Skin.String(actualViewtype),shift) | Stringcompare(Skin.String(actualViewtype),wall) | Stringcompare(Skin.String(actualViewtype),showcasemovies) | Stringcompare(Skin.String(actualViewtype),showcasedvd) | Stringcompare(Skin.String(actualViewtype),banners) | Stringcompare(Skin.String(actualViewtype),addonwall)] + Container.Content(movies)]</visible>
+            </control>
+            <control type="radiobutton" id="16441">
+                <description>Toggle Info</description>
+                <include>Objects_MediaMenuButtonAlt2</include>
+                <label>$LOCALIZE[31631]</label>
+                <onclick>Skin.ToggleSetting(artistslogosfloor)</onclick>
+                <selected>Skin.HasSetting(artistslogosfloor)</selected>
+                <visible>[[stringcompare(Skin.String(actualViewtype),shift) | Stringcompare(Skin.String(actualViewtype),wall) | Stringcompare(Skin.String(actualViewtype),showcasesquare) | Stringcompare(Skin.String(actualViewtype),addonwall)] + Container.Content(artists)]</visible>
+            </control>
+            <control type="button" id="16440">
+                <description>Toggle Info</description>
+                <include>Objects_MediaMenuButtonAlt2</include>
+                <label>$LOCALIZE[31388] $VAR[IconModeLabelVar]</label>
+                <onclick condition="!Skin.HasSetting(tvshowlogosfloor) + !Skin.HasSetting(tvshowbannersfloor)">Skin.SetBool(tvshowbannersfloor)</onclick>
+                <onclick condition="Skin.HasSetting(tvshowbannersfloor)">Skin.SetBool(tvshowlogosfloor)</onclick>
+                <onclick condition="Skin.HasSetting(tvshowbannersfloor)">Skin.Reset(tvshowbannersfloor)</onclick>
+                <onclick condition="Skin.HasSetting(tvshowlogosfloor)">Skin.Reset(tvshowlogosfloor)</onclick>
+                <selected>Skin.HasSetting(tvshowlogosfloor)</selected>
+                <visible>[[stringcompare(Skin.String(actualViewtype),shift) | Stringcompare(Skin.String(actualViewtype),wall) | Stringcompare(Skin.String(actualViewtype),showcasemovies) | Stringcompare(Skin.String(actualViewtype),showcasedvd) |  Stringcompare(Skin.String(actualViewtype),addonwall)] + Container.Content(tvshows)]</visible>
             </control>
             <control type="togglebutton" id="1650">
                 <description>Toggle Info</description>
@@ -681,7 +721,15 @@
                 <label>$LOCALIZE[31377]</label>
                 <onclick>Skin.ToggleSetting(cdartfliplist)</onclick>
                 <selected>!Skin.HasSetting(cdartfliplist)</selected>
-                <visible>[Window.IsActive(musicfiles) | Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist)] + stringcompare(Skin.String(actualViewtype),list) + Container.Content(songs)</visible>
+                <visible>[[Window.IsActive(musiclibrary) + Container.Content(songs)] | Window.IsActive(musicplaylist) | Window.IsActive(musicfiles)] + [stringcompare(Skin.String(actualViewtype),list) | stringcompare(Skin.String(actualViewtype),tripanel)]</visible>
+            </control>
+            <control type="radiobutton" id="1684">
+                <description>CD Art</description>
+                <include>Objects_MediaMenuButtonAlt2</include>
+                <label>$LOCALIZE[31377]</label>
+                <onclick>Skin.ToggleSetting(albumcdartfliplist)</onclick>
+                <selected>!Skin.HasSetting(albumcdartfliplist)</selected>
+                <visible>[Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist)] + [stringcompare(Skin.String(actualViewtype),list) | stringcompare(Skin.String(actualViewtype),tripanel)]  + Container.Content(albums)</visible>
             </control>
             <control type="radiobutton" id="1658">
                 <description>No Flow Album Showcase</description>
@@ -809,7 +857,7 @@
                 <onclick>Skin.ToggleSetting(TVShowsUseBanners)</onclick>
                 <onclick>Notification($LOCALIZE[42002],$LOCALIZE[42003])</onclick>
                 <selected>Skin.HasSetting(TVShowsUseBanners)</selected>
-                <visible>[Container.Content(tvshows) | Container.Content(seasons)] + [[stringcompare(Skin.String(actualViewtype),tripanel) + Skin.HasSetting(tripanelbanner)] | stringcompare(Skin.String(actualViewtype),banners) | [stringcompare(Skin.String(actualViewtype),wall) + Skin.HasSetting(TVWallBanner)] | [stringcompare(Skin.String(actualViewtype),episode) + Skin.HasSetting(episodebanner)]]</visible>
+                <visible>[Container.Content(tvshows) | Container.Content(seasons)] + [[stringcompare(Skin.String(actualViewtype),tripanel) + Skin.HasSetting(tripanelbanner)] | stringcompare(Skin.String(actualViewtype),banners) | [stringcompare(Skin.String(actualViewtype),wall) + Skin.HasSetting(TVWallBanner)] | [stringcompare(Skin.String(actualViewtype),episode) + Skin.HasSetting(episodebanner)] | [stringcompare(Skin.String(actualViewtype),lowlist) + Skin.HasSetting(lowlistbanner)]]</visible>
             </control>
             <control type="togglebutton" id="266">
                 <label>$LOCALIZE[207]: [B]$LOCALIZE[31426][/B]</label>

@@ -40,61 +40,68 @@
         <value condition="Stringcompare(System.Time(mm),32)">FFFFA500</value>
         <value condition="Stringcompare(System.Time(mm),33)">FFFF4500</value>
         <value condition="Stringcompare(System.Time(mm),34)">FFB20000</value>
-        <value condition="Stringcompare(System.Time(mm),35)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),36)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),37)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),38)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),39)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),40)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),41)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),42)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),43)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),44)">FF0000FF</value>
+        <value condition="Stringcompare(System.Time(mm),35)">FF9370D8</value>
+        <value condition="Stringcompare(System.Time(mm),36)">FFfa98e0</value>
+        <value condition="Stringcompare(System.Time(mm),37)">FFFFFFFF</value>
+        <value condition="Stringcompare(System.Time(mm),38)">FFC9C0BB</value>
+        <value condition="Stringcompare(System.Time(mm),39)">FF99E0CC</value>
+        <value condition="Stringcompare(System.Time(mm),40)">FF69f5ee</value>
+        <value condition="Stringcompare(System.Time(mm),41)">FF03F2FF</value>
+        <value condition="Stringcompare(System.Time(mm),42)">FFA4F4F9</value>
+        <value condition="Stringcompare(System.Time(mm),43)">FF6db9e5</value>
+        <value condition="Stringcompare(System.Time(mm),44)">FF00BFFF</value>
         <value condition="Stringcompare(System.Time(mm),45)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),46)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),47)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),48)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),49)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),50)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),51)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),52)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),53)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),54)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),55)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),56)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),57)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),58)">FF0000FF</value>
-        <value condition="Stringcompare(System.Time(mm),59)">FF0000FF</value>
+        <value condition="Stringcompare(System.Time(mm),46)">FF04B431</value>
+        <value condition="Stringcompare(System.Time(mm),47)">FF6cf884</value>
+        <value condition="Stringcompare(System.Time(mm),48)">FF39FF14</value>
+        <value condition="Stringcompare(System.Time(mm),49)">FFc5fa05</value>
+        <value condition="Stringcompare(System.Time(mm),50)">FFF3F781</value>
+        <value condition="Stringcompare(System.Time(mm),51)">FFFFD700</value>
+        <value condition="Stringcompare(System.Time(mm),52)">FFFFA500</value>
+        <value condition="Stringcompare(System.Time(mm),53)">FFFF4500</value>
+        <value condition="Stringcompare(System.Time(mm),54)">FFB20000</value>
+        <value condition="Stringcompare(System.Time(mm),55)">FF9370D8</value>
+        <value condition="Stringcompare(System.Time(mm),56)">FFfa98e0</value>
+        <value condition="Stringcompare(System.Time(mm),57)">FFFFFFFF</value>
+        <value condition="Stringcompare(System.Time(mm),58)">FFC9C0BB</value>
+        <value condition="Stringcompare(System.Time(mm),59)">FF99E0CC</value>
     </variable>
     <variable name="AreaColorVar">
+        <value condition="Window.IsActive(infodialog) + Skin.HasSetting(colorinfo)">FFFF0000</value>
         <value condition="[Window.IsActive(1128) | Window.IsActive(1138)] + !IsEmpty(Skin.String(diffuse_color))">$INFO[Skin.String(diffuse_color)]</value>
         <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)] + !IsEmpty(Skin.String(diffuse_videolibrary))">$INFO[Skin.String(diffuse_videolibrary)]</value>
         <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicosd) | Window.IsActive(musicfiles) | Window.IsActive(visualisation)] + !IsEmpty(Skin.String(diffuse_music))">$INFO[Skin.String(diffuse_music)]</value>
         <value condition="[Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)] + !IsEmpty(Skin.String(diffuse_programs))">$INFO[Skin.String(diffuse_programs)]</value>
         <value condition="Window.IsActive(pictures) + !IsEmpty(Skin.String(diffuse_pictures))">$INFO[Skin.String(diffuse_pictures)]</value>
-        <value condition="Window.IsActive(home) + !IsEmpty(Skin.String(diffuse_mainmenu))">$INFO[Skin.String(diffuse_mainmenu)]</value>
+        <value condition="[Window.IsActive(startup) | Window.IsActive(home) | Window.IsActive(1124)] + !IsEmpty(Skin.String(diffuse_mainmenu))">$INFO[Skin.String(diffuse_mainmenu)]</value>
         <value condition="Window.IsActive(addonbrowser) + !IsEmpty(Skin.String(diffuse_addons))">$INFO[Skin.String(diffuse_addons)]</value>
         <value condition="Window.IsActive(musicplaylist) + !IsEmpty(Skin.String(diffuse_musicplaylist))">$INFO[Skin.String(diffuse_musicplaylist)]</value>
         <value condition="Window.IsActive(videoplaylist) + !IsEmpty(Skin.String(diffuse_videoplaylist))">$INFO[Skin.String(diffuse_videoplaylist)]</value>
-        <value condition="Window.IsActive(PVR) + !IsEmpty(Skin.String(diffuse_PVR))">$INFO[Skin.String(diffuse_PVR)]</value>
         <value condition="Window.IsActive(weather) + !IsEmpty(Skin.String(diffuse_weather))">$INFO[Skin.String(diffuse_weather)]</value>
         <value condition="[Window.IsActive(1115) | Window.IsActive(script-globalsearch-main.xml)] + !IsEmpty(Skin.String(diffuse_featured))">$INFO[Skin.String(diffuse_featured)]</value>
         <value condition="[Window.IsActive(1111) | Window.IsActive(settings) | Window.IsActive(systeminfo) | Window.IsActive(picturessettings) | Window.IsActive(programssettings) | Window.IsActive(weathersettings) | Window.IsActive(musicsettings) | Window.IsActive(systemsettings) | Window.IsActive(videossettings) | Window.IsActive(networksettings) | Window.IsActive(appearancesettings)] + !IsEmpty(Skin.String(diffuse_settings))">$INFO[Skin.String(diffuse_settings)]</value>
+        <value condition="Window.IsActive(PVR) + !IsEmpty(Skin.String(diffuse_PVR))">$INFO[Skin.String(diffuse_PVR)]</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="ColorDiffuseVar">
-        <value condition="Skin.HasSetting(daytimecolor)">$VAR[DayTimeColorVar]</value>
+        <value condition="Skin.HasSetting(randomcolor)">$VAR[DayTimeColorVar]</value>
         <value>$VAR[AreaColorVar]</value>
     </variable>
     <variable name="DialogColorVar">
-        <value condition="![Window.IsActive(home) | Window.IsActive(startup)] + Skin.HasSetting(colordialogs)">$VAR[ColorDiffuseVar]</value>
-        <value condition="[Window.IsActive(home) | Window.IsActive(startup)] + Skin.HasSetting(colordialogshome)">$VAR[ColorDiffuseVar]</value>
+        <value condition="![Window.IsActive(home) | Window.IsActive(startup) | Window.IsActive(1124)] + Skin.HasSetting(colordialogs)">$VAR[ColorDiffuseVar]</value>
+        <value condition="[Window.IsActive(home) | Window.IsActive(startup) | Window.IsActive(1124)] + Skin.HasSetting(colordialogshome)">$VAR[ColorDiffuseVar]</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FloorColorVar">
         <value condition="Skin.HasTheme(Lite_Floor)">FFFFFFFF</value>
-        <value condition="Skin.HasSetting(daytimecolor)">$VAR[DayTimeColorVar]</value>
+        <value condition="Skin.HasSetting(randomcolor)">$VAR[DayTimeColorVar]</value>
         <value>$VAR[AreaColorVar]</value>
+    </variable>
+    <variable name="ExtendedFloorColorVar">
+        <value condition="Skin.HasTheme(Lite_Floor)">FFFFFFFF</value>
+        <value condition="![Skin.HasSetting(DisableGlowbar) + !Skin.HasSetting(ExtendedGlowMode)]">$VAR[AreaColorVar]</value>
+        <value condition="Skin.HasSetting(randomcolor) + ![Skin.HasSetting(DisableGlowbar) + !Skin.HasSetting(ExtendedGlowMode)]">$VAR[DayTimeColorVar]</value>
+        <value>FF000000</value>
     </variable>
     <variable name="HomeMenuTextFocusVar">
         <value condition="Skin.HasSetting(colortexthome)">$VAR[ColorDiffuseVar]</value>
@@ -105,32 +112,33 @@
         <value>white2</value>
     </variable>
     <variable name="SelectedColorVar">
-        <value condition="Skin.HasSetting(daytimecolor)">$VAR[DayTimeColorVar]</value>
+        <value condition="Skin.HasSetting(randomcolor)">$VAR[DayTimeColorVar]</value>
         <value>$VAR[AreaColorVar]</value>
     </variable>
     <variable name="SpotColorVar">
-        <value condition="[Window.IsActive(1128) | Window.IsActive(1138)] + StringCompare(Skin.String(diffuse_color),FFFFFFFF)">diffuse_white</value>
-        <value condition="[Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)] + StringCompare(Skin.String(diffuse_videolibrary),FFFFFFFF)">diffuse_white</value>
-        <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + StringCompare(Skin.String(diffuse_music),FFFFFFFF)">diffuse_white</value>
-        <value condition="[Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)] + StringCompare(Skin.String(diffuse_programs),FFFFFFFF)">diffuse_white</value>
-        <value condition="Window.IsActive(pictures) + StringCompare(Skin.String(diffuse_pictures),FFFFFFFF)">diffuse_white</value>
-        <value condition="Window.IsActive(addonbrowser) + StringCompare(Skin.String(diffuse_addons),FFFFFFFF)">diffuse_white</value>
-        <value condition="Window.IsActive(musicplaylist) + StringCompare(Skin.String(diffuse_musicplaylist),FFFFFFFF)">diffuse_white</value>
-        <value condition="Window.IsActive(videoplaylist) + StringCompare(Skin.String(diffuse_videoplaylist),FFFFFFFF)">diffuse_white</value>
-        <value condition="Window.IsActive(PVR) + StringCompare(Skin.String(diffuse_PVR),FFFFFFFF)">diffuse_white</value>
-        <value condition="Window.IsActive(weather) + StringCompare(Skin.String(diffuse_weather),FFFFFFFF)">diffuse_white</value>
-        <value condition="[Window.IsActive(1115) | Window.IsActive(script-globalsearch-main.xml)] + StringCompare(Skin.String(diffuse_featured),FFFFFFFF)">diffuse_white</value>
-        <value condition="[Window.IsActive(1111) | Window.IsActive(settings) | Window.IsActive(picturessettings) | Window.IsActive(programssettings) | Window.IsActive(weathersettings) | Window.IsActive(musicsettings) | Window.IsActive(systemsettings) | Window.IsActive(videossettings) | Window.IsActive(networksettings) | Window.IsActive(appearancesettings)] + StringCompare(Skin.String(diffuse_settings),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + [Window.IsActive(1128) | Window.IsActive(1138)] + StringCompare(Skin.String(diffuse_color),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + [Window.IsActive(1128) | Window.IsActive(1138)] + !StringCompare(Skin.String(diffuse_color),FFFFFFFF)">$VAR[SelectedColorVar]</value>
+        <value condition="!Skin.HasSetting(randomcolor) + [Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)] + StringCompare(Skin.String(diffuse_videolibrary),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + [Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + StringCompare(Skin.String(diffuse_music),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + [Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)] + StringCompare(Skin.String(diffuse_programs),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + Window.IsActive(pictures) + StringCompare(Skin.String(diffuse_pictures),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + Window.IsActive(addonbrowser) + StringCompare(Skin.String(diffuse_addons),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + Window.IsActive(musicplaylist) + StringCompare(Skin.String(diffuse_musicplaylist),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + Window.IsActive(videoplaylist) + StringCompare(Skin.String(diffuse_videoplaylist),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + Window.IsActive(weather) + StringCompare(Skin.String(diffuse_weather),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + [Window.IsActive(1115) | Window.IsActive(script-globalsearch-main.xml)] + StringCompare(Skin.String(diffuse_featured),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + [Window.IsActive(1111) | Window.IsActive(settings) | Window.IsActive(picturessettings) | Window.IsActive(programssettings) | Window.IsActive(weathersettings) | Window.IsActive(musicsettings) | Window.IsActive(systemsettings) | Window.IsActive(videossettings) | Window.IsActive(networksettings) | Window.IsActive(appearancesettings)] + StringCompare(Skin.String(diffuse_settings),FFFFFFFF)">diffuse_white</value>
+        <value condition="!Skin.HasSetting(randomcolor) + Window.IsActive(PVR) + StringCompare(Skin.String(diffuse_PVR),FFFFFFFF)">diffuse_white</value>
         <value>$VAR[SelectedColorVar]</value>
     </variable>
     <variable name="TitleColorVar">
-        <value condition="!Window.IsActive(home) + Skin.HasSetting(colortext)">$VAR[ColorDiffuseVar]</value>
-        <value condition="Window.IsActive(home) + Skin.HasSetting(colortexthome)">$VAR[ColorDiffuseVar]</value>
+        <value condition="![Window.IsActive(home) | Window.IsActive(1124)] + Skin.HasSetting(colortext)">$VAR[ColorDiffuseVar]</value>
+        <value condition="[Window.IsActive(home) | Window.IsActive(1124)] + Skin.HasSetting(colortexthome)">$VAR[ColorDiffuseVar]</value>
         <value>CCFFFFFF</value>
     </variable>
     <variable name="SubTitleColorVar">
         <value condition="!Skin.HasSetting(colortext)">grey</value>
-        <value condition="Skin.HasSetting(daytimecolor)">$VAR[DayTimeColorVar]</value>
+        <value condition="Skin.HasSetting(randomcolor)">$VAR[DayTimeColorVar]</value>
         <value>$VAR[AreaColorVar]</value>
     </variable>
     <variable name="ExtendedColorVar">
@@ -173,7 +181,7 @@
         <value condition="[SubString(ListItem.Filename,bluray) | SubString(ListItem.Filename,blu-ray) | SubString(ListItem.Filename,bdrip) | SubString(ListItem.Filename,brrip)]">bluray</value>
         <value condition="SubString(ListItem.Filename,dvb)">dvb</value>
         <value condition="SubString(ListItem.Filename,web-dl)">web-dl</value>
-        <value condition="[[SubString(ListItem.Filename,dvd) + !SubString(ListItem.Filename,hddvd) + !SubString(ListItem.Filename,hd-dvd) + !SubString(ListItem.Filename,bluray)] | [SubString(ListItem.Filename,.iso,Right) + !SubString(ListItem.Filename,bluray)] | SubString(ListItem.Filename,.ifo,Right)]">dvd</value>
+        <value condition="SubString(ListItem.Filename,dvd) | StringCompare(ListItem.FileExtension,iso) | StringCompare(ListItem.FileExtension,ifo)">dvd</value>
         <value>$INFO[ListItem.VideoCodec]</value>
     </variable>
     <variable name="VideoSourceFlagVar">
@@ -184,7 +192,7 @@
         <value condition="[SubString(Player.Filenameandpath,bluray) | SubString(Player.Filenameandpath,blu-ray) | SubString(Player.Filenameandpath,bdrip) | SubString(Player.Filenameandpath,brrip)]">bluray</value>
         <value condition="SubString(Player.Filenameandpath,dvb)">dvb</value>
         <value condition="SubString(Player.Filenameandpath,web-dl)">web-dl</value>
-        <value condition="[[SubString(Player.Filenameandpath,dvd) + !SubString(Player.Filenameandpath,hddvd) + !SubString(Player.Filenameandpath,hd-dvd) + !SubString(Player.Filenameandpath,bluray)] | [SubString(Player.Filenameandpath,.iso,Right) + !SubString(Player.Filenameandpath,bluray)] | SubString(Player.Filenameandpath,.ifo,Right)]">dvd</value>
+        <value condition="SubString(Player.Filenameandpath,dvd)  | SubString(Player.Filenameandpath,.iso,Right)  | SubString(Player.Filenameandpath,.ifo,Right)">dvd</value>
         <value>$INFO[VideoPlayer.VideoCodec]</value>
     </variable>
     <variable name="RatingFlagVar">
@@ -348,11 +356,13 @@
         <value condition="Container.Content(episodes)">$INFO[ListItem.Path,,../extrafanart]</value>
     </variable>
     <variable name="VideoFanartVar">
+        <value condition="Skin.HasSetting(NoVideoLibraryFanart) + Container.Content(movies) + StringCompare(Skin.String(MovieHomeItem.MultiFanart),recentmovies)">$INFO[Window(Home).Property(LatestMovie.1.Fanart)]</value>
         <value condition="Skin.HasSetting(NoVideoLibraryFanart) + Container.Content(movies) + !IsEmpty(Skin.String(MovieHomeItem.MultiFanart))">$INFO[Skin.String(MovieHomeItem.MultiFanart)]</value>
         <value condition="Skin.HasSetting(NoVideoLibraryFanart) + Container.Content(movies) + IsEmpty(Skin.String(MovieHomeItem.MultiFanart))">special://skin/backgrounds/movies.jpg</value>
-        <value condition="Skin.HasSetting(NoVideoLibraryFanart)  + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(Skin.String(TVShowHomeItem.MultiFanart))">$INFO[Skin.String(TVShowHomeItem.MultiFanart)]</value>
-        <value condition="Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + IsEmpty(Skin.String(TVShowHomeItem.MultiFanart))">special://skin/backgrounds/tvshows.jpg</value>
-        <value condition="Skin.HasSetting(NoVideoLibraryFanart)">$INFO[Skin.String(VideosHomeItem.MultiFanart)]</value>
+        <value condition="Skin.HasSetting(NoVideoLibraryFanartTVShows)  + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + StringCompare(Skin.String(TVShowHomeItem.MultiFanart),recenttv)">$INFO[Window(Home).Property(LatestEpisode.1.Fanart)]</value>
+        <value condition="Skin.HasSetting(NoVideoLibraryFanartTVShows)  + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(Skin.String(TVShowHomeItem.MultiFanart))">$INFO[Skin.String(TVShowHomeItem.MultiFanart)]</value>
+        <value condition="Skin.HasSetting(NoVideoLibraryFanartTVShows) + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + IsEmpty(Skin.String(TVShowHomeItem.MultiFanart))">special://skin/backgrounds/tvshows.jpg</value>
+        <value condition="[Skin.HasSetting(NoVideoLibraryFanartTVShows)  + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]] | [Skin.HasSetting(NoVideoLibraryFanart)  + ![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]]">$INFO[Skin.String(VideosHomeItem.MultiFanart)]</value>
         <value condition="Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/genre/video/fanart/,.jpg]</value>
         <value condition="Container.Content(years)">$INFO[ListItem.Label,special://skin/extras/year/video/fanart/,.jpg]</value>
         <value condition="Container.Content(movies)] + IsEmpty(Listitem.Property(Fanart_Image))">special://skin/backgrounds/fallback_movies.jpg</value>
@@ -640,8 +650,10 @@
         <value condition="SubString(Container(9000).ListItem.Property(Widget),randomalbums)">$LOCALIZE[31076]</value>
         <value condition="SubString(Container(9000).ListItem.Property(Widget),randomaddons)">$LOCALIZE[31077]</value>
         <value condition="Stringcompare(Container(9000).ListItem.Property(Widget),system)">$LOCALIZE[138]</value>
-        <value condition="Substring(Container(9000).ListItem.Property(Widget),musicvideo)">$LOCALIZE[31081]</value>
+        <value condition="Substring(Container(9000).ListItem.Property(Widget),recentmusicvideo)">$LOCALIZE[31081]</value>
+        <value condition="Substring(Container(9000).ListItem.Property(Widget),randommusicvideo)">$LOCALIZE[31091]</value>
         <value condition="Substring(Container(9000).ListItem.Property(Widget),actor)">$LOCALIZE[31336]</value>
+        <value condition="Substring(Container(9000).ListItem.Property(Widget),watchlistmusic)">$LOCALIZE[31326]</value>
     </variable>
     <variable name="WidgetTypeLabelVar1124">
         <value condition="SubString(Skin.String(ItemToEdit.Widget),recentmovies)">$LOCALIZE[31331]</value>
@@ -656,8 +668,11 @@
         <value condition="SubString(Skin.String(ItemToEdit.Widget),randomalbums)">$LOCALIZE[31076]</value>
         <value condition="SubString(Skin.String(ItemToEdit.Widget),randomaddons)">$LOCALIZE[31077]</value>
         <value condition="Stringcompare(Skin.String(ItemToEdit.Widget),system)">$LOCALIZE[138]</value>
-        <value condition="Substring(Skin.String(ItemToEdit.Widget),musicvideo)">$LOCALIZE[31081]</value>
+        <value condition="Substring(Skin.String(ItemToEdit.Widget),recentmusicvideo)">$LOCALIZE[31081]</value>
+        <value condition="Substring(Skin.String(ItemToEdit.Widget),randommusicvideo)">$LOCALIZE[31091]</value>
         <value condition="Substring(Skin.String(ItemToEdit.Widget),actor)">$LOCALIZE[31336]</value>
+        <value condition="Substring(Skin.String(ItemToEdit.Widget),watchlistmusic)">$LOCALIZE[31326]</value>
+        <value>$LOCALIZE[16018]</value>
     </variable>
     <variable name="PanelWidgetLabel1Var">
         <value condition="[[Window.IsActive(1122) | Window.IsActive(1123)] + SubString(Skin.String(ItemToEdit.Widget),panel)]">$VAR[WidgetTypeLabelVar1124]</value>
@@ -679,8 +694,10 @@
         <value condition="Stringcompare(Container(9000).ListItem.Property(Widget),recentalbums)">$LOCALIZE[31359]</value>
         <value condition="Stringcompare(Container(9000).ListItem.Property(Widget),randomalbums)">$LOCALIZE[31068]</value>
         <value condition="Stringcompare(Container(9000).ListItem.Property(Widget),randomaddons)">$LOCALIZE[31070]</value>
-        <value condition="Substring(Container(9000).ListItem.Property(Widget),musicvideo)">$LOCALIZE[31081]</value>
+        <value condition="Substring(Container(9000).ListItem.Property(Widget),recentmusicvideo)">$LOCALIZE[31081]</value>
+        <value condition="Substring(Container(9000).ListItem.Property(Widget),randommusicvideo)">$LOCALIZE[31091]</value>
         <value condition="Substring(Container(9000).ListItem.Property(Widget),actor)">$LOCALIZE[31336]</value>
+        <value condition="Substring(Container(9000).ListItem.Property(Widget),watchlistmusic)">$LOCALIZE[31326]</value>
     </variable>
     <variable name="RecentAddedWidgetLabel2Var1124">
         <value condition="SubString(Skin.String(ItemToEdit.Widget),recentmovies)">$LOCALIZE[31323]</value>
@@ -694,8 +711,10 @@
         <value condition="Stringcompare(Skin.String(ItemToEdit.Widget),recentalbums)">$LOCALIZE[31359]</value>
         <value condition="Stringcompare(Skin.String(ItemToEdit.Widget),randomalbums)">$LOCALIZE[31068]</value>
         <value condition="Stringcompare(Skin.String(ItemToEdit.Widget),randomaddons)">$LOCALIZE[31070]</value>
-        <value condition="Substring(Skin.String(ItemToEdit.Widget),musicvideo)">$LOCALIZE[31081]</value>
+        <value condition="Substring(Skin.String(ItemToEdit.Widget),recentmusicvideo)">$LOCALIZE[31081]</value>
+        <value condition="Substring(Skin.String(ItemToEdit.Widget),randommusicvideo)">$LOCALIZE[31091]</value>
         <value condition="Substring(Skin.String(ItemToEdit.Widget),actor)">$LOCALIZE[31336]</value>
+        <value condition="Substring(Skin.String(ItemToEdit.Widget),watchlistmusic)">$LOCALIZE[31326]</value>
     </variable>
     <variable name="FlagDiffuseVar">
         <value condition="Control.IsVisible(516) | Control.IsVisible(514) | Control.IsVisible(511) | [Control.IsVisible(503) + !Skin.HasSetting(showcaseinfoontv) + Container.Content(tvshows) + Skin.HasSetting(landscapelogo)] | [Skin.HasSetting(addonwallaltbackground) + Control.IsVisible(512)]">FFe1e1e1</value>
@@ -705,9 +724,6 @@
         <value condition="[!Playlist.IsRepeat + !Playlist.IsRepeatOne] + !Control.HasFocus(704)">osd/buttons/OSDRepeatNF.png</value>
         <value condition="Playlist.IsRepeatOne + !Control.HasFocus(704)">osd/buttons/OSDRepeatOneNF.png</value>
         <value condition="Playlist.IsRepeat + !Control.HasFocus(704)">osd/buttons/OSDRepeatAllNF.png</value>
-        <value condition="[!Playlist.IsRepeat + !Playlist.IsRepeatOne] + Control.HasFocus(704)">osd/buttons/OSDRepeatFO.png</value>
-        <value condition="Playlist.IsRepeatOne + Control.HasFocus(704)">osd/buttons/OSDRepeatOneFO.png</value>
-        <value condition="Playlist.IsRepeat + Control.HasFocus(704)">osd/buttons/OSDRepeatAllFO.png</value>
     </variable>
     <variable name="MusicOSDRepeatButtonVar2">
         <value condition="[!Playlist.IsRepeat + !Playlist.IsRepeatOne] + Control.HasFocus(704)">osd/buttons/OSDRepeatFO.png</value>
@@ -724,23 +740,28 @@
     </variable>
     <variable name="HomeWidgetFanartVar">
         <value condition="Control.HasFocus(8000) + !IsEmpty(Container(8000).ListItem.Property(Fanart))">$INFO[Container(8000).ListItem.Property(Fanart)]</value>
-        <value condition="[Control.HasFocus(5010) | ControlGroup(5014).HasFocus] + !IsEmpty(Container(5010).ListItem.Property(Fanart))">$INFO[Container(5010).ListItem.Property(Fanart)]</value>
+        <value condition="[Control.HasFocus(5010) | ControlGroup(5014).HasFocus | ControlGroup(5020).HasFocus | ControlGroup(5021).HasFocus] + !IsEmpty(Container(5010).ListItem.Property(Fanart))">$INFO[Container(5010).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(5010) + Substring(Container(9000).ListItem.Property(Widget),featured) + !IsEmpty(Container(5001).ListItem.Property(Fanart))">$INFO[Container(5001).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(5012) + !IsEmpty(Container(5003).ListItem.Property(Fanart))">$INFO[Container(5003).ListItem.Property(Fanart)]</value>
     </variable>
+    <variable name="MultiFanartVar">
+        <value condition="Control.HasFocus(9010) + !IsEmpty(Container(9010).ListItem.Thumb)">$INFO[Container(9010).ListItem.Icon]</value>
+        <value condition="Window.IsActive(1128)">special://skin/backgrounds/color.jpg</value>
+        <value>$INFO[Container(9000).ListItem.Icon]</value>
+    </variable>
     <variable name="HomeMainFanartVar">
         <value condition="Player.HasAudio + Skin.HasSetting(musicfanarthome) + Window.IsActive(home) + !IsEmpty(MusicPlayer.Property(Fanart_Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
-        <value condition="Control.IsVisible(8998) + [StringCompare(Control.GetLabel(4322),recentmovies) | StringCompare(Control.GetLabel(4322),recenttv) | StringCompare(Control.GetLabel(4322),playlistfanart)]">$INFO[Container(8000).ListItem.Property(Fanart)]</value>
-        <value condition="StringCompare(Control.GetLabel(4322),recentmovies)">$INFO[Window(Home).Property(LatestMovie.1.Fanart)]</value>
-        <value condition="StringCompare(Control.GetLabel(4322),recenttv)">$INFO[Window(Home).Property(LatestEpisode.1.Fanart)]</value>
+        <value condition="Control.IsVisible(8998) + !IsEmpty(Container(8000).ListItem.Property(Fanart)) + [StringCompare(Control.GetLabel(4322),recentmovies) | StringCompare(Control.GetLabel(4322),recenttv) | StringCompare(Control.GetLabel(4322),playlistfanart)]">$INFO[Container(8000).ListItem.Property(Fanart)]</value>
+        <value condition="StringCompare(Control.GetLabel(4322),recentmovies) + !IsEmpty(Window(Home).Property(LatestMovie.1.Fanart))">$INFO[Window(Home).Property(LatestMovie.1.Fanart)]</value>
+        <value condition="StringCompare(Control.GetLabel(4322),recenttv) + !IsEmpty(Window(Home).Property(LatestEpisode.1.Fanart))">$INFO[Window(Home).Property(LatestEpisode.1.Fanart)]</value>
         <value condition="StringCompare(Control.GetLabel(4322),weather)">$INFO[Skin.String(WeatherFanartDir)]$INFO[Weather.FanartCode]</value>
-        <value condition="StringCompare(Control.GetLabel(4322),playlistfanart)">Container(9000).ListItem.Property(PlayListFanart)</value>
+        <value condition="StringCompare(Control.GetLabel(4322),playlistfanart) + !IsEmpty(Window(Home).Property(PlayListFanart))">$INFO[Container(9000).ListItem.Property(PlayListFanart)]</value>
         <value>$VAR[MultiFanartVar]</value>
     </variable>
     <variable name="1124FanartVar">
-        <value condition="[Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1136)] + Control.IsVisible(8998) + [StringCompare(Skin.String(ItemToEdit.MultiFanart),recentmovies) | StringCompare(Skin.String(ItemToEdit.MultiFanart),recenttv) | StringCompare(Skin.String(ItemToEdit.MultiFanart),playlistfanart)]">$INFO[Container(8000).ListItem.Property(Fanart)]</value>
-        <value condition="[Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1136)] + StringCompare(Skin.String(ItemToEdit.MultiFanart),recentmovies)">$INFO[Window(Home).Property(LatestMovie.1.Fanart)]</value>
-        <value condition="[Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1136)] + StringCompare(Skin.String(ItemToEdit.MultiFanart),recenttv)">$INFO[Window(Home).Property(LatestEpisode.1.Fanart)]</value>
+        <value condition="[Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1136)] + Control.IsVisible(8998) + [StringCompare(Skin.String(ItemToEdit.MultiFanart),recentmovies) | StringCompare(Skin.String(ItemToEdit.MultiFanart),recenttv) | StringCompare(Skin.String(ItemToEdit.MultiFanart),playlistfanart)] + !IsEmpty(Container(8000).ListItem.Property(Fanart))">$INFO[Container(8000).ListItem.Property(Fanart)]</value>
+        <value condition="[Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1136)] + StringCompare(Skin.String(ItemToEdit.MultiFanart),recentmovies) + !IsEmpty(Window(Home).Property(LatestMovie.1.Fanart))">$INFO[Window(Home).Property(LatestMovie.1.Fanart)]</value>
+        <value condition="[Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1136)] + StringCompare(Skin.String(ItemToEdit.MultiFanart),recenttv) + !IsEmpty(Window(Home).Property(LatestEpisode.1.Fanart))">$INFO[Window(Home).Property(LatestEpisode.1.Fanart)]</value>
         <value condition="[Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1136)] + StringCompare(Skin.String(ItemToEdit.MultiFanart),weather)">$INFO[Skin.String(WeatherFanartDir)]$INFO[Weather.FanartCode]</value>
         <value condition="[Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1136)] + !IsEmpty(Skin.String(ItemToEdit.MultiFanart))">$INFO[Skin.String(ItemToEdit.MultiFanart)]</value>
         <value>$VAR[HomeMainFanartVar]</value>
@@ -748,10 +769,6 @@
     <variable name="WidgetTypeVar">
         <value condition="Window.IsActive(1122) | Window.IsActive(1123)">$INFO[Skin.String(ItemToEdit.Widget)]</value>
         <value>$INFO[Container(9000).ListItem.Property(Widget)]</value>
-    </variable>
-    <variable name="MultiFanartVar">
-        <value condition="Control.HasFocus(9010) + !IsEmpty(Container(9010).ListItem.Thumb)">$INFO[Container(9010).ListItem.Icon]</value>
-        <value>$INFO[Container(9000).ListItem.Icon]</value>
     </variable>
     <variable name="WeatherShadowVar">
         <value condition="Substring(Control.GetLabel(4321),pda)">44000000</value>
@@ -1088,7 +1105,7 @@
         <value condition="!Control.IsVisible(50) + Container.Content(episodes) + IsEmpty(Container.SeasonThumb)">$INFO[Container.TvShowThumb]</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
-   <variable name="IconYearGenreVar">
+    <variable name="IconYearGenreVar">
         <value condition="Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/genre/video/icons/,.jpg]</value>
         <value condition="Container.Content(years)">$INFO[ListItem.Label,special://skin/extras/year/video/icons/,.png]</value>
         <value>$INFO[ListItem.Icon]</value>
@@ -1106,6 +1123,7 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="LandscapeThumbVar">
+        <value condition="Container.Content(seasons) + Skin.HasSetting(SeasonLandscape)">$INFO[ListItem.Path,,season]$INFO[ListItem.Season,,-landscape.jpg]</value>
         <value condition="Container.Content(episodes) | Container.Content(seasons)">$INFO[ListItem.Icon]</value>
         <value condition="Container.Content(tvshows)">$INFO[ListItem.Path,,landscape.jpg]</value>
         <value>$INFO[ListItem.property(fanart_image)]</value>
@@ -1249,12 +1267,14 @@
     </variable>
     <variable name="TriPanelSquareDetail1Var">
         <value condition="Container.Content(addons)">$LOCALIZE[21863]:</value>
+        <value condition="Container.Content(artists)">$LOCALIZE[21898]:</value>
         <value condition="Container.Content(albums) | Container.Content(songs)">$LOCALIZE[557]:</value>
         <value condition="Window.IsActive(musicfiles)">$LOCALIZE[553]:</value>
     </variable>
     <variable name="TriPanelSquareValue1Var">
         <value condition="Container.Content(addons)">$INFO[ListItem.Property(Addon.Creator)]</value>
         <value condition="Container.Content(albums) | Container.Content(songs)">$INFO[ListItem.Artist]</value>
+        <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_YearsActive)]</value>
         <value condition="Window.IsActive(musicfiles)">$INFO[ListItem.Size]</value>
     </variable>
     <variable name="TriPanelSquareDetail2Var">
@@ -1263,6 +1283,7 @@
     </variable>
     <variable name="TriPanelSquareValue2Var">
         <value condition="Container.Content(addons)">$INFO[ListItem.Property(Addon.Path)]</value>
+        <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
         <value>$INFO[ListItem.Genre]</value>
     </variable>
     <variable name="VideoSeasonVar">
@@ -1293,6 +1314,11 @@
         <!--  <value condition="Skin.HasSetting(TVInfoWallLandscape)">$LOCALIZE[31150]</value> -->
         <value>$LOCALIZE[31061]</value>
     </variable>
+    <variable name="IconModeLabelVar">
+        <value condition="Skin.HasSetting(tvshowlogosfloor)">$LOCALIZE[31059]</value>
+        <value condition="Skin.HasSetting(tvshowbannersfloor)">$LOCALIZE[31454]</value>
+        <value>$LOCALIZE[31061]</value>
+    </variable>
     <variable name="KioskModeLabelVar">
         <value condition="Skin.HasSetting(kioskmode)">$LOCALIZE[31179]</value>
         <value condition="Skin.HasSetting(hideoptions)">$LOCALIZE[31180]</value>
@@ -1311,7 +1337,7 @@
     <variable name="VideoFanArtLabelVar">
         <value condition="[Container.Content(seasons) + Skin.HasSetting(extrafanartseasons)] | [Container.Content(tvshows) + Skin.HasSetting(extrafanartseries)] | [Container.Content(episodes) + Skin.HasSetting(extrafanartepisodes)] | [Container.Content(movies) + Skin.HasSetting(extrafanartmovies)]">$LOCALIZE[31047]</value>
         <value condition="Skin.HasSetting(SeasonFanart) + !Container.Content(movies)">$LOCALIZE[31054]</value>
-        <value condition="Skin.HasSetting(NoVideoLibraryFanart)">$LOCALIZE[106]</value>
+        <value condition="[Skin.HasSetting(NoVideoLibraryFanartTVShows)  + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]] | [Skin.HasSetting(NoVideoLibraryFanart)  + ![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]]">$LOCALIZE[106]</value>
         <value>$LOCALIZE[107]</value>
     </variable>
     <variable name="TopBarLeftSideLabelVar">
@@ -1325,10 +1351,27 @@
         <value>CD</value>
     </variable>
     <variable name="PlayListWidgetLabelVar">
-        <value condition="Skin.HasSetting(itemsplaylist) + !Skin.HasSetting(fiveitemsplaylist)">5 $LOCALIZE[31045]</value>
-        <value condition="Skin.HasSetting(itemsplaylist) + Skin.HasSetting(fiveitemsplaylist)">10 $LOCALIZE[31045]</value>
+        <value condition="Skin.HasSetting(itemsplaylist) + !Skin.HasSetting(fiveitemsplaylist)">10 $LOCALIZE[31045]</value>
+        <value condition="Skin.HasSetting(itemsplaylist) + Skin.HasSetting(fiveitemsplaylist)">5 $LOCALIZE[31045]</value>
         <value condition="Skin.HasSetting(homeartistslideshow)">$LOCALIZE[31044]</value>
         <value>$LOCALIZE[16039]</value>
+    </variable>
+    <variable name="CDArtLabelVar">
+        <value condition="Skin.HasSetting(vinylart)">$LOCALIZE[31227]</value>
+        <value condition="Skin.HasSetting(blurayart)">$LOCALIZE[31255]</value>
+        <value condition="Skin.HasSetting(CDArtinVis)">$LOCALIZE[571]</value>
+        <value>$LOCALIZE[106]</value>
+    </variable>
+    <variable name="NowPlayingTextBoxLabelVar">
+        <value condition="!IsEmpty(MusicPlayer.Property(Album_Description))">$INFO[MusicPlayer.Property(Album_Description)]</value>
+        <value condition="!IsEmpty(MusicPlayer.Property(Artist_Description))">$INFO[MusicPlayer.Property(Artist_Description)]</value>
+        <value>$INFO[Window(visualisation).Property(ArtistSlideshow.ArtistBiography)]</value>
+    </variable>
+    <variable name="NowPlayingTextBoxLabelVar2">
+        <value condition="!IsEmpty(Window(visualisation).Property(ArtistSlideshow.ArtistBiography)">$INFO[Window(visualisation).Property(ArtistSlideshow.ArtistBiography)]</value>
+        <value condition="!IsEmpty(MusicPlayer.Property(Artist_Description))">$INFO[MusicPlayer.Property(Artist_Description)]</value>
+        <value condition="!IsEmpty(MusicPlayer.Property(Album_Description))">$INFO[MusicPlayer.Property(Album_Description)]</value>
+
     </variable>
     <variable name="InfoPanelToggleLabelVar">
         <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(showcaseinfoontv) + Skin.HasSetting(infopaneautotv)">$LOCALIZE[31194]</value>
@@ -1365,10 +1408,6 @@
         <value condition="Skin.HasSetting(altbreadcrumbstexture)">CCFFFFFF</value>
         <value>88FFFFFF</value>
     </variable>
-    <variable name="BackgroundTransparencyVar">
-        <value condition="!IsEmpty(Skin.String(BackgroundDarkness))">$INFO[Skin.String(BackgroundDarkness)]</value>
-        <value>C0FFFFFF</value>
-    </variable>
     <variable name="CustomItemFanartLabelVar">
         <value condition="IsEmpty(Skin.String(ItemToEdit.MultiFanart))">$LOCALIZE[571]</value>
         <value condition="Stringcompare(Skin.String(ItemToEdit.MultiFanart),weather)">$LOCALIZE[31035]</value>
@@ -1376,7 +1415,7 @@
         <value condition="Stringcompare(Skin.String(ItemToEdit.MultiFanart),special://profile/Thumbnails/Music/Fanart)">$LOCALIZE[31628]</value>
         <value condition="Stringcompare(Skin.String(ItemToEdit.MultiFanart),special://profile/Thumbnails/Video/Fanart)">$LOCALIZE[31629]</value>
         <value>$LOCALIZE[31630]</value>
-        </variable>
+    </variable>
     <variable name="CustomItemTypeNameVar">
         <value condition="stringcompare(Skin.String(ItemToEdit.Type),0)">$LOCALIZE[41145]</value>
         <value condition="stringcompare(Skin.String(ItemToEdit.Type),1)">$LOCALIZE[41146]</value>
@@ -1391,10 +1430,6 @@
     <variable name="MenuLabelVar">
         <value condition="!IsEmpty(Skin.String(ItemToEdit.Label))">$INFO[Skin.String(ItemToEdit.Label)]</value>
         <value>$LOCALIZE[571]</value>
-    </variable>
-    <variable name="WidgetLabelVar">
-        <value condition="!IsEmpty(Skin.String(ItemToEdit.Widget))">$INFO[Skin.String(ItemToEdit.Widget)]</value>
-        <value>$LOCALIZE[16018]</value>
     </variable>
     <variable name="NavHelper1IconVar">
         <value condition="ControlGroup(5000).HasFocus + !Skin.HasSetting(lowermainmenu)">common/arrowdown.png</value>
@@ -1411,12 +1446,12 @@
         <value condition="Substring(Control.GetLabel(4321),weather)">$LOCALIZE[31030]</value>
         <value condition="ControlGroup(5000).HasFocus + !Substring(Control.GetLabel(4321),panel)">$LOCALIZE[31031]</value>
         <value condition="ControlGroup(5000).HasFocus + Substring(Control.GetLabel(4321),iconpanel)">$LOCALIZE[31027]</value>
-        <value condition="Control.HasFocus(8000) + SubString(Control.GetLabel(4321),random)">$LOCALIZE[31079]</value>
+        <value condition="Control.HasFocus(8000) + SubString(Control.GetLabel(4321),random) + IsEmpty(Container(8000).ListItem.Property(Trailer))">$LOCALIZE[31079]</value>
         <value condition="Control.HasFocus(8000) + !IsEmpty(Container(8000).ListItem.Property(Trailer))">$LOCALIZE[20410]</value>
     </variable>
     <variable name="NavHelper2IconVar">
         <value condition="ControlGroup(5000).HasFocus + !Skin.HasSetting(lowermainmenu)">common/arrowup.png</value>
-        <value condition="Control.HasFocus(8000)">common/arrowback.png</value>
+        <value condition="Control.HasFocus(8000)">common/arrowleft.png</value>
         <value>common/arrowdown.png</value>
     </variable>
     <variable name="NavHelper2LabelVar">
@@ -1435,16 +1470,37 @@
         <value condition="Skin.HasSetting(submenufixedlist)">$LOCALIZE[31695]</value>
         <value>$LOCALIZE[31032]</value>
     </variable>
-	<variable name="BigFanIconVar">
-	<value condition="Skin.HasSetting(bigfanlogo)">$INFO[ListItem.Path,,clearart.png]</value>
-	<value condition="Skin.HasSetting(bigfanlandscape) + Container.Content(tvshows)">$INFO[ListItem.Path,,landscape.jpg]</value>
-	<value condition="Skin.HasSetting(bigfanlandscape) + Container.Content(seasons)">$INFO[ListItem.Icon]</value>
-	<value>$INFO[ListItem.Property(Fanart_Image)]</value>
-	</variable>
-
-	<variable name="BigFanIconLabelVar">
-	<value condition="Skin.HasSetting(bigfanlogo)">$LOCALIZE[31086]</value>
-	<value condition="Skin.HasSetting(bigfanlandscape)">$LOCALIZE[31150]</value>
-	<value>$LOCALIZE[31060]</value>
-	</variable>
+    <variable name="BigFanIconVar">
+        <value condition="Skin.HasSetting(bigfanlogo)">$INFO[ListItem.Path,,clearart.png]</value>
+        <value condition="Skin.HasSetting(bigfanlandscape) + Container.Content(tvshows)">$INFO[ListItem.Path,,landscape.jpg]</value>
+        <value condition="Skin.HasSetting(bigfanlandscape) + Container.Content(seasons)">$INFO[ListItem.Icon]</value>
+        <value>$INFO[ListItem.Property(Fanart_Image)]</value>
+    </variable>
+    <variable name="BigFanIconLabelVar">
+        <value condition="Skin.HasSetting(bigfanlogo)">$LOCALIZE[31086]</value>
+        <value condition="Skin.HasSetting(bigfanlandscape)">$LOCALIZE[31150]</value>
+        <value>$LOCALIZE[31060]</value>
+    </variable>
+    <variable name="FlagLabelVar">
+        <value condition="Skin.HasSetting(watchedoverlay) + Skin.HasSetting(newstatus)">$LOCALIZE[31089]</value>
+        <value condition="Skin.HasSetting(watchedoverlay)">$LOCALIZE[31241]</value>
+        <value condition="Skin.HasSetting(newstatus)">$LOCALIZE[31240]</value>
+        <value>$LOCALIZE[231]</value>
+    </variable>
+    <variable name="VisPanelLabelVar">
+        <value condition="Skin.HasSetting(activatepanelrotation)">$LOCALIZE[31636]</value>
+        <value condition="Skin.HasSetting(DisablePanelWidgetVis)">$LOCALIZE[106]</value>
+        <value>$LOCALIZE[571]</value>
+    </variable>
+    <variable name="HomePanelVar">
+        <value condition="Skin.HasSetting(rotatenowplayingpanel)">$LOCALIZE[31636]</value>
+        <value condition="Skin.HasSetting(nowplayingpanel)">$LOCALIZE[571]</value>
+        <value>$LOCALIZE[106]</value>
+    </variable>
+    <variable name="cdARTVar">
+        <value condition="[Window.IsActive(musicfiles) + IsEmpty(ListItem.FileExtension)]">$INFO[ListItem.Path]$INFO[ListItem.Label,,/cdart.png]</value>
+        <value condition="Container.Content(albums)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist]\$INFO[ListItem.Year] - $INFO[ListItem.Album,,\cdart.png]</value>
+        <value condition="Window.IsActive(musicinformation)">$INFO[ListItem.FileNameAndPath,,/cdart.png]</value>
+        <value>$INFO[ListItem.Path,,cdart.png]</value>
+    </variable>
 </includes>

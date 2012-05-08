@@ -26,6 +26,7 @@
     <string id="31323">Latest movies</string>
     <string id="31324">Latest episodes</string>
     <string id="31325">Playlist Options</string>
+    <string id="31326">Most Played Albums</string>
     <string id="31328">Recently Added</string>
     <string id="31331">Latest Movie</string>
     <string id="31332">Latest Episode</string>
@@ -96,6 +97,11 @@
     <string id="31084">Panels</string>
     <string id="31085">Light</string>
     <string id="31086">ClearART</string>
+    <string id="31087">Randomize All</string>
+    <string id="31088">Use color for all areas</string>
+    <string id="31089">Both</string>
+    <string id="31090">Adjust Transparency</string>
+    <string id="31091">Random MusicVids</string>
 
     <!-- Playlist Editor labels -->
     <string id="31055">Open playlist</string>
@@ -127,18 +133,21 @@
     <string id="31144">Music fanart</string>
     <string id="31148">Show timepanel</string>
     <string id="31142">Show album level fanart in visualization</string>
-    <string id="31227">- Use Vinyl Record as fallback in cdART</string>
-    <string id="31255">- Use Blu-ray Disc as fallback in cdART</string>
+    <string id="31227">Vinyl Record</string>
+    <string id="31255">Blu-ray Disc</string>
     <string id="31244">Enable cdART in 'Now Playing' widget</string>
     <string id="31456">- Path to CD Cover Folder</string>
     <string id="31267">Enable cdART in music visualization</string>
-    <string id="31276">Use smaller 'Now Playing' music widget</string>
+    <string id="31276">Use NowPlaying InfoPanel</string>
     <string id="31281">Show video info when player is paused</string>
     <string id="31371">Enable Artist Slideshow fanart</string>
     <string id="31425">Enable folder.jpg for album cover</string>
     <string id="31039">CD-Wall</string>
     <string id="31041">Videofanart Slideshow</string>
     <string id="31042">Musicfanart SlideShow</string>
+    <string id="31632">Enable Extended Info widget</string>
+    <string id="31635">Similar Artists</string>
+    <string id="31636">Rotating</string>
 
 
     <!-- Skin Fontsets -->
@@ -191,7 +200,7 @@
     <string id="31174">Update local add-ons</string>
     <string id="31175">Big list</string>
     <string id="31176">General options</string>
-    <string id="31177">Set area color based on daytime</string>
+    <string id="31177">Random color mode</string>
     <string id="31178">Choose color</string>
     <string id="31181">Activate 'Glow Mode'</string>
     <string id="31182">Colored</string>
@@ -212,8 +221,9 @@
     <string id="31228">Navigation: [B]Vertical[/B]</string>
     <string id="31229">Navigation: [B]Horizontal[/B]</string>
     <string id="31230">Viewtypes</string>
-    <string id="31240">Show 'New' flag</string>
-    <string id="31241">Show 'Watched' flag</string>
+    <string id="31240">'New' flag</string>
+    <string id="31241">'Watched' flag</string>
+    <string id="31242">Show Flags</string>
     <string id="31248">BD/DVD Cases</string>
     <string id="31257">Details</string>
     <string id="31258">Overview</string>
@@ -272,6 +282,7 @@
     <string id="31628">All Artists</string>
     <string id="31629">All Videos</string>
     <string id="31630">Custom</string>
+    <string id="31631">Show Logo.png instead Of Title</string>
 
     <!-- Home Menu -->
     <string id="31500">PICTURES</string>
@@ -409,12 +420,14 @@
     <string id="42006">Needs script.randommovie to be available</string>
     <string id="42007">Press RIGHT to select path to wall viz</string>
     <string id="42008">You need to set a path</string>
-    <string id="42009">Press RIGHT to set custom transparency</string>
     <string id="42010">This feature requires the ColorPicker add-on</string>
     <string id="42011">Updating add-on repos</string>
     <string id="42012">Updating local add-ons</string>
     <string id="42013">Click on furniture to see available options</string>
     <string id="42014">Click on menu items to see available options</string>
+    <string id="42015">Play some Music to get live Preview of Settings</string>
+    <string id="42016">Needs "Additional Artist Info" activated in Artistslideshow Plugin</string>
+    
 
     <string id="42100">Set area color for 'Featured' window</string>
     <string id="42101">Set area color for  'Settings' window</string>
