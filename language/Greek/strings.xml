@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<strings> <!-- Translator: CutSickAss / Last update: 06/05/2012 -->
+<strings> <!-- Translator: CutSickAss / Last update: 16/05/2012 -->
     <!-- Misc labels -->
     <string id="31001">Αγαπητό</string>
     <string id="31002">Απεχθές</string>
@@ -28,8 +28,6 @@
     <string id="31325">Επιλογές λίστας αναπαραγωγής</string>
     <string id="31326">Περισσότερο αναπαραχθέντα άλμπουμ</string>
     <string id="31328">Προστέθηκαν πρόσφατα</string>
-    <string id="31331">Νεώτερη ταινία</string>
-    <string id="31332">Νεώτερο επεισόδιο</string>
     <string id="31333">Πρόσφατα</string>
     <string id="31334">Νεώτερα</string>
     <string id="31335">Σε εξέλιξη</string>
@@ -46,23 +44,18 @@
     <string id="31162">Διαφημιστικό</string>
     <string id="31163">Τυχαία</string>
     <string id="31164">Ταξινόμηση</string>
-    <string id="31217">Νεώτερο τραγούδι</string>
     <string id="31218">Νεώτερα τραγούδια</string>
-    <string id="31219">Τυχαίο επεισόδιο</string>
     <string id="31220">Τυχαία επεισόδια</string>
-    <string id="31221">Τυχαία ταινία</string>
     <string id="31222">Τυχαίες ταινίες</string>
-    <string id="31358">Νεώτερο άλμπουμ</string>
     <string id="31359">Νεώτερα άλμπουμ</string>
-    <string id="31475">ΠΕΡΙΣΣΟΤΕΡΟ ΑΝΑΠΑΡΑΧΘΕΝΤΑ ΑΛΜΠΟΥΜ</string>
     <string id="31027">Επαναφορά</string>
     <string id="31030">ΟΘΟΝΗ ΚΑΙΡΟΥ</string>
     <string id="31031">ΠΛΟΗΓΗΣΗ</string>
-    <string id="31032">Κανένα</string>
+    <string id="31032">Τίποτα</string>
     <string id="31035">Τρέχουσες καιρικές συνθήκες</string>
     <string id="31036">Κλασικά Breadcrumbs</string>
     <string id="31037">Προεπιλεγμένα Breadcrumbs</string>
-    <string id="31038">Κλασικό πάνω πλαίσιο</string>
+    <string id="31038">Κλασικό πάνω πάνελ</string>
     <string id="31044">Παρουσίαση διαφανειών καλλιτέχνη</string>
     <string id="31045">Καταχωρίσεις</string>
     <string id="31046">Breadcrumbs</string>
@@ -85,9 +78,6 @@
     <string id="31072">Πληροφορίες συστήματος</string>
     <string id="31073">Πληροφορίες ηθοποιού</string>
     <string id="31074">Φιλμογραφία</string>
-    <string id="31075">Τυχαίο τραγούδι</string>
-    <string id="31076">Τυχαίο άλμπουμ</string>
-    <string id="31077">Τυχαίο πρόσθετο</string>
     <string id="31078">Διαφημιστικό</string>
     <string id="31079">Ανανέωση</string>
     <string id="31080">Πληροφορίες σκηνοθέτη</string>
@@ -99,8 +89,13 @@
     <string id="31086">ClearART</string>
     <string id="31087">Όλα τυχαία</string>
     <string id="31088">Χρήση χρώματος σε όλες τις επιφάνειες</string>
-    <string id="31089">Και τα δύο</string>
+    <string id="31089">Και οι δύο</string>
     <string id="31090">Ρύθμιση Διαφάνειας</string>
+    <string id="31091">Τυχαία Μουσικά Βίντεο</string>
+    <string id="31092">Fanart καλλιτέχνη (Extrafanart, fanart.jpg, προεπιλεγμένο fanart)</string>
+    <string id="31093">Ηθοποιοί με γενέθλια σήμερα</string>
+    <string id="31094">Fanart του widget</string>
+    <string id="31095">Αξιολόγηση</string>
 
     <!-- Playlist Editor labels -->
     <string id="31055">Άνοιγμα λίστας αναπαραγωγής</string>
@@ -144,6 +139,9 @@
     <string id="31039">Τοίχος CD</string>
     <string id="31041">Παρουσίαση διαφανειών fanart Βίντεο</string>
     <string id="31042">Παρουσίαση διαφανειών fanart Μουσικής</string>
+    <string id="31632">Ενεργοποίηση widget εκτεταμένων πληροφοριών</string>
+    <string id="31635">Παρόμοιοι Καλλιτέχνες</string>
+    <string id="31636">Περιστρεφόμενο</string>
 
 
     <!-- Skin Fontsets -->
@@ -208,26 +206,23 @@
     <string id="31189">Προηγούμενο επεισόδιο</string>
     <string id="31190">Επόμενο επεισόδιο</string>
     <string id="31191">Χρήση ως εικονίδιο</string>
-    <string id="31192">Εικόνα: [B]Μικρογραφία[/B]</string>
-    <string id="31193">Εικόνα: [B]Λογότυπο[/B]</string>
     <string id="31194">Καθυστέρηση</string>
     <string id="31195">Χωρίς πλαίσιο</string>
     <string id="31196">Προβολή μικρών εικόνων</string>
     <string id="31198">Επιπλέον μικρογραφίες (extrathumbs)</string>
-    <string id="31228">Πλοήγηση: [B]Κάθετα[/B]</string>
-    <string id="31229">Πλοήγηση: [B]Οριζόντια[/B]</string>
+    <string id="31228">Κάθετα</string>
+    <string id="31229">Οριζόντια</string>
     <string id="31230">Συλλογές</string>
+    <string id="31231">Πλοήγηση</string>
     <string id="31240">Εμφάνιση νέων</string>
     <string id="31241">Εμφάνιση προβληθέντων</string>
-    <string id="31242">Σήμανση</string>
+    <string id="31242">Σημαίες</string>
     <string id="31248">Θήκες BD/DVD</string>
     <string id="31257">Λεπτομέρειες</string>
     <string id="31258">Επισκόπηση</string>
     <string id="31265">Μικρότερα αναδιδόμενα παράθυρα</string>
     <string id="31269">Εφέ υποβάθρου [I](Μπορεί να αυξήσει τη λειτουργία του επεξεργαστή!) [/I]</string>
     <string id="31272">Διάταξη</string>
-    <string id="31277">Πλοήγηση: [B]Κυλιόμενη Λίστα[/B]</string>
-    <string id="31278">Πλοήγηση: [B]Καθορισμένη Λίστα[/B]</string>
     <string id="31279">Προβολή διαφημιστικού σε πλήρη οθόνη</string>
     <string id="31282">Διαφανείς θήκες</string>
     <string id="31285">Επεισόδιο Νο.</string>
@@ -259,7 +254,6 @@
     <string id="31453">Ημέρα/ώρα προβολής</string>
     <string id="31454">Πανό</string>
     <string id="31458">Πιέστε ΠΑΝΩ ή ΚΑΤΩ για να αλλάξετε την αξιολόγηση</string>
-    <string id="31459">Εικόνα: [B]Fanart[/B]</string>
     <string id="31460">Εικόνες</string>
     <string id="31464">Προτεινόμενα</string>
     <string id="31465">Κινούμενα εικονίδια</string>
@@ -278,7 +272,8 @@
     <string id="31628">Όλοι οι Καλλιτέχνες</string>
     <string id="31629">Όλα τα Βίντεο</string>
     <string id="31630">Προσωπικό</string>
-    <string id="31631">Εμφάνιση του Logo.png αντί Τίτλου</string>
+    <string id="31631">Εμφάνιση του Logo.png αντί τίτλου</string>
+    <string id="31633">Ταχεία Πλοήγηση</string>
 
     <!-- Home Menu -->
     <string id="31500">Εικόνες</string>
@@ -325,7 +320,7 @@
     <string id="31676">Πάνω μπάρα</string>
     <string id="31677">Αριστερή πλευρά</string>
     <string id="31186">Λειτουργία Kiosk</string>
-    <string id="31179">Απενεργοποίηση μενού πολυμέσων</string>
+    <string id="31179">Απενεργοποίηση μενού πολυμέσων και απόκρυψη επιλογών στις πληροφορίες βίντεο</string>
     <string id="31180">Απόκρυψη επιλογών στα μενού πολυμέσων</string>
     <string id="31378">Διαδρομή για τη μουσική συλλογή (χρειάζεται για extrafanart, clearLOGO)</string>
     <string id="31678">Διαδρομή υποβάθρων καιρικών συνθηκών</string>
@@ -342,14 +337,17 @@
     <string id="31689">Απενεργοποίηση στατιστικών συλλογής</string>
     <string id="31690">Απενεργοποίηση ροής τίτλων ειδήσεων (RSS)</string>
     <string id="31691">Αλλαγή θέσης</string>
-    <string id="31692">Μικρότερο πλαίσιο χρόνου και στατιστικών συλλογής</string>
+    <string id="31692">Μικρότερο πάνελ χρόνου και στατιστικά συλλογής</string>
     <string id="31693">Μεγαλύτερα κενά στο Κεντρικού Μενού</string>
-    <string id="31694">Καθορισμένη λίστα:</string>
+    <string id="31694">Καθορισμένη λίστα</string>
     <string id="31695">Υπομενού</string>
     <string id="31696">Εναλλακτική διάταξη</string>
     <string id="31697">Απενεργοποίηση υποδείξεων πλοήγησης</string>
     <string id="31698">Εμφάνιση λίστας γενεθλίων ηθοποιών/καλλιτεχνών</string>
     <string id="31699">Μικρότερο Κεντρικό Μενού</string>
+    <string id="31700">Πάνελ</string>
+    <string id="31701">Ρυθμίσεις μουσικής οπτικοποίησης</string>
+    <string id="31702">Ρυθμίσεις απεικονίσεων οθόνης (OSD) βίντεο</string>
 
     <!-- Extra Unified PVR labels -->
     <string id="52502">Live TV</string>
@@ -422,6 +420,9 @@
     <string id="42013">Πιέστε πάνω στα έπιπλα για τις επιλογές τους</string> 
     <string id="42014">Πιέστε πάνω στα αντικείμενα για τις επιλογές τους</string> 
     <string id="42015">Βάλτε μουσική για να δείτε ζωντανά τις αλλαγές</string>
+    <string id="42016">Πρέπει να είναι ενεργές οι 'Επιπλέον Πληροφορίες Καλλιτέχνη' στο plugin παρουσίασης διαφανειών καλλιτέχνη (Artistslideshow)</string>
+    <string id="42017">Καλώς ορίσατε στο Aeon Nox 3.0</string>
+    <string id="42018">Επισκεφθείτε τα forum του XBMC.org για υποστήριξη</string>
 
 
     <string id="42100">Χρώμα επιφάνειας για τα 'Τυχαία'</string>

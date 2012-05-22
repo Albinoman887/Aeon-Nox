@@ -124,7 +124,7 @@
                         <height>868</height>
                         <texture>views/listpanel_detailwide.png</texture>
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                        <visible>Container.Content(addons) + !Window.IsActive(addonbrowser)</visible>
+                        <visible>[Container.Content(addons) | Container.Content(musicvideos)] + !Window.IsActive(addonbrowser)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -147,7 +147,7 @@
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                         <texture>views/listpanel_detailwide.png</texture>
                         <visible>StringCompare(Container.SortMethod,$LOCALIZE[562]) | [Container.Content(addons) + StringCompare(Container.SortMethod,$LOCALIZE[551])]</visible>
-                        <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)  | Container.Content(songs) | Container.Content(addons)]</visible>
+                        <visible>[Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(songs) | Container.Content(addons)]</visible>
                         <animation effect="slide" start="0" end="38" reversible="true" condition="!Window.IsActive(videolibrary) + !Container.Content(musicvideos)">Conditional</animation>
                     </control>
                     <control type="image">
@@ -196,7 +196,7 @@
                             <posy>0</posy>
                             <width>82</width>
                             <height>98</height>
-                            <font>Font_OSDTitle2</font>
+                            <font>Font_Bold35</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <include>detailcolornofocus</include>
@@ -291,9 +291,9 @@
                         <control type="label">
                             <posx>93</posx>
                             <posy>0</posy>
-                            <width>68</width>
+                            <width>82</width>
                             <height>98</height>
-                            <font>Font_OSDTitle2</font>
+                            <font>Font_Bold35</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <include>listcolornofocus</include>
@@ -584,7 +584,7 @@
                     <visible>Skin.HasSetting(ClassicTopBar)</visible>
                 </control>
             </control>
-            <include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(musicplaylist)">CDArtFlip</include>
+            <include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist)">CDArtFlip</include>
             <include condition="Window.IsActive(videolibrary) | Window.IsActive(programs)">ListIconPoster</include>
             <control type="group" id="40003">
                 <posx>1296</posx>

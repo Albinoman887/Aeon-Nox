@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1118">
     <defaultcontrol always="true">450</defaultcontrol>
     <coordinates>
@@ -13,8 +13,20 @@
             <posx>357</posx>
             <posy>180</posy>
             <width>1212</width>
-            <height>722</height>
+            <height>600</height>
+            <texture>osd/osd_settings_back_glow.png</texture>
+            <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+            <include>PanelGlowFade</include>
+            <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+        </control>
+        <control type="image">
+            <description>Panel</description>
+            <posx>357</posx>
+            <posy>180</posy>
+            <width>1212</width>
+            <height>600</height>
             <texture>osd/osd_settings_back.png</texture>
+            <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
             <posx>375</posx>
@@ -29,7 +41,7 @@
             <posy>225</posy>
             <width>600</width>
             <height>60</height>
-            <textcolor>white</textcolor>
+            <textcolor>$VAR[TitleColorVar]</textcolor>
             <font>Font_Bold19</font>
             <label>$LOCALIZE[31619]</label>
             <align>left</align>
@@ -49,14 +61,14 @@
             <ondown>450</ondown>
             <control type="radiobutton" id="451">
                 <description>Show video info</description>
-                <label>31618</label>
+                <label>31281</label>
                 <include>Objects_CommonSettingsButton</include>
                 <onclick>Skin.ToggleSetting(Show_Info_Paused)</onclick>
                 <selected>Skin.HasSetting(Show_Info_Paused)</selected>
             </control>
             <control type="radiobutton" id="452">
                 <description>Show video info</description>
-                <label>31281</label>
+                <label>31618</label>
                 <include>Objects_CommonSettingsButton</include>
                 <onclick>Skin.ToggleSetting(MoreFullscreenInfo)</onclick>
                 <selected>Skin.HasSetting(MoreFullscreenInfo)</selected>

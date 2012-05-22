@@ -918,17 +918,17 @@
             <onclick condition="IsEmpty(Skin.String(HomeMenuSubMoviesTrailer))">Skin.SetAddon(HomeMenuSubMoviesTrailer,xbmc.addon.video)</onclick>
             <visible>Container(9000).HasFocus(10) + !Skin.HasSetting(MoviesSub2)</visible>
         </item>
-        <item id="90166">
-            <label>31334</label>
-            <onclick>SetProperty(DontRunTVShowScripts,True,Home)</onclick>
-            <onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
-            <visible>Container(9000).HasFocus(10) + !Skin.HasSetting(MoviesSub3)</visible>
-        </item>
         <item id="90161">
             <label>369</label>
             <onclick>SetProperty(DontRunTVShowScripts,True,Home)</onclick>
             <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
             <visible>Container(9000).HasFocus(10) + !Skin.HasSetting(MoviesSub4)</visible>
+        </item>
+        <item id="90166">
+            <label>31334</label>
+            <onclick>SetProperty(DontRunTVShowScripts,True,Home)</onclick>
+            <onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
+            <visible>Container(9000).HasFocus(10) + !Skin.HasSetting(MoviesSub3)</visible>
         </item>
         <item id="90162">
             <label>135</label>
@@ -1166,6 +1166,20 @@
             <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
         </item>
     </include>
+    <include name="MusicVideosMainMenu">
+        <item id="33">
+            <label fallback="20389">$INFO[Skin.String(MusicVideosHomeItem.Label)]</label>
+            <onclick condition="IsEmpty(Skin.String(MusicVideosHomeItem.Path))">ActivateWindow(Videos,MusicVideoTitles)</onclick>
+            <onclick condition="!IsEmpty(Skin.String(MusicVideosHomeItem.Path))">$INFO[Skin.String(MusicVideosHomeItem.Path)]</onclick>
+            <property name="Widget">$INFO[Skin.String(MusicVideosHomeItem.Widget)]</property>
+            <property name="ShortLibraryStatsMusic">[COLOR grey]$LOCALIZE[20389]:[/COLOR] $INFO[Window(Home).Property(MusicVideos.Count)][COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] $INFO[Window(Home).Property(MusicVideos.UnWatched)]</property>
+            <property name="LibraryStatsMusic">[COLOR grey]$LOCALIZE[20389]:[/COLOR] $INFO[Window(Home).Property(MusicVideos.Count)][COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] $INFO[Window(Home).Property(MusicVideos.Watched)][COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] $INFO[Window(Home).Property(MusicVideos.UnWatched)]</property>
+            <icon>special://skin/backgrounds/music.jpg</icon>
+            <thumb>$INFO[Skin.String(MusicVideosHomeItem.MultiFanart)]</thumb>
+            <visible>!Skin.HasSetting(HomeMenuNoMusicVideosButton)</visible>
+            <visible>Library.HasContent(musicvideos)</visible>
+        </item>
+    </include>
     <include name="PicturesMainMenu">
         <item id="4">
             <label fallback="31500">$INFO[Skin.String(PicturesHomeItem.Label)]</label>
@@ -1224,7 +1238,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem1.Type),6) | Stringcompare(Skin.String(CustomHomeItem1.Type),7)">$INFO[Skin.String(CustomHomeItem1.Path)]</onclick>
             <icon>special://skin/backgrounds/playlist.jpg</icon>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem1.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem1.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem1.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem1.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem1.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem1.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem1.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem1.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem1.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem1.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem1.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1243,7 +1256,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem2.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(CustomHomeItem2.Path)],return)</onclick>
             <onclick condition="stringcompare(Skin.String(CustomHomeItem2.Type),6) | Stringcompare(Skin.String(CustomHomeItem2.Type),7)">$INFO[Skin.String(CustomHomeItem2.Path)]</onclick>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem2.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem2.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem2.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem2.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem2.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem2.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem2.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem2.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem2.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem2.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem2.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1263,7 +1275,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem3.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(CustomHomeItem3.Path)],return)</onclick>
             <onclick condition="stringcompare(Skin.String(CustomHomeItem3.Type),6) | Stringcompare(Skin.String(CustomHomeItem3.Type),7)">$INFO[Skin.String(CustomHomeItem3.Path)]</onclick>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem3.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem3.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem3.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem3.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem3.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem3.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem3.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem3.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem3.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem3.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem3.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1283,7 +1294,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem4.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(CustomHomeItem4.Path)],return)</onclick>
             <onclick condition="stringcompare(Skin.String(CustomHomeItem4.Type),6) | Stringcompare(Skin.String(CustomHomeItem4.Type),7)">$INFO[Skin.String(CustomHomeItem4.Path)]</onclick>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem4.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem4.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem4.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem4.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem4.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem4.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem4.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem4.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem4.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem4.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem4.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1303,7 +1313,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem5.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(CustomHomeItem5.Path)],return)</onclick>
             <onclick condition="stringcompare(Skin.String(CustomHomeItem5.Type),6) | Stringcompare(Skin.String(CustomHomeItem5.Type),7)">$INFO[Skin.String(CustomHomeItem5.Path)]</onclick>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem5.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem5.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem5.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem5.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem5.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem5.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem5.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem5.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem5.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem5.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem5.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1323,7 +1332,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem6.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(CustomHomeItem6.Path)],return)</onclick>
             <onclick condition="stringcompare(Skin.String(CustomHomeItem6.Type),6) | Stringcompare(Skin.String(CustomHomeItem6.Type),7)">$INFO[Skin.String(CustomHomeItem6.Path)]</onclick>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem6.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem6.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem6.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem6.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem6.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem6.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem6.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem6.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem6.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem6.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem6.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1344,7 +1352,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem7.Type),6) | Stringcompare(Skin.String(CustomHomeItem7.Type),7)">$INFO[Skin.String(CustomHomeItem7.Path)]</onclick>
             <icon>special://skin/backgrounds/playlist.jpg</icon>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem7.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem7.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem7.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem7.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem7.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem7.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem7.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem7.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem7.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem7.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem7.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1363,7 +1370,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem8.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(CustomHomeItem8.Path)],return)</onclick>
             <onclick condition="stringcompare(Skin.String(CustomHomeItem8.Type),6) | Stringcompare(Skin.String(CustomHomeItem8.Type),7)">$INFO[Skin.String(CustomHomeItem8.Path)]</onclick>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem8.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem8.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem8.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem8.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem8.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem8.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem8.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem8.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem8.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem8.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem8.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1383,7 +1389,6 @@
             <onclick condition="stringcompare(Skin.String(CustomHomeItem9.Type),5)">ActivateWindow(MusicLibrary,$INFO[Skin.String(CustomHomeItem9.Path)],return)</onclick>
             <onclick condition="stringcompare(Skin.String(CustomHomeItem9.Type),6) | Stringcompare(Skin.String(CustomHomeItem9.Type),7)">$INFO[Skin.String(CustomHomeItem9.Path)]</onclick>
             <property name="Widget">$INFO[Skin.String(CustomHomeItem9.Widget)]</property>
-            <property name="PlayListFanart">$INFO[Window(Home).Property(CustomHomeItem9.1.Fanart)]</property>
             <property name="LibraryStatsMovies">$INFO[Window(Home).Property(CustomHomeItem9.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem9.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem9.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsTV">$INFO[Window(Home).Property(CustomHomeItem9.Count),[COLOR grey]$LOCALIZE[20360]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem9.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem9.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</property>
             <property name="LibraryStatsMusic">$INFO[Window(Home).Property(CustomHomeItem9.Artists),[COLOR grey]$LOCALIZE[132]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem9.Albums),[COLOR grey]   •   $LOCALIZE[134]:[/COLOR] ]$INFO[Window(Home).Property(CustomHomeItem9.Songs),[COLOR grey]   •   $LOCALIZE[133]:[/COLOR] ]</property>
@@ -1427,16 +1432,18 @@
         <height>225</height>
         <onleft>9000</onleft>
         <onright>9000</onright>
-        <onup condition="Substring(Container(9000).ListItem.Property(Widget),weather) +  Skin.HasSetting(lowermainmenu) ">ActivateWindow(weather)</onup>
-        <onup condition="Substring(Container(9000).ListItem.Property(Widget),system) +  Skin.HasSetting(lowermainmenu) ">ActivateWindow(settings)</onup>
+        <onup condition="Substring(Container(9000).ListItem.Property(Widget),weather) + Skin.HasSetting(lowermainmenu)">ActivateWindow(weather)</onup>
+        <onup condition="Substring(Container(9000).ListItem.Property(Widget),system) + Skin.HasSetting(lowermainmenu)">ActivateWindow(settings)</onup>
         <onup condition="Control.IsVisible(5000)">5000</onup>
-        <onup condition="Control.IsVisible(8998) +  Skin.HasSetting(lowermainmenu)">CancelAlarm(WidgetMove,true)</onup>
-        <onup condition="Control.IsVisible(8998) +  Skin.HasSetting(lowermainmenu)">8000</onup>
+        <onup condition="Control.IsVisible(8998) + Skin.HasSetting(lowermainmenu)">CancelAlarm(WidgetMove,true)</onup>
+        <onup condition="Control.IsVisible(8998) + Skin.HasSetting(lowermainmenu)">SetFocus(8000,0)</onup>
+        <onup condition="Control.IsVisible(8998) + Skin.HasSetting(lowermainmenu)">8000</onup>
         <ondown>9010</ondown>
-        <ondown condition="Substring(Container(9000).ListItem.Property(Widget),weather) +  !Skin.HasSetting(lowermainmenu) + !IntegerGreaterThan(Container(9010).NumItems,0)">ActivateWindow(weather)</ondown>
-        <ondown condition="Substring(Container(9000).ListItem.Property(Widget),system) +  !Skin.HasSetting(lowermainmenu) + !IntegerGreaterThan(Container(9010).NumItems,0)">ActivateWindow(settings)</ondown>
+        <ondown condition="Substring(Container(9000).ListItem.Property(Widget),weather) + !Skin.HasSetting(lowermainmenu) + !IntegerGreaterThan(Container(9010).NumItems,0)">ActivateWindow(weather)</ondown>
+        <ondown condition="Substring(Container(9000).ListItem.Property(Widget),system) + !Skin.HasSetting(lowermainmenu) + !IntegerGreaterThan(Container(9010).NumItems,0)">ActivateWindow(settings)</ondown>
         <ondown condition="!Control.HasFocus(9010)">CancelAlarm(WidgetMove,true)</ondown>
         <ondown condition="!Control.IsVisible(9001) + Control.IsVisible(8998)">CancelAlarm(WidgetMove,true)</ondown>
+        <ondown condition="!Control.IsVisible(9001) + Control.IsVisible(8998)">SetFocus(8000,0)</ondown>
         <ondown condition="!Control.IsVisible(9001) + Control.IsVisible(8998)">8000</ondown>
         <ondown condition="!Control.HasFocus(9010) + Control.IsVisible(5000) + !Skin.HasSetting(lowermainmenu)">5000</ondown>
         <pagecontrol>-</pagecontrol>
@@ -1521,6 +1528,7 @@
             <include condition="!Skin.HasSetting(HomeMenuNoPicturesButton)">PicturesMainMenu</include>
             <include condition="!Skin.HasSetting(HomeMenuNoMusicButton)">MusicMainMenu</include>
             <include condition="!Skin.HasSetting(HomeMenuNoMovieButton)">MoviesMainMenu</include>
+            <include condition="!Skin.HasSetting(HomeMenuNoMusicVideosButton)">MusicVideosMainMenu</include>
             <include condition="!Skin.HasSetting(HomeMenuNoTVShowButton)">TVShowsMainMenu</include>
             <include condition="System.GetBool(pvrmanager.enabled)">TVMainMenu</include>
             <include condition="!Skin.HasSetting(HomeMenuNoTVGuideButton) + System.HasAddon(script.tv.show.next.aired)">TVGuideMainMenu</include>
@@ -1559,9 +1567,11 @@
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
         <onup>9000</onup>
         <preloaditems>2</preloaditems>
-        <ondown condition="Substring(Container(9000).ListItem.Property(Widget),weather) +  !Skin.HasSetting(lowermainmenu) ">ActivateWindow(weather)</ondown>
-        <ondown condition="Substring(Container(9000).ListItem.Property(Widget),system) +  !Skin.HasSetting(lowermainmenu) ">ActivateWindow(settings)</ondown>
+        <onback>SetFocus(9000)</onback>
+        <ondown condition="Substring(Container(9000).ListItem.Property(Widget),weather) + !Skin.HasSetting(lowermainmenu)">ActivateWindow(weather)</ondown>
+        <ondown condition="Substring(Container(9000).ListItem.Property(Widget),system) + !Skin.HasSetting(lowermainmenu)">ActivateWindow(settings)</ondown>
         <ondown condition="Control.IsVisible(8998)">CancelAlarm(WidgetMove,true)</ondown>
+        <ondown condition="Control.IsVisible(8998)">Control.SetFocus(8000,0)</ondown>
         <ondown condition="Control.IsVisible(8998)">8000</ondown>
         <ondown condition="Control.IsVisible(5000) + !Skin.HasSetting(lowermainmenu)">5000</ondown>
         <itemlayout width="225" height="50">
@@ -1848,6 +1858,23 @@
                 <icon fallback="special://skin/backgrounds/movies.jpg">$INFO[Skin.String(MovieHomeItem.MultiFanart)]</icon>
                 <property name="DisableIcon">close.png</property>
                 <visible>Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
+            </item>
+            <item id="33">
+                <label fallback="20389">$INFO[Skin.String(MusicVideosHomeItem.Label)]</label>
+                <onclick>Skin.SetString(MenuItem,MusicVideosHomeItem)</onclick>
+                <onclick>ActivateWindow(1123)</onclick>
+                <icon fallback="special://skin/backgrounds/music.jpg">$INFO[Skin.String(MusicVideosHomeItem.MultiFanart)]</icon>
+                <property name="Widget">$INFO[Skin.String(MusicVideosHomeItem.Widget)]</property>
+                <thumb>-</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoMusicVideosButton) + Library.HasContent(musicvideos)</visible>
+            </item>
+            <item id="33">
+                <label fallback="20389">$INFO[Skin.String(MusicVideosHomeItem.Label)]</label>
+                <onclick>Skin.SetString(MenuItem,MusicVideosHomeItem)</onclick>
+                <onclick>ActivateWindow(1123)</onclick>
+                <icon fallback="special://skin/backgrounds/music.jpg">$INFO[Skin.String(MusicVideosHomeItem.MultiFanart)]</icon>
+                <property name="DisableIcon">close.png</property>
+                <visible>Skin.HasSetting(HomeMenuNoMusicVideosButton) + Library.HasContent(musicvideos)</visible>
             </item>
             <item id="11">
                 <label fallback="31503">$INFO[Skin.String(TVShowHomeItem.Label)]</label>

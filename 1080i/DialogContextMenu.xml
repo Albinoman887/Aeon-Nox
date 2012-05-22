@@ -9,6 +9,16 @@
     </coordinates>
     <include>Animation_DialogZoom</include>
     <controls>
+        <control type="image">
+            <posx>-2000</posx>
+            <posy>-1000</posy>
+            <width>6000</width>
+            <height>3000</height>
+            <colordiffuse>AAFFFFFF</colordiffuse>
+            <texture>common/black.png</texture>
+            <animation effect="fade" start="0" end="100" time="700">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+        </control>
         <include condition="Skin.HasSetting(effect_bg)">BG_Effect_Home</include>
         <control type="image" id="999">
             <description>background image</description>
@@ -16,7 +26,8 @@
             <posy>0</posy>
             <width>462</width>
             <height>1080</height>
-            <texture>dialogs/context_middle.png</texture>
+            <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+            <texture>$VAR[ContextMiddleVar]</texture>
         </control>
         <control type="grouplist" id="996">
             <posx>0</posx>
@@ -32,7 +43,8 @@
             <posy>-39</posy>
             <width>462</width>
             <height>39</height>
-            <texture>dialogs/context_top.png</texture>
+            <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+            <texture>$VAR[ContextTopVar]</texture>
         </control>
         <control type="image" id="998">
             <description>background bottom image</description>
@@ -40,18 +52,19 @@
             <posy>585</posy>
             <width>462</width>
             <height>40</height>
-            <texture>dialogs/context_bottom.png</texture>
+            <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+            <texture>$VAR[ContextBottomVar]</texture>
         </control>
         <control type="button" id="1000">
             <description>button template</description>
             <posx>0</posx>
             <posy>0</posy>
-            <height>58</height>
+            <height>59</height>
             <width>462</width>
             <textcolor>context</textcolor>
             <focusedcolor>FFdfdfdf</focusedcolor>
             <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
-            <texturefocus>dialogs/shutdown_focus.png</texturefocus>
+            <texturefocus>dialogs/context_highlight.png</texturefocus>
             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             <align>center</align>
             <aligny>top</aligny>

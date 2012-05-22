@@ -361,7 +361,7 @@
                 <visible>Skin.HasSetting(Show_Info_Paused)</visible>
                 <control type="group" id="4001">
                     <decscription>bottom bar</decscription>
-                    <visible>[Player.Seeking | [Player.DisplayAfterSeek + [!IsEmpty(Player.SeekOffset) | !IsEmpty(Player.Chapter)]] |  Player.Forwarding | Player.Rewinding] + ![Player.Paused|[Player.Paused+Player.Seeking] | [Player.Paused+Player.DisplayAfterSeek]]</visible>
+                    <visible>[Player.Seeking | [Player.DisplayAfterSeek + [!IsEmpty(Player.SeekOffset) | !IsEmpty(Player.Chapter)]] | Player.Forwarding | Player.Rewinding] + ![Player.Paused|[Player.Paused+Player.Seeking] | [Player.Paused+Player.DisplayAfterSeek]]</visible>
                     <visible>!Control.IsVisible(4003) + !Control.IsVisible(4004)</visible>
                     <control type="group">
                         <description>Bottom bar</description>
@@ -592,7 +592,7 @@
                         <effect type="fade" time="200" start="100" end="0" />
                         <effect type="slide" time="200" start="0,0" end="0,-98" easing="in" tween="cubic" />
                     </animation>
-                    <visible>[Player.Seeking | [Player.DisplayAfterSeek + [!IsEmpty(Player.SeekOffset) | !IsEmpty(Player.Chapter)]] |  Player.Forwarding | Player.Rewinding] + ![Player.Paused|[Player.Paused+Player.Seeking] | [Player.Paused+Player.DisplayAfterSeek]]</visible>
+                    <visible>[Player.Seeking | [Player.DisplayAfterSeek + [!IsEmpty(Player.SeekOffset) | !IsEmpty(Player.Chapter)]] | Player.Forwarding | Player.Rewinding] + ![Player.Paused|[Player.Paused+Player.Seeking] | [Player.Paused+Player.DisplayAfterSeek]]</visible>
                     <visible>!Control.IsVisible(4003) + !Control.IsVisible(4004)</visible>
                     <control type="group">
                         <description>Top bar</description>
@@ -785,7 +785,7 @@
                             <align>center</align>
                             <aligny>top</aligny>
                             <font>Font_Condensed22</font>
-                            <textcolor>grey</textcolor>
+                            <textcolor>$VAR[SubTitleColorVar]</textcolor>
                             <label>$INFO[VideoPlayer.Tagline]</label>
                             <scroll>true</scroll>
                             <visible>VideoPlayer.Content(movies)</visible>
@@ -811,7 +811,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>Font_Condensed22</font>
-                            <textcolor>grey</textcolor>
+                            <textcolor>$VAR[SubTitleColorVar]</textcolor>
                             <scroll>true</scroll>
                             <label>$INFO[VideoPlayer.TVShowTitle]</label>
                             <visible>VideoPlayer.Content(episodes)</visible>
@@ -1077,11 +1077,11 @@
                         <height>8</height>
                         <align>center</align>
                         <font>Font_Condensed22</font>
-                        <textcolor>white6</textcolor>
+                        <textcolor>$VAR[ColorDiffuseVar]</textcolor>
                         <label>$INFO[VideoPlayer.Director,[COLOR 60ffffff]$LOCALIZE[31156][/COLOR] ]</label>
                         <label>$INFO[VideoPlayer.Writer,[COLOR 60ffffff]$LOCALIZE[31157][/COLOR] ]</label>
                         <label>$INFO[VideoPlayer.Genre]</label>
-                        <label>$INFO[VideoPlayer.RatingAndVotes,[COLOR 60ffffff]$LOCALIZE[368]:[/COLOR] ]$INFO[VideoPlayer.Top250,[COLOR 60ffffff] $LOCALIZE[13409][/COLOR] # ]</label>
+                        <label>$INFO[VideoPlayer.RatingAndVotes,[COLOR 60ffffff]$LOCALIZE[31095]:[/COLOR] ]$INFO[VideoPlayer.Top250,[COLOR 60ffffff] $LOCALIZE[13409][/COLOR] # ]</label>
                         <label>$INFO[VideoPlayer.mpaa]</label>
                         <label>$INFO[VideoPlayer.Country,[COLOR 60ffffff]$LOCALIZE[21875][/COLOR] ]</label>
                         <label>$INFO[VideoPlayer.PlayCount,[COLOR 60FFFFFF]$LOCALIZE[567]: [/COLOR]]</label>

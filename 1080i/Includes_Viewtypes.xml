@@ -10,7 +10,7 @@
             <fadetime>300</fadetime>
             <aspectratio align="bottom">keep</aspectratio>
             <visible>[![Control.IsVisible(501) | Control.IsVisible(504)] | [Skin.HasSetting(ClassicTopBar) + !Container.Content(movies)]]</visible>
-            <visible>![Container.Content(tvshows) + Control.IsVisible(503) + Skin.HasSetting(landscapelogo)] + !Stringcompare(Control.GetLabel(8999),empty.png)</visible>
+            <visible>![[Container.Content(tvshows) | Container.Content(movies)] + Control.IsVisible(503) + Skin.HasSetting(landscapelogo)] + !Stringcompare(Control.GetLabel(8999),empty.png)</visible>
             <visible>!Control.isVisible(8822)</visible>
             <animation effect="fade" start="0" delay="0" end="100" time="0" reversible="true" condition="!Stringcompare(Control.GetLabel(8999),empty.png)">Conditional</animation>
             <animation effect="slide" start="0,0" end="0,-34" time="0" condition="Container.Content(movies)">Conditional</animation>
@@ -18,11 +18,11 @@
             <animation effect="fade" start="0" end="100" time="400">Visible</animation>
         </control>
         <control type="group">
-            <visible>[Container.Content(movies) + [[Skin.HasSetting(fanartinfopane) + Control.IsVisible(501)] | [Skin.HasSetting(fanartinfopane503) + Control.IsVisible(503)] | [Skin.HasSetting(fanartinfopane504) + Control.IsVisible(504)] | [Control.IsVisible(501) + Skin.HasSetting(fourthumbs)] | [Control.IsVisible(503) + Skin.HasSetting(fourthumbs503)] | [Control.IsVisible(504) + Skin.HasSetting(fourthumbs504)]]] |
+            <visible>Container.Content(musicvideos) | [Container.Content(movies) + [[Skin.HasSetting(fanartinfopane) + Control.IsVisible(501)] | [Skin.HasSetting(fanartinfopane503) + Control.IsVisible(503)] | [Skin.HasSetting(fanartinfopane504) + Control.IsVisible(504)] | [Control.IsVisible(501) + Skin.HasSetting(fourthumbs)] | [Control.IsVisible(503) + Skin.HasSetting(fourthumbs503)] | [Control.IsVisible(504) + Skin.HasSetting(fourthumbs504)]]] |
 				[Container.Content(tvshows) + !Skin.HasSetting(tvposterinfopane)] | Container.Content(seasons) | Container.Content(episodes)</visible>
             <posx>158</posx>
             <posy>63</posy>
-            <animation effect="slide" start="0,0" end="472,0" time="0" easing="inout" tween="cubic" condition="[Container.Content(movies) + [[Control.IsVisible(501) + Skin.HasSetting(fourthumbs)] | [Control.IsVisible(503) + Skin.HasSetting(fourthumbs503)] | [Control.IsVisible(504) + Skin.HasSetting(fourthumbs504)]]] | [Container.Content(tvshows) +  Skin.HasSetting(tvthumbsinfopane)]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="472,0" time="0" easing="inout" tween="cubic" condition="[Container.Content(movies) + [[Control.IsVisible(501) + Skin.HasSetting(fourthumbs)] | [Control.IsVisible(503) + Skin.HasSetting(fourthumbs503)] | [Control.IsVisible(504) + Skin.HasSetting(fourthumbs504)]]] | [Container.Content(tvshows) + Skin.HasSetting(tvthumbsinfopane)]">Conditional</animation>
             <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo + [[Skin.HasSetting(fourthumbs) + Control.IsVisible(501)] | [Skin.HasSetting(fourthumbs503) + Control.IsVisible(503)] | [Skin.HasSetting(fourthumbs504) + Control.IsVisible(504)]]">Conditional</animation>
             <animation type="VisibleChange">
                 <effect type="fade" start="0" end="100" delay="400" time="200" reversible="true" />
@@ -162,7 +162,7 @@
                     <label>$VAR[FanartPanelPlotVar]</label>
                     <textcolor>white6</textcolor>
                     <align>justify</align>
-                    <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+                    <autoscroll delay="8000" time="5000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                 </control>
             </control>
             <include condition="System.HasAddon(script.moviesets) + System.GetBool(videolibrary.groupmoviesets)">InfoPanelFanartMovieSetsLayout</include>
@@ -479,7 +479,7 @@
                     <align>justify</align>
                     <textcolor>white6</textcolor>
                     <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo">Conditional</animation>
-                    <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+                    <autoscroll delay="8000" time="5000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                     <visible>!Control.IsVisible(504) + !Control.IsVisible(503)</visible>
                     <visible>[[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]]</visible>
                 </control>
@@ -493,7 +493,7 @@
                     <align>justify</align>
                     <textcolor>white6</textcolor>
                     <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo">Conditional</animation>
-                    <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+                    <autoscroll delay="8000" time="5000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                     <visible>Control.IsVisible(504) + [[Skin.HasSetting(noflowdvd) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowdvdtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]]</visible>
                 </control>
                 <control type="textbox">
@@ -506,7 +506,7 @@
                     <align>justify</align>
                     <textcolor>white6</textcolor>
                     <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo">Conditional</animation>
-                    <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+                    <autoscroll delay="8000" time="5000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                     <visible>Control.IsVisible(504) + ![[Skin.HasSetting(noflowdvd) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowdvdtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]]</visible>
                 </control>
                 <control type="textbox">
@@ -520,7 +520,7 @@
                     <align>justify</align>
                     <textcolor>white6</textcolor>
                     <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo">Conditional</animation>
-                    <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+                    <autoscroll delay="8000" time="5000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                     <visible>![[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]] | Control.IsVisible(503)</visible>
                 </control>
             </control>
@@ -541,7 +541,7 @@
                 <colordiffuse>$VAR[ExtendedFloorColorVar]</colordiffuse>
             </control>
             <control type="group" id="8860">
-                <visible>![Control.IsVisible(512)  | Control.IsVisible(510)]</visible>
+                <visible>![Control.IsVisible(512) | Control.IsVisible(510)]</visible>
                 <animation effect="slide" time="1000" start="1200,0" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
                 <animation effect="slide" time="1000" end="1200,0" start="0,0" tween="cubic" easing="out">WindowClose</animation>
                 <control type="image">
@@ -628,7 +628,7 @@
         </control>
         <control type="group" id="8858">
             <posy>105</posy>
-            <visible>[Control.IsVisible(503) + !Skin.HasSetting(showcaseinfoontv) + Container.Content(tvshows) + Skin.HasSetting(landscapelogo)]</visible>
+            <visible>[Control.IsVisible(503) + !Skin.HasSetting(showcaseinfoontv) + [Container.Content(tvshows) | Container.Content(movies)] + Skin.HasSetting(landscapelogo)]</visible>
             <include>Animation_CommonFade</include>
             <control type="image">
                 <description>media info background image</description>
@@ -678,12 +678,12 @@
     </include>
     <include name="FloorLabels">
         <control type="group">
-            <visible>Control.IsVisible(509) | [Control.IsVisible(500) + !StringCompare(Container.FolderName,youtube)] | Control.IsVisible(508) |  Control.IsVisible(513) | Control.IsVisible(504) | Control.IsVisible(501)</visible>
+            <visible>Control.IsVisible(509) | [Control.IsVisible(500) + !StringCompare(Container.FolderName,youtube)] | Control.IsVisible(508) | Control.IsVisible(513) | Control.IsVisible(504) | Control.IsVisible(501)</visible>
             <include>dialogeffect</include>
             <control type="group">
                 <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Visible</animation>
                 <animation effect="fade" start="100" end="0" time="0" delay="0" reversible="false">Hidden</animation>
-                <visible>[Control.IsVisible(8822)  + !Container.OnNext + !Container.OnPrevious + Stringcompare(Control.GetLabel(8822),empty.png)] | !Control.IsVisible(8822)</visible>
+                <visible>[Control.IsVisible(8822) + !Container.OnNext + !Container.OnPrevious + Stringcompare(Control.GetLabel(8822),empty.png)] | !Control.IsVisible(8822)</visible>
                 <include>SecondLabelFloor</include>
                 <include>FirstLabelFloor</include>
             </control>
@@ -751,6 +751,7 @@
                 <texture>wall/wall_bg_glow.png</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+                <include>PanelGlowFade</include>
                 <animation effect="zoom" start="112,68,1695,1038" end="38,68,1845,1038" time="0" reversible="false" condition="Control.IsVisible(512)">Conditional</animation>
             </control>
             <control type="image">
@@ -794,7 +795,7 @@
             <texture flipx="true">wall/wall_arrow.png</texture>
             <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
             <animation effect="slide" start="150" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="400" condition=" Container(560).Column(8) + !ControlGroup(9000).HasFocus()">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="400" condition="Container(560).Column(8) + !ControlGroup(9000).HasFocus()">Conditional</animation>
             <visible>[!Skin.HasSetting(WallVertical) + Control.IsVisible(500) + !Window.IsActive(musiclibrary)] | [!Skin.HasSetting(WallMusicVertical) + Control.IsVisible(500) + Window.IsActive(musiclibrary)]</visible>
         </control>
     </include>
@@ -1027,7 +1028,7 @@
                 <align>justify</align>
                 <textcolor>white6</textcolor>
                 <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo">Conditional</animation>
-                <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+                <autoscroll delay="8000" time="5000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
             </control>
         </control>
     </include>
@@ -1152,7 +1153,7 @@
                 <label fallback="312577">$INFO[Container(3000).ListItem.Plot]</label>
                 <textcolor>white6</textcolor>
                 <align>justify</align>
-                <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+                <autoscroll delay="8000" time="5000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
             </control>
         </control>
     </include>

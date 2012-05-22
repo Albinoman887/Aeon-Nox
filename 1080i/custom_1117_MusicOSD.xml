@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1117">
     <defaultcontrol always="true">450</defaultcontrol>
     <coordinates>
@@ -12,8 +12,20 @@
             <description>Panel</description>
             <posx>357</posx>
             <posy>180</posy>
-            <width>1212</width>
+            <width>1208</width>
             <height>722</height>
+            <texture>osd/osd_settings_back_glow.png</texture>
+            <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+            <include>PanelGlowFade</include>
+            <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+        </control>
+        <control type="image">
+            <description>Panel</description>
+            <posx>357</posx>
+            <posy>180</posy>
+            <width>1208</width>
+            <height>722</height>
+            <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             <texture>osd/osd_settings_back.png</texture>
         </control>
         <control type="image">
@@ -29,7 +41,7 @@
             <posy>225</posy>
             <width>600</width>
             <height>60</height>
-            <textcolor>white</textcolor>
+            <textcolor>$VAR[TitleColorVar]</textcolor>
             <font>Font_Bold19</font>
             <label>$LOCALIZE[12006]</label>
             <align>left</align>
@@ -56,7 +68,7 @@
                 <onclick condition="Skin.HasSetting(CDArtinVis) + Skin.HasSetting(blurayart) + !Skin.HasSetting(vinylart)">Skin.SetBool(vinylart)</onclick>
                 <onclick condition="Skin.HasSetting(CDArtinVis) + Skin.HasSetting(blurayart) + !Skin.HasSetting(vinylart)">Skin.Reset(blurayart)</onclick>
                 <onclick condition="Skin.HasSetting(CDArtinVis) + !Skin.HasSetting(blurayart) + Skin.HasSetting(vinylart)">Skin.Reset(vinylart)</onclick>
-                <onclick condition="Skin.HasSetting(CDArtinVis) + !Skin.HasSetting(blurayart) + Skin.HasSetting(vinylart)">Skin.Reset(CDArtinVis)</onclick>             
+                <onclick condition="Skin.HasSetting(CDArtinVis) + !Skin.HasSetting(blurayart) + Skin.HasSetting(vinylart)">Skin.Reset(CDArtinVis)</onclick>
             </control>
             <control type="radiobutton" id="452">
                 <description>Flip CD cover</description>
@@ -70,8 +82,8 @@
                 <label>$LOCALIZE[31632]: $VAR[VisPanelLabelVar]</label>
                 <include>Objects_CommonSettingsButton</include>
                 <selected>Skin.HasSetting(activatepanelrotation)</selected>
-               <onclick condition="!Skin.HasSetting(DisablePanelWidgetVis) + !Skin.HasSetting(activatepanelrotation)">Skin.SetBool(activatepanelrotation)</onclick>
-               <onclick condition="!Skin.HasSetting(DisablePanelWidgetVis) + !Skin.HasSetting(activatepanelrotation)">Notification($LOCALIZE[42002],$LOCALIZE[42016])</onclick>
+                <onclick condition="!Skin.HasSetting(DisablePanelWidgetVis) + !Skin.HasSetting(activatepanelrotation)">Skin.SetBool(activatepanelrotation)</onclick>
+                <onclick condition="!Skin.HasSetting(DisablePanelWidgetVis) + !Skin.HasSetting(activatepanelrotation)">Notification($LOCALIZE[42002],$LOCALIZE[42016])</onclick>
                 <onclick condition="Skin.HasSetting(activatepanelrotation)">Skin.SetBool(DisablePanelWidgetVis)</onclick>
                 <onclick condition="Skin.HasSetting(activatepanelrotation)">Skin.Reset(activatepanelrotation)</onclick>
                 <onclick condition="Skin.HasSetting(DisablePanelWidgetVis)">Skin.Reset(DisablePanelWidgetVis)</onclick>
@@ -98,22 +110,6 @@
                 <selected>Skin.HasSetting(animation_bg)</selected>
                 <enable>!Skin.HasSetting(nofanartmusicviz) | Skin.HasSetting(Viz-CDWall)</enable>
             </control>
-            <control type="radiobutton" id="456">
-                <description>Bigger Top Bar</description>
-                <label>31142</label>
-                <include>Objects_CommonSettingsButton</include>
-                <onclick>Skin.ToggleSetting(albumlevelfanart)</onclick>
-                <selected>Skin.HasSetting(albumlevelfanart)</selected>
-                <enable>!Skin.HasSetting(nofanartmusicviz) + !Skin.HasSetting(Viz-CDWall)</enable>
-            </control>
-            <control type="radiobutton" id="457">
-                <description>Bigger Top Bar</description>
-                <label>31361</label>
-                <include>Objects_CommonSettingsButton</include>
-                <onclick>Skin.ToggleSetting(nofanartmusicviz)</onclick>
-                <selected>Skin.HasSetting(nofanartmusicviz)</selected>
-                <enable>!Skin.HasSetting(Viz-CDWall)</enable>
-            </control>
             <control type="radiobutton" id="458">
                 <description>Bigger Top Bar</description>
                 <label>$LOCALIZE[31102]: $VAR[VizBackgroundLabelVar]</label>
@@ -126,7 +122,7 @@
                 <textcolor>grey2</textcolor>
                 <focusedcolor>white</focusedcolor>
                 <textoffsetx>45</textoffsetx>
-                <radioposx>1020</radioposx>
+                <radioposx>1090</radioposx>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
                 <texturenofocus>osd/osd_settings_buttonnf.png</texturenofocus>
@@ -135,31 +131,17 @@
                 <selected>Skin.HasSetting(Viz-CDWall)</selected>
                 <radiowidth>30</radiowidth>
                 <radioheight>30</radioheight>
-                <onclick condition="!Skin.HasSetting(musicfanartslideshow) + !Skin.HasSetting(videofanartslideshow) + !Skin.HasSetting(Viz-CDWall)">Skin.SetBool(videofanartslideshow)</onclick>
+                <onclick condition="!Skin.HasSetting(musicfanartslideshow) + !Skin.HasSetting(videofanartslideshow) + !Skin.HasSetting(Viz-CDWall) + !Skin.HasSetting(DisableArtistslideshow) + !Skin.HasSetting(nofanartmusicviz)">Skin.SetBool(DisableArtistslideshow)</onclick>
+                <onclick condition="!Skin.HasSetting(musicfanartslideshow) + !Skin.HasSetting(videofanartslideshow) + !Skin.HasSetting(Viz-CDWall) + Skin.HasSetting(DisableArtistslideshow) + !Skin.HasSetting(nofanartmusicviz)">Skin.SetBool(videofanartslideshow)</onclick>
                 <onclick condition="Skin.HasSetting(videofanartslideshow)">Skin.SetBool(Viz-CDWall)</onclick>
                 <onclick condition="Skin.HasSetting(videofanartslideshow)">Notification($LOCALIZE[42002],$LOCALIZE[42007])</onclick>
                 <onclick condition="Skin.HasSetting(videofanartslideshow)">Skin.Reset(videofanartslideshow)</onclick>
                 <onclick condition="Skin.HasSetting(Viz-CDWall)">Skin.SetBool(musicfanartslideshow)</onclick>
                 <onclick condition="Skin.HasSetting(Viz-CDWall)">Skin.Reset(Viz-CDWall)</onclick>
+                <onclick condition="Skin.HasSetting(musicfanartslideshow)">Skin.SetBool(nofanartmusicviz)</onclick>
                 <onclick condition="Skin.HasSetting(musicfanartslideshow)">Skin.Reset(musicfanartslideshow)</onclick>
-            </control>
-            <control type="radiobutton" id="459">
-                <description>Bigger Top Bar</description>
-                <label>31371</label>
-                <include>Objects_CommonSettingsButton</include>
-                <onclick>Skin.ToggleSetting(DisableArtistslideshow)</onclick>
-                <onclick condition="!Skin.HasSetting(DisableArtistslideshow)">Skin.SetBool(nofanartmusicviz)</onclick>
-                <onclick condition="Skin.HasSetting(DisableArtistslideshow)">Skin.Reset(nofanartmusicviz)</onclick>
-                <selected>!Skin.HasSetting(DisableArtistslideshow)</selected>
-                <enable>!Skin.HasSetting(Viz-CDWall)</enable>
-            </control>
-            <!-- Cd Wall -->
-            <control type="button" id="460">
-                <description>cd wall path button</description>
-                <label>31456</label>
-                <label2>[COLOR=$VAR[SelectedColorVar]]$INFO[Skin.String(CDWall_Folder_Path)][/COLOR]</label2>
-                <include>Objects_CommonSettingsButton</include>
-                <enable>Skin.HasSetting(Viz-CDWall)</enable>
+                <onclick condition="Skin.HasSetting(nofanartmusicviz)">Skin.Reset(DisableArtistslideshow)</onclick>
+                <onclick condition="Skin.HasSetting(nofanartmusicviz)">Skin.Reset(nofanartmusicviz)</onclick>
             </control>
             <!-- cd wall end -->
             <control type="button" id="461">
