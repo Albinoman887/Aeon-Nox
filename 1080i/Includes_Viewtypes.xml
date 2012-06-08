@@ -531,7 +531,7 @@
         <control type="group" id="8857">
             <description>Furniture Showcase</description>
             <include>Animation_OpenClose_Furniture</include>
-            <visible>![Control.IsVisible(516) | Control.IsVisible(514) | Control.IsVisible(511) | Control.IsVisible(506) | Control.IsVisible(8858) | [Skin.HasSetting(addonwallaltbackground) + Control.IsVisible(512)]]</visible>
+            <visible>![Control.IsVisible(516) | Control.IsVisible(514) | Control.IsVisible(511) | Control.IsVisible(506) | Control.IsVisible(8858) | [[[!Container.Content(movies) + Skin.HasSetting(addonwallaltbackground)] | [Container.Content(movies) + Skin.HasSetting(addonwallaltbackgroundmovies)]] + Control.IsVisible(512)]]</visible>
             <control type="image">
                 <posx>0</posx>
                 <posy>472</posy>
@@ -614,7 +614,7 @@
             </control>
             <control type="group">
                 <include>Animation_OpenClose_Furniture</include>
-                <visible>Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(50) | Control.IsVisible(500) | [Control.IsVisible(512) + !Skin.HasSetting(addonwallaltbackground)] | Control.IsVisible(500)</visible>
+                <visible>Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(50) | Control.IsVisible(500) | [Control.IsVisible(512) + ![[!Container.Content(movies) + Skin.HasSetting(addonwallaltbackground)] | [Container.Content(movies) + Skin.HasSetting(addonwallaltbackgroundmovies)]]] | Control.IsVisible(500)</visible>
                 <control type="image">
                     <width>1920</width>
                     <height>206</height>
@@ -730,7 +730,7 @@
     <include name="Furniture_Glow">
         <control type="image">
             <include>Animation_OpenClose_Furniture</include>
-            <visible>![Control.IsVisible(516) | Control.IsVisible(514) | Control.IsVisible(511) | Control.IsVisible(506) | Control.IsVisible(8858) | [Skin.HasSetting(addonwallaltbackground) + Control.IsVisible(512)]]</visible>
+            <visible>![Control.IsVisible(516) | Control.IsVisible(514) | Control.IsVisible(511) | Control.IsVisible(506) | Control.IsVisible(8858) | [[[!Container.Content(movies) + Skin.HasSetting(addonwallaltbackground)] | [Container.Content(movies) + Skin.HasSetting(addonwallaltbackgroundmovies)]] + Control.IsVisible(512)]]</visible>
             <posx>0</posx>
             <posy>-100</posy>
             <width>1920</width>
@@ -742,7 +742,7 @@
     <include name="WallPanel">
         <control type="group">
             <include>Animation_OpenCloseZoom_New</include>
-            <visible>Control.IsVisible(500) | [Control.IsVisible(512) + !Skin.HasSetting(addonwallaltbackground)] | Control.IsVisible(500)</visible>
+            <visible>Control.IsVisible(500) | [Control.IsVisible(512) + ![[!Container.Content(movies) + Skin.HasSetting(addonwallaltbackground)] | [Container.Content(movies) + Skin.HasSetting(addonwallaltbackgroundmovies)]]] | Control.IsVisible(500)</visible>
             <control type="image">
                 <posx>112</posx>
                 <posy>68</posy>
@@ -1160,4 +1160,16 @@
     <include name="MovieSetsVisibility">
         <visible>!SubString(ListItem.Path,videodb://1/7/)</visible>
     </include>
+	<include name="ReloadWindowOnClick">
+		<onclick condition="Window.IsActive(addonbrowser)">SetProperty(activewindow,addons,home)</onclick>
+		<onclick condition="Window.IsActive(musicfiles)">SetProperty(activewindow,musicfiles,home)</onclick>
+		<onclick condition="Window.IsActive(musiclibrary)">SetProperty(activewindow,musiclibrary,home)</onclick>
+		<onclick condition="Window.IsActive(musicplaylist)">SetProperty(activewindow,musicplaylist,home)</onclick>
+		<onclick condition="Window.IsActive(videoplaylist)">SetProperty(activewindow,videoplaylist,home)</onclick>
+		<onclick condition="Window.IsActive(videos)">SetProperty(activewindow,videos,home)</onclick>
+		<onclick condition="Window.IsActive(programs)">SetProperty(activewindow,programs,home)</onclick>
+		<onclick>SetProperty(containerpath,$INFO[Container.FolderPath],home)</onclick>
+		<onclick>Dialog.Close(1126)</onclick>
+		<onclick>ReplaceWindow(1141)</onclick>
+	</include>
 </includes>

@@ -427,7 +427,7 @@
                 <include>Objects_MediaMenuButtonAlt2</include>
                 <label>$LOCALIZE[31248]</label>
                 <onclick>Skin.ToggleSetting(usecases)</onclick>
-                <onclick>XBMC.ReloadSkin()</onclick>
+                <include>ReloadWindowOnClick</include>
                 <selected>Skin.HasSetting(usecases)</selected>
                 <visible>Window.IsActive(videolibrary) + stringcompare(Skin.String(actualViewtype),showcasedvd)</visible>
             </control>
@@ -437,7 +437,7 @@
                 <include>Objects_MediaMenuButtonAlt2</include>
                 <label>$LOCALIZE[31170]</label>
                 <onclick>Skin.ToggleSetting(nohighlist)</onclick>
-                <onclick>XBMC.ReloadSkin()</onclick>
+                <include>ReloadWindowOnClick</include>
                 <onclick>SetFocus(9003)</onclick>
                 <selected>Skin.HasSetting(nohighlist)</selected>
                 <visible>Window.IsActive(videolibrary) + stringcompare(Skin.String(actualViewtype),lowlist)</visible>
@@ -584,9 +584,19 @@
                 <description>Toggle aspect of thumbs</description>
                 <include>Objects_MediaMenuButtonAlt2</include>
                 <label>$LOCALIZE[31195]</label>
+                <onclick>Skin.ToggleSetting(addonwallaltbackgroundmovies)</onclick>
+                <selected>Skin.HasSetting(addonwallaltbackgroundmovies)</selected>
+                <visible>stringcompare(Skin.String(actualViewtype),addonwall)</visible>
+                <visible>Container.Content(movies)</visible>
+            </control>
+            <control type="radiobutton" id="1700">
+                <description>Toggle aspect of thumbs</description>
+                <include>Objects_MediaMenuButtonAlt2</include>
+                <label>$LOCALIZE[31195]</label>
                 <onclick>Skin.ToggleSetting(addonwallaltbackground)</onclick>
                 <selected>Skin.HasSetting(addonwallaltbackground)</selected>
                 <visible>stringcompare(Skin.String(actualViewtype),addonwall)</visible>
+                <visible>!Container.Content(movies)</visible>
             </control>
             <!--Posters Options-->
             <control type="togglebutton" id="1648">
@@ -595,7 +605,7 @@
                 <label>$LOCALIZE[31694]: [COLOR $VAR[SelectedColorVar]]$LOCALIZE[106][/COLOR]</label>
                 <altlabel>$LOCALIZE[31694]: [COLOR $VAR[SelectedColorVar]]$LOCALIZE[107][/COLOR]</altlabel>
                 <onclick>Skin.ToggleSetting(posterwrap)</onclick>
-                <onclick>XBMC.ReloadSkin()</onclick>
+                <include>ReloadWindowOnClick</include>
                 <usealttexture>!Skin.HasSetting(posterwrap)</usealttexture>
                 <visible>Window.IsActive(videolibrary) + stringcompare(Skin.String(actualViewtype),posters)</visible>
             </control>
@@ -653,7 +663,7 @@
                 <label>$LOCALIZE[31231]: [COLOR=$VAR[SelectedColorVar]]$LOCALIZE[31228][/COLOR]</label>
                 <altlabel>$LOCALIZE[31231]: [COLOR=$VAR[SelectedColorVar]]$LOCALIZE[31229][/COLOR]</altlabel>
                 <onclick>Skin.ToggleSetting(BannerPlexVertical)</onclick>
-                <onclick>XBMC.ReloadSkin()</onclick>
+                <include>ReloadWindowOnClick</include>
                 <usealttexture>!Skin.HasSetting(BannerPlexVertical)</usealttexture>
                 <visible>Window.IsActive(videolibrary) + stringcompare(Skin.String(actualViewtype),banners)</visible>
             </control>
@@ -701,7 +711,7 @@
                 <include>Objects_MediaMenuButtonAlt2</include>
                 <label>21377</label>
                 <onclick>Skin.ToggleSetting(StripshowWS)</onclick>
-                <onclick>ReloadSkin()</onclick>
+                <include>ReloadWindowOnClick</include>
                 <selected>Skin.HasSetting(StripshowWS)</selected>
                 <visible>stringcompare(Skin.String(actualViewtype),stripshow) + Window.IsActive(pictures)</visible>
             </control>
@@ -719,7 +729,7 @@
                 <label>$LOCALIZE[31170]</label>
                 <onclick>Skin.ToggleSetting(lowlist)</onclick>
                 <selected>Skin.HasSetting(lowlist)</selected>
-                <onclick>XBMC.ReloadSkin()</onclick>
+                <include>ReloadWindowOnClick</include>
                 <visible>[Window.IsActive(musicfiles) | Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist)] + stringcompare(Skin.String(actualViewtype),lowlistmusic)</visible>
             </control>
             <control type="radiobutton" id="1676">
@@ -795,7 +805,7 @@
                 <label>$LOCALIZE[31231]: [COLOR=$VAR[SelectedColorVar]]$LOCALIZE[31228][/COLOR]</label>
                 <altlabel>$LOCALIZE[31231]: [COLOR=$VAR[SelectedColorVar]]$LOCALIZE[31229][/COLOR]</altlabel>
                 <onclick>Skin.ToggleSetting(WallVertical)</onclick>
-                <onclick>XBMC.ReloadSkin()</onclick>
+                <include>ReloadWindowOnClick</include>
                 <usealttexture>!Skin.HasSetting(WallVertical)</usealttexture>
                 <visible>stringcompare(Skin.String(actualViewtype),wall)</visible>
             </control>
@@ -805,7 +815,7 @@
                 <label>$LOCALIZE[31483]</label>
                 <onclick>Skin.ToggleSetting(titlewall)</onclick>
                 <selected>Skin.HasSetting(titlewall)</selected>
-                <visible>stringcompare(Skin.String(actualViewtype),wall) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | StringCompare(Container.FolderName,youtube)]</visible>
+                <visible>stringcompare(Skin.String(actualViewtype),wall) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | StringCompare(Container.FolderName,youtube) | [Window.IsActive(pictures) + Skin.HasSetting(comics)]]</visible>
             </control>
             <control type="radiobutton" id="16530">
                 <description>Wall Cases</description>
@@ -830,7 +840,7 @@
                 <label>$LOCALIZE[31694]: [COLOR $VAR[SelectedColorVar]]$LOCALIZE[107][/COLOR]</label>
                 <altlabel>$LOCALIZE[31694]: [COLOR $VAR[SelectedColorVar]]$LOCALIZE[106][/COLOR]</altlabel>
                 <onclick>Skin.ToggleSetting(showcasewrap)</onclick>
-                <onclick condition="!Window.IsActive(script-Rom_Collection_Browser-main.xml)">XBMC.ReloadSkin()</onclick>
+                <include condition="!Window.IsActive(script-Rom_Collection_Browser-main.xml)">ReloadWindowOnClick</include>
                 <usealttexture>Skin.HasSetting(showcasewrap)</usealttexture>
                 <visible>[stringcompare(Skin.String(actualViewtype),showcasemovies) | Stringcompare(Skin.String(actualViewtype),landscape) | Stringcompare(Skin.String(actualViewtype),showcasedvd) | Stringcompare(Skin.String(actualViewtype),showcasesquare) | Stringcompare(Skin.String(actualViewtype),showcasecd)]</visible>
             </control>
