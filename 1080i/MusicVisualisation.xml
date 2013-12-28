@@ -569,7 +569,7 @@
                     </control>
                 </control>
                 <control type="grouplist">
-                    <posx>610</posx>
+                    <posx>1380</posx>
                     <posy>121</posy>
                     <width>1920</width>
                     <height>150</height>
