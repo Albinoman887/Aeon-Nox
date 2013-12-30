@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -11,8 +11,8 @@
             <onright>9000</onright>
             <onup>9000</onup>
             <ondown>9000</ondown>
-            <itemlayout height="1" width="1" />
-            <focusedlayout height="1" width="1" />
+            <itemlayout height="1" width="1"/>
+            <focusedlayout height="1" width="1"/>
         </control>
         <control type="togglebutton" id="5">
             <onfocus>SetFocus(6)</onfocus>
@@ -269,7 +269,7 @@
                         <posy>-4</posy>
                         <visible>!IsEmpty(ListItem.Rating)</visible>
                         <control type="label">
-                            <posx>562</posx>
+                            <right>562</right>
                             <posy>255</posy>
                             <width>165</width>
                             <height>44</height>
@@ -291,7 +291,7 @@
                         <posy>-4</posy>
                         <visible>IsEmpty(ListItem.Rating) + !IsEmpty(ListItem.Date)</visible>
                         <control type="label">
-                            <posx>562</posx>
+                            <right>562</right>
                             <posy>255</posy>
                             <width>200</width>
                             <height>44</height>

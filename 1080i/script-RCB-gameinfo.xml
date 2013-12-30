@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <allowoverlay>yes</allowoverlay>
     <coordinates>
@@ -7,12 +7,12 @@
         <system>1</system>
     </coordinates>
     <animation type="WindowOpen" reversible="false">
-        <effect type="zoom" start="150" end="100" center="960,540" time="400" tween="cubic" />
-        <effect type="fade" end="100" time="200" />
+        <effect type="zoom" start="150" end="100" center="960,540" time="400" tween="cubic"/>
+        <effect type="fade" end="100" time="200"/>
     </animation>
     <animation type="WindowClose" reversible="false">
-        <effect type="fade" start="100" end="0" time="240" />
-        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+        <effect type="fade" start="100" end="0" time="240"/>
+        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in"/>
     </animation>
     <controls>
         <!-- gameinfoviewgamelist -->
@@ -24,8 +24,8 @@
                 <onup>3000</onup>
                 <ondown>3000</ondown>
                 <scrolltime>200</scrolltime>
-                <itemlayout height="0" width="0" />
-                <focusedlayout height="0" width="0"></focusedlayout>
+                <itemlayout height="0" width="0"/>
+                <focusedlayout height="0" width="0"/>
             </control>
         </control>
         <control type="image">
@@ -320,7 +320,7 @@
             </control>
         </control>
         <control type="label" id="4000">
-            <label></label>
+            <label/>
             <posx>10</posx>
             <posy>560</posy>
             <width>680</width>

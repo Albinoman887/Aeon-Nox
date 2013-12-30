@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>8</defaultcontrol>
     <controls>
@@ -39,7 +39,7 @@
             <texturefocus>calibration/calibrate-subtitles-focus.png</texturefocus>
             <texturenofocus>calibration/calibrate-subtitles.png</texturenofocus>
         </control>
-        <control type="resize" id="11"></control>
+        <control type="resize" id="11"/>
         <control type="group">
             <posx>30</posx>
             <posy>120</posy>

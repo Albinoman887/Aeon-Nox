@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <allowoverlay>no</allowoverlay>
     <coordinates>
@@ -11,7 +11,7 @@
         <control type="group">
             <control type="group" id="250">
                 <animation type="Conditional" condition="Control.HasFocus(150)">
-                    <effect type="slide" end="-90,0" time="320" />
+                    <effect type="slide" end="-90,0" time="320"/>
                 </animation>
                 <control type="image">
                     <posx>300</posx>
@@ -48,7 +48,7 @@
                     <textcolor>$VAR[TitleColorVar]</textcolor>
                 </control>
                 <control type="label">
-                    <posx>1514</posx>
+                    <right>1514</right>
                     <posy>842</posy>
                     <width>315</width>
                     <height>60</height>
@@ -339,7 +339,7 @@
                 <ondown>121</ondown>
                 <onup>121</onup>
                 <animation type="Conditional" condition="Control.HasFocus(150)">
-                    <effect type="slide" end="-90,0" time="320" />
+                    <effect type="slide" end="-90,0" time="320"/>
                 </animation>
             </control>
         </control>

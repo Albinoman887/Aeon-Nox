@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="120">
     <defaultcontrol always="true">380</defaultcontrol>
     <onload>AlarmClock(MusicInfoRotation,ActivateWindow(1156),00:15,silent,loop)</onload>
@@ -54,7 +54,7 @@
                 <visible>ControlGroup(650).HasFocus</visible>
             </control>
             <control type="label">
-                <posx>440r</posx>
+                <right>440r</right>
                 <width>200</width>
                 <height>125</height>
                 <align>right</align>

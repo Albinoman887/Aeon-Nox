@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="LanguageFlags">
         <control type="image">
@@ -482,7 +482,7 @@
                 <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
                 <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
                 <control type="label">
-                    <posx>1850</posx>
+                    <right>1850</right>
                     <posy>7</posy>
                     <width>690</width>
                     <height>20</height>
@@ -495,7 +495,7 @@
                     <scroll>true</scroll>
                 </control>
                 <control type="label">
-                    <posx>1850</posx>
+                    <right>1850</right>
                     <posy>40</posy>
                     <width>690</width>
                     <height>20</height>
@@ -992,7 +992,7 @@
                 </control>
             </control>
             <control type="label">
-                <posx>1890</posx>
+                <right>1890</right>
                 <posy>27</posy>
                 <width>450</width>
                 <height>38</height>

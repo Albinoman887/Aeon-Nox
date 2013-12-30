@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8</defaultcontrol>
     <onload>ClearProperty(ActorFade)</onload>
@@ -105,8 +105,8 @@
                     </control>
                     <control type="group">
                         <animation type="WindowOpen" reversible="false">
-                            <effect type="fade" start="0" end="100" delay="0" time="0" tween="cubic" />
-                            <effect type="slide" start="0,80" end="0,0" delay="460" time="960" tween="cubic" />
+                            <effect type="fade" start="0" end="100" delay="0" time="0" tween="cubic"/>
+                            <effect type="slide" start="0,80" end="0,0" delay="460" time="960" tween="cubic"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(ListItem.Top250)</visible>
@@ -225,8 +225,8 @@
                     <!-- First Row -->
                     <control type="group">
                         <animation type="WindowOpen" reversible="false">
-                            <effect type="fade" start="0" end="100" delay="460" time="960" tween="cubic" />
-                            <effect type="zoom" start="100,0" end="100,100" delay="460" time="960" center="0,170" tween="cubic" />
+                            <effect type="fade" start="0" end="100" delay="460" time="960" tween="cubic"/>
+                            <effect type="zoom" start="100,0" end="100,100" delay="460" time="960" center="0,170" tween="cubic"/>
                         </animation>
                         <control type="image">
                             <posy>90</posy>
@@ -572,8 +572,8 @@
                     </control>
                     <control type="group">
                         <animation type="WindowOpen" reversible="false">
-                            <effect type="fade" start="0" end="100" delay="460" time="960" tween="cubic" />
-                            <effect type="zoom" start="100,0" end="100,100" delay="460" time="960" center="0,872" tween="cubic" />
+                            <effect type="fade" start="0" end="100" delay="460" time="960" tween="cubic"/>
+                            <effect type="zoom" start="100,0" end="100,100" delay="460" time="960" center="0,872" tween="cubic"/>
                         </animation>
                         <posy>26</posy>
                         <control type="image">
@@ -765,13 +765,13 @@
                     <!--                 <visible>!ControlGroup(6000).HasFocus</visible>
  -->
                     <animation type="WindowOpen" reversible="false">
-                        <effect type="slide" start="-1610,0" end="0" delay="800" time="1120" tween="quadratic" easing="out" />
-                        <effect type="rotate" start="0" center="1760,810" end="-720" delay="800" time="1120" tween="quadratic" easing="out" />
-                        <effect type="zoom" start="104" center="1760,810" end="100" delay="2120" time="140" tween="quadratic" easing="out" />
+                        <effect type="slide" start="-1610,0" end="0" delay="800" time="1120" tween="quadratic" easing="out"/>
+                        <effect type="rotate" start="0" center="1760,810" end="-720" delay="800" time="1120" tween="quadratic" easing="out"/>
+                        <effect type="zoom" start="104" center="1760,810" end="100" delay="2120" time="140" tween="quadratic" easing="out"/>
                     </animation>
                     <animation type="WindowClose" reversible="false">
-                        <effect type="slide" start="0,0" end="4600" time="700" tween="quadratic" easing="out" />
-                        <effect type="rotate" start="0" center="1760,810" end="-720" time="700" tween="quadratic" easing="out" />
+                        <effect type="slide" start="0,0" end="4600" time="700" tween="quadratic" easing="out"/>
+                        <effect type="rotate" start="0" center="1760,810" end="-720" time="700" tween="quadratic" easing="out"/>
                     </animation>
                 </control>
                 <control type="list" id="50">

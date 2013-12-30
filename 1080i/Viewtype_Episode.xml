@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="Viewtype_Episode">
         <control type="group">
@@ -78,8 +78,8 @@
                 <fadetime>400</fadetime>
                 <visible>![Skin.HasSetting(episodelogo) + Container.Content(tvshows)]</visible>
                 <animation type="Conditional" condition="Window.IsActive(musiclibrary)">
-                    <effect type="zoom" end="130" center="auto" time="320" tween="cubic" easing="inout" />
-                    <effect type="slide" end="0,35" time="6000" />
+                    <effect type="zoom" end="130" center="auto" time="320" tween="cubic" easing="inout"/>
+                    <effect type="slide" end="0,35" time="6000"/>
                 </animation>
             </control>
             <control type="group">
@@ -160,7 +160,7 @@
             <control type="group">
                 <posx>150</posx>
                 <animation type="Conditional" reversible="false" condition="Control.HasFocus(514) + [!Container(514).OnNext + !Container(514).OnPrevious]">
-                    <effect type="fade" end="100" time="160" />
+                    <effect type="fade" end="100" time="160"/>
                 </animation>
                 <control type="label">
                     <posx>1175</posx>
@@ -253,7 +253,7 @@
                 <animation type="Conditional" condition="Container.Content(episodes)">
                     <!--                     <effect type="fade" end="15" time="400" easing="in" tween="cubic" />
  -->
-                    <effect type="slide" end="46,2" time="0" easing="in" tween="cubic" />
+                    <effect type="slide" end="46,2" time="0" easing="in" tween="cubic"/>
                 </animation>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <animation effect="slide" end="0,-20" time="240" tween="cubic" easing="inout" condition="Container.Content(seasons)">Conditional</animation>
@@ -268,7 +268,7 @@
                 <font>Font_ShowcaseMainLabel2</font>
                 <textcolor>white</textcolor>
                 <animation type="Conditional" condition="StringCompare(ListItem.Overlay,OverlayWatched.png)">
-                    <effect type="fade" end="30" time="0" easing="in" tween="cubic" />
+                    <effect type="fade" end="30" time="0" easing="in" tween="cubic"/>
                 </animation>
                 <visible>Container.Content(episodes)</visible>
             </control>
@@ -408,7 +408,7 @@
                 <posy>-15</posy>
                 <animation effect="slide" end="220,0" time="0" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">Conditional</animation>
                 <animation type="Conditional" reversible="false" condition="Control.HasFocus(514) + [!Container(514).OnNext + !Container(514).OnPrevious]">
-                    <effect type="fade" end="100" time="160" />
+                    <effect type="fade" end="100" time="160"/>
                 </animation>
                 <control type="label">
                     <posx>838</posx>
@@ -480,7 +480,7 @@
             <control type="group">
                 <posx>50</posx>
                 <animation type="Conditional" reversible="false" condition="Control.HasFocus(514) + [!Container(514).OnNext + !Container(514).OnPrevious]">
-                    <effect type="fade" end="100" time="160" />
+                    <effect type="fade" end="100" time="160"/>
                 </animation>
                 <control type="label">
                     <posx>838</posx>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <constant name="FanartCrossfadeTime">500</constant>
     <constant name="IconCrossfadeTime">400</constant>
@@ -809,7 +809,7 @@
         <value condition="Stringcompare(Control.GetLabel(4326),system)">$INFO[System.memory(used.percent),[COLOR grey]$LOCALIZE[31309][/COLOR] ]$INFO[System.CPUUsage,[COLOR grey] • $LOCALIZE[13271][/COLOR] ]</value>
         <value condition="Substring(Control.GetLabel(4326),custom,left)">$VAR[CustomLibraryStatsVar]</value>
         <value condition="Window.IsActive(1131)">$LOCALIZE[31683]</value>
-        <value></value>
+        <value/>
     </variable>
     <variable name="CustomLibraryStatsVar">
         <value condition="Stringcompare(Control.GetLabel(4326),custom1) + Substring(Window(Home).Property(SmartPlaylist1.Type),Movie)">$INFO[Window(Home).Property(SmartPlaylist1.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ]$INFO[Window(Home).Property(SmartPlaylist1.Watched),[COLOR grey]   •   $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(SmartPlaylist1.UnWatched),[COLOR grey]   •   $LOCALIZE[16101]:[/COLOR] ]</value>
@@ -869,7 +869,7 @@
         <value condition="Stringcompare(Control.GetLabel(4326),PVR)">[COLOR grey]$LOCALIZE[19019]:[/COLOR] $INFO[Pvr.BackendChannels] • [COLOR grey]$LOCALIZE[19163]:[/COLOR] $INFO[Pvr.BackendRecordings]</value>
         <value condition="Substring(Control.GetLabel(4326),custom,left)">$VAR[CustomShortLibraryStatsVar]</value>
         <value condition="Window.IsActive(1131)">$LOCALIZE[31683]</value>
-        <value></value>
+        <value/>
     </variable>
     <variable name="FurniturePositionVar">
         <value condition="Stringcompare(Window.Property(actualItem),TimePanel) + Skin.HasSetting(timehomehigh)">$LOCALIZE[31617]</value>
@@ -1021,7 +1021,7 @@
         <value condition="!IsEmpty(Container(9000).ListItem.Icon)">$INFO[Container(9000).ListItem.Icon]</value>
         <value condition="Window.IsActive(1128)">special://skin/backgrounds/color.jpg</value>
         <value condition="Window.IsActive(1131)">special://skin/backgrounds/system/</value>
-        <value></value>
+        <value/>
     </variable>
     <variable name="HomeMainFanartVar">
         <value condition="Window.IsActive(1115)">special://skin/backgrounds/featured/</value>
@@ -1493,7 +1493,7 @@
     <variable name="BreadcrumbsFilterVar">
         <value condition="Container.Filtered">($LOCALIZE[587])</value>
         <value condition="!Stringcompare(Control.GetLabel(10),$LOCALIZE[16100]) + Window.IsActive(videos)">$INFO[Control.GetLabel(10), (,)]</value>
-        <value></value>
+        <value/>
     </variable>
     <!--Breadcrumbs-->
     <variable name="BreadcrumbsVideoVar">
@@ -1881,7 +1881,7 @@
         <value condition="Substring(Skin.String(ItemToEdit.Submenu),shutdown,left)">$LOCALIZE[31508]</value>
         <value condition="Substring(Skin.String(ItemToEdit.Submenu),settings,left)">$LOCALIZE[31506]</value>
         <value condition="Substring(Skin.String(ItemToEdit.Submenu),music,left)">$LOCALIZE[31501]</value>
-        <value></value>
+        <value/>
     </variable>
     <variable name="CustomItemTypeNameVar">
         <value condition="stringcompare(Skin.String(ItemToEdit.Type),0)">$LOCALIZE[31945]</value>

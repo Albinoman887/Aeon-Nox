@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="contents501list">
         <posx>-69</posx>
@@ -73,10 +73,10 @@
                 </control>
             </control>
         </focusedlayout>
-        <itemlayout height="600" width="100" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + !Skin.HasSetting(showcasezoom)"></itemlayout>
-        <focusedlayout height="525" width="858" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + !Skin.HasSetting(showcasezoom)"></focusedlayout>
-        <itemlayout height="600" width="200" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + Skin.HasSetting(showcasezoom)"></itemlayout>
-        <focusedlayout height="525" width="858" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + Skin.HasSetting(showcasezoom)"></focusedlayout>
+        <itemlayout height="600" width="100" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + !Skin.HasSetting(showcasezoom)"/>
+        <focusedlayout height="525" width="858" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + !Skin.HasSetting(showcasezoom)"/>
+        <itemlayout height="600" width="200" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + Skin.HasSetting(showcasezoom)"/>
+        <focusedlayout height="525" width="858" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + Skin.HasSetting(showcasezoom)"/>
     </include>
     <include name="scmfixed">
         <control type="fixedlist" id="501">
@@ -94,7 +94,7 @@
             <animation effect="zoom" start="100" end="195" time="640" easing="inout" tween="circle" center="960,970" condition="Skin.HasSetting(showcasezoom)">Conditional</animation>
             <animation effect="slide" tween="cubic" time="720" start="0,806" end="0,0">VisibleChange</animation>
             <control type="group">
-                <camera x="960" y="810" />
+                <camera x="960" y="810"/>
                 <control type="group" id="6001">
                     <posx>55</posx>
                     <posy>570</posy>
@@ -312,12 +312,12 @@
                     <posx>55</posx>
                     <posy>570</posy>
                     <animation type="WindowOpen" reversible="false">
-                        <effect type="zoom" start="150" end="100" center="960,540" time="240" tween="cubic" />
-                        <effect type="fade" end="100" time="240" />
+                        <effect type="zoom" start="150" end="100" center="960,540" time="240" tween="cubic"/>
+                        <effect type="fade" end="100" time="240"/>
                     </animation>
                     <animation type="WindowClose" reversible="false">
-                        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
-                        <effect type="fade" start="100" end="0" time="240" delay="240" />
+                        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in"/>
+                        <effect type="fade" start="100" end="0" time="240" delay="240"/>
                     </animation>
                     <visible>!Control.IsVisible(6001) + !Control.IsVisible(6002) + Control.IsVisible(960)</visible>
                     <control type="group">
@@ -327,8 +327,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="818" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="-135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="-135" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-1028" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="-135" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-1028" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem-6</include>
                     </control>
@@ -339,8 +339,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="682" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="0" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-866" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="0" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-866" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem-5</include>
                     </control>
@@ -351,8 +351,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="548" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="135" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-704" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="135" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-704" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem-4</include>
                     </control>
@@ -363,8 +363,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="412" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="270" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-543" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="270" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-543" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem-3</include>
                     </control>
@@ -375,8 +375,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="278" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="405" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="405" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-384" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="405" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-384" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem-2</include>
                     </control>
@@ -387,8 +387,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="142" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="540" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="540" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-226" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="540" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-226" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem-1</include>
                     </control>
@@ -399,8 +399,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-818" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1965" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="1965" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="1028" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1965" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="1028" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem6</include>
                     </control>
@@ -411,8 +411,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-682" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1830" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="1830" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="866" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1830" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="866" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem5</include>
                     </control>
@@ -423,8 +423,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-548" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1695" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="1695" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="704" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1695" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="704" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem4</include>
                     </control>
@@ -435,8 +435,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-412" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1560" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="1560" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="543" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1560" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="543" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem3</include>
                     </control>
@@ -447,8 +447,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-278" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1425" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="1425" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="384" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1425" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="384" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem2</include>
                     </control>
@@ -459,8 +459,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-142" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1290" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Control.IsVisible(961)">
-                            <effect type="rotatey" center="1290" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="226" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1290" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="226" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <include>MovieShowCaseItem1</include>
                     </control>

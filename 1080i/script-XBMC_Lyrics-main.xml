@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <allowoverlay>no</allowoverlay>
     <coordinates>
@@ -111,10 +111,10 @@
                         <textcolor>grey</textcolor>
                         <visible>Control.HasFocus(110)</visible>
                         <animation type="Focus" reversible="false">
-                            <effect type="fade" end="100" time="240" />
+                            <effect type="fade" end="100" time="240"/>
                         </animation>
                         <animation type="UnFocus" reversible="false">
-                            <effect type="fade" start="100" end="0" time="160" />
+                            <effect type="fade" start="100" end="0" time="160"/>
                         </animation>
                     </control>
                     <control type="label">
@@ -127,10 +127,10 @@
                         <textcolor>white</textcolor>
                         <visible>Control.HasFocus(110)</visible>
                         <animation type="Focus" reversible="false">
-                            <effect type="fade" end="100" time="240" />
+                            <effect type="fade" end="100" time="240"/>
                         </animation>
                         <animation type="UnFocus" reversible="false">
-                            <effect type="fade" start="100" end="0" time="160" />
+                            <effect type="fade" start="100" end="0" time="160"/>
                         </animation>
                     </control>
                 </focusedlayout>

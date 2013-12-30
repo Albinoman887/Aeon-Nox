@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="2000">
     <defaultcontrol always="true">6</defaultcontrol>
     <zorder>4</zorder>
@@ -79,7 +79,7 @@
             <ondown>3</ondown>
         </control>
         <control type="label">
-            <posx>1514</posx>
+            <right>1514</right>
             <posy>842</posy>
             <width>315</width>
             <height>60</height>
@@ -91,7 +91,7 @@
             <visible>Control.IsVisible(3)</visible>
         </control>
         <control type="label">
-            <posx>1514</posx>
+            <right>1514</right>
             <posy>842</posy>
             <width>315</width>
             <height>60</height>

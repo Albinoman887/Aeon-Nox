@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <!--Max: 1707 -->
     <include name="PlaylistEditorButtons">
@@ -295,19 +295,19 @@
     <include name="Media_Menu_Furniture">
         <control type="group">
             <animation type="Conditional" condition="!ControlGroup(9000).HasFocus">
-                <effect type="slide" end="-420" time="320" easing="in" tween="cubic" />
+                <effect type="slide" end="-420" time="320" easing="in" tween="cubic"/>
             </animation>
             <animation type="Conditional" condition="Window.IsActive(1126)">
-                <effect type="slide" end="75" time="320" easing="in" tween="cubic" />
+                <effect type="slide" end="75" time="320" easing="in" tween="cubic"/>
             </animation>
             <animation type="Conditional" condition="Window.IsActive(1128) | Window.IsActive(1127) | Window.IsActive(1112)">
-                <effect type="slide" end="-600" time="320" easing="in" tween="cubic" />
+                <effect type="slide" end="-600" time="320" easing="in" tween="cubic"/>
             </animation>
             <animation type="WindowClose">
-                <effect type="slide" end="-450" time="320" easing="in" tween="cubic" />
+                <effect type="slide" end="-450" time="320" easing="in" tween="cubic"/>
             </animation>
             <animation type="WindowOpen">
-                <effect type="slide" start="-450" end="0" time="320" delay="800" tween="cubic" />
+                <effect type="slide" start="-450" end="0" time="320" delay="800" tween="cubic"/>
             </animation>
             <include>Media_Menu_Tooltip</include>
             <control type="image">
@@ -317,18 +317,18 @@
                 <texture>dialogs/context_middle.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 <animation type="Conditional" condition="Window.IsActive(1126)">
-                    <effect type="zoom" end="115,100" time="320" easing="in" tween="cubic" />
-                    <effect type="slide" end="-62" time="320" easing="in" tween="cubic" />
+                    <effect type="zoom" end="115,100" time="320" easing="in" tween="cubic"/>
+                    <effect type="slide" end="-62" time="320" easing="in" tween="cubic"/>
                 </animation>
                 <animation type="Conditional" condition="Window.IsActive(1121)">
-                    <effect type="zoom" end="66,100" time="320" easing="in" tween="cubic" />
-                    <effect type="slide" end="-49" time="320" easing="in" tween="cubic" />
+                    <effect type="zoom" end="66,100" time="320" easing="in" tween="cubic"/>
+                    <effect type="slide" end="-49" time="320" easing="in" tween="cubic"/>
                 </animation>
             </control>
             <control type="group">
                 <posx>380</posx>
                 <animation type="Conditional" condition="Window.IsActive(1121)">
-                    <effect type="slide" end="-180" time="320" easing="in" tween="cubic" />
+                    <effect type="slide" end="-180" time="320" easing="in" tween="cubic"/>
                 </animation>
                 <include>Neon_VerticalBar</include>
             </control>
@@ -624,7 +624,7 @@
         <control type="button">
             <include>HiddenObject</include>
             <visible>!Skin.HasSetting(kioskmode)</visible>
-            <hitrect x="50" y="0" w="1870" h="10" />
+            <hitrect x="50" y="0" w="1870" h="10"/>
             <onfocus>ActivateWindow(playercontrols)</onfocus>
         </control>
     </include>
@@ -632,7 +632,7 @@
         <control type="edit" id="19">
             <label>587</label>
             <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-            <hinttext></hinttext>
+            <hinttext/>
             <visible>!Container.Content()</visible>
             <include>Objects_MediaMenuButtonIcons</include>
         </control>

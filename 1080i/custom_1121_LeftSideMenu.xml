@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1121">
     <defaultcontrol always="true">9011</defaultcontrol>
     <onunload>ClearProperty(quicknavsetup,home)</onunload>
@@ -9,10 +9,10 @@
         <system>1</system>
     </coordinates>
     <animation type="WindowClose">
-        <effect type="slide" end="-460,0" time="320" easing="in" tween="cubic" />
+        <effect type="slide" end="-460,0" time="320" easing="in" tween="cubic"/>
     </animation>
     <animation type="WindowOpen">
-        <effect type="fade" end="100" delay="320" time="160" />
+        <effect type="fade" end="100" delay="320" time="160"/>
     </animation>
     <controls>
         <control type="image">
@@ -27,10 +27,10 @@
         <control type="group">
             <visible>Window.IsActive(skinsettings) | Window.IsActive(1115) | Window.IsActive(settings) | Window.IsActive(systeminfo) | Window.IsActive(picturessettings) | Window.IsActive(programssettings) | Window.IsActive(weathersettings) | Window.IsActive(musicsettings) | Window.IsActive(systemsettings) | Window.IsActive(videossettings) | Window.IsActive(networksettings) | Window.IsActive(appearancesettings) | Window.IsActive(profiles) | Window.IsActive(filemanager) | Window.IsActive(pvrsettings)</visible>
             <animation type="WindowClose">
-                <effect type="slide" end="-490" time="320" easing="in" tween="cubic" />
+                <effect type="slide" end="-490" time="320" easing="in" tween="cubic"/>
             </animation>
             <animation type="WindowOpen">
-                <effect type="slide" start="-450" end="0" time="320" tween="cubic" />
+                <effect type="slide" start="-450" end="0" time="320" tween="cubic"/>
             </animation>
             <control type="image">
                 <posx>-42</posx>
@@ -39,14 +39,14 @@
                 <texture>dialogs/context_middle.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 <animation type="Conditional" condition="Window.IsActive(1121)">
-                    <effect type="zoom" end="66,100" time="320" easing="in" tween="cubic" />
-                    <effect type="slide" end="-49" time="320" easing="in" tween="cubic" />
+                    <effect type="zoom" end="66,100" time="320" easing="in" tween="cubic"/>
+                    <effect type="slide" end="-49" time="320" easing="in" tween="cubic"/>
                 </animation>
             </control>
             <control type="group">
                 <posx>380</posx>
                 <animation type="Conditional" condition="Window.IsActive(1121)">
-                    <effect type="slide" end="-180" time="320" easing="in" tween="cubic" />
+                    <effect type="slide" end="-180" time="320" easing="in" tween="cubic"/>
                 </animation>
                 <include>Neon_VerticalBar</include>
             </control>

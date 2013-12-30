@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="Custom1Widget2">
         <item>
@@ -5908,7 +5908,7 @@
                         <info>Window(weather).Property(Day0.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
+                        <right>140</right>
                         <posy>221</posy>
                         <width>142</width>
                         <height>30</height>
@@ -5928,7 +5928,7 @@
                         <visible>!IsEmpty(Window(weather).Property(Day0.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
+                        <right>140</right>
                         <posy>255</posy>
                         <width>142</width>
                         <height>52</height>
@@ -5981,7 +5981,7 @@
                         <info>Window(weather).Property(Day1.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
+                        <right>140</right>
                         <posy>221</posy>
                         <width>142</width>
                         <height>30</height>
@@ -6001,7 +6001,7 @@
                         <visible>!IsEmpty(Window(weather).Property(Day1.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
+                        <right>140</right>
                         <posy>255</posy>
                         <width>142</width>
                         <height>45</height>
@@ -6054,7 +6054,7 @@
                         <info>Window(weather).Property(Day2.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
+                        <right>140</right>
                         <posy>221</posy>
                         <width>142</width>
                         <height>30</height>
@@ -6074,7 +6074,7 @@
                         <visible>!IsEmpty(Window(weather).Property(Day2.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
+                        <right>140</right>
                         <posy>255</posy>
                         <width>142</width>
                         <height>45</height>
@@ -6127,7 +6127,7 @@
                         <info>Window(weather).Property(Day3.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
+                        <right>140</right>
                         <posy>221</posy>
                         <width>142</width>
                         <height>30</height>
@@ -6147,7 +6147,7 @@
                         <visible>!IsEmpty(Window(weather).Property(Day3.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
+                        <right>140</right>
                         <posy>255</posy>
                         <width>142</width>
                         <height>45</height>

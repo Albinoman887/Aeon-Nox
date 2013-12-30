@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="LowList">
         <control type="group">
@@ -28,10 +28,10 @@
                             <effect type="fade" start="100" end="0" time="200" />
                         </animation> -->
                         <animation type="Visible">
-                            <effect type="zoom" end="100,100" start="100,0" time="320" easing="in" tween="cubic" center="960,755" />
+                            <effect type="zoom" end="100,100" start="100,0" time="320" easing="in" tween="cubic" center="960,755"/>
                         </animation>
                         <animation type="Hidden">
-                            <effect type="zoom" end="100,0" start="100,100" time="320" tween="cubic" center="960,755" />
+                            <effect type="zoom" end="100,0" start="100,100" time="320" tween="cubic" center="960,755"/>
                         </animation>
                         <control type="image">
                             <posx>333</posx>
@@ -588,8 +588,8 @@
                     <posy>194</posy>
                     <animation effect="slide" end="-21,0" time="320" easing="inout" tween="cubic" condition="Control.HasFocus(69)">Conditional</animation>
                     <animation type="Visible">
-                        <effect type="fade" time="120" end="100" />
-                        <effect type="slide" start="0,-75" end="0,0" time="160" />
+                        <effect type="fade" time="120" end="100"/>
+                        <effect type="slide" start="0,-75" end="0,0" time="160"/>
                     </animation>
                     <visible>Container.Content(episodes) + !Control.HasFocus(7002)</visible>
                     <control type="image">

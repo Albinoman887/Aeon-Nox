@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="142">
     <defaultcontrol always="true">9000</defaultcontrol>
     <onunload>ClearProperty(morefullscreeninfo,home)</onunload>
@@ -8,20 +8,20 @@
             <visible>!Window.IsActive(infodialog)</visible>
             <visible>IsEmpty(Window(home).Property(morefullscreeninfo)) + !Control.IsVisible(9004) + !Control.IsVisible(9005)</visible>
             <animation type="Visible">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,-135" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,-135" end="0,0" tween="cubic"/>
             </animation>
             <animation type="Hidden">
-                <effect type="fade" time="320" start="100" end="0" />
-                <effect type="slide" time="320" end="0,-135" easing="in" tween="cubic" />
+                <effect type="fade" time="320" start="100" end="0"/>
+                <effect type="slide" time="320" end="0,-135" easing="in" tween="cubic"/>
             </animation>
             <animation type="WindowOpen">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,-135" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,-135" end="0,0" tween="cubic"/>
             </animation>
             <animation type="WindowClose">
-                <effect type="fade" time="320" start="100" end="0" />
-                <effect type="slide" time="320" end="0,-135" easing="in" tween="cubic" />
+                <effect type="fade" time="320" start="100" end="0"/>
+                <effect type="slide" time="320" end="0,-135" easing="in" tween="cubic"/>
             </animation>
             <control type="group">
                 <posy>128</posy>
@@ -136,20 +136,20 @@
         <control type="group" id="9002">
             <visible>IsEmpty(Window(home).Property(morefullscreeninfo)) + !Control.IsVisible(9004) + !Control.IsVisible(9005)</visible>
             <animation type="Visible">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,135" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,135" end="0,0" tween="cubic"/>
             </animation>
             <animation type="Hidden">
-                <effect type="fade" time="320" start="100" end="0" />
-                <effect type="slide" time="320" end="0,135" easing="in" tween="cubic" />
+                <effect type="fade" time="320" start="100" end="0"/>
+                <effect type="slide" time="320" end="0,135" easing="in" tween="cubic"/>
             </animation>
             <animation type="WindowOpen">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,135" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,135" end="0,0" tween="cubic"/>
             </animation>
             <animation type="WindowClose">
-                <effect type="fade" time="320" start="100" end="0" />
-                <effect type="slide" time="320" end="0,135" easing="in" tween="cubic" />
+                <effect type="fade" time="320" start="100" end="0"/>
+                <effect type="slide" time="320" end="0,135" easing="in" tween="cubic"/>
             </animation>
             <include condition="VideoPlayer.Content(livetv)">FullScreenInfoBarLiveTV</include>
             <include condition="!VideoPlayer.Content(livetv)">FullScreenInfoBar</include>
@@ -410,7 +410,7 @@
                     </control>
                     <control type="label">
                         <posx>291</posx>
-                        <posy></posy>
+                        <posy/>
                         <width>155</width>
                         <height>74</height>
                         <align>center</align>
@@ -652,8 +652,8 @@
                 <texture background="true">$INFO[Player.Art(discart)]</texture>
                 <include>Animation_VisibleChange200</include>
                 <animation type="WindowOpen">
-                    <effect type="rotate" end="-360" center="auto" time="6400" delay="1600" tween="cubic" easing="inout" />
-                    <effect type="slide" start="150" end="0" delay="640" time="320" tween="cubic" />
+                    <effect type="rotate" end="-360" center="auto" time="6400" delay="1600" tween="cubic" easing="inout"/>
+                    <effect type="slide" start="150" end="0" delay="640" time="320" tween="cubic"/>
                 </animation>
             </control>
             <control type="image">

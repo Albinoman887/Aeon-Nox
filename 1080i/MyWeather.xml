@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">7510</defaultcontrol>
     <backgroundcolor>backgroundcolor</backgroundcolor>
@@ -52,12 +52,12 @@
         </control>
         <control type="group">
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="150" end="100" center="960,540" time="480" tween="cubic" />
-                <effect type="fade" end="100" time="80" />
+                <effect type="zoom" start="150" end="100" center="960,540" time="480" tween="cubic"/>
+                <effect type="fade" end="100" time="80"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="fade" start="100" end="0" time="240" />
-                <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+                <effect type="fade" start="100" end="0" time="240"/>
+                <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in"/>
             </animation>
             <control type="group">
                 <posy>-15</posy>
@@ -99,7 +99,7 @@
             <control type="group">
                 <visible>Skin.HasSetting(ExtendedWeatherInfo)</visible>
                 <animation type="VisibleChange">
-                    <effect type="fade" end="100" delay="320" time="160" />
+                    <effect type="fade" end="100" delay="320" time="160"/>
                 </animation>
                 <control type="group">
                     <control type="label">
@@ -151,7 +151,7 @@
                         <posx>278</posx>
                         <posy>-120</posy>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>645</posy>
                             <width>255</width>
                             <height>52</height>
@@ -161,7 +161,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>690</posy>
                             <width>255</width>
                             <height>52</height>
@@ -171,7 +171,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>735</posy>
                             <width>255</width>
                             <height>52</height>
@@ -181,7 +181,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>780</posy>
                             <width>255</width>
                             <height>52</height>
@@ -191,7 +191,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>825</posy>
                             <width>255</width>
                             <height>52</height>
@@ -201,7 +201,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>870</posy>
                             <width>255</width>
                             <height>52</height>
@@ -211,7 +211,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>915</posy>
                             <width>255</width>
                             <height>52</height>
@@ -1522,7 +1522,7 @@
                                 <content>
                                     <item>
                                         <label>31875</label>
-                                        <icon></icon>
+                                        <icon/>
                                         <onclick>noop</onclick>
                                         <visible>IsEmpty(Window.Property(Video.1.Title)) + IsEmpty(Window.Property(Video.2.Title)) + IsEmpty(Window.Property(Video.3.Title)) + IsEmpty(Window.Property(MapList.1.MapLabel.1)) + IsEmpty(Window.Property(MapList.1.MapLabel.2)) + IsEmpty(Window.Property(MapList.1.MapLabel.3))</visible>
                                     </item>
@@ -1988,7 +1988,7 @@
             <control type="group">
                 <visible>!Skin.HasSetting(ExtendedWeatherInfo)</visible>
                 <animation type="VisibleChange">
-                    <effect type="fade" end="100" delay="320" time="160" />
+                    <effect type="fade" end="100" delay="320" time="160"/>
                 </animation>
                 <control type="image">
                     <posx>126</posx>
@@ -2048,7 +2048,7 @@
                         <posx>278</posx>
                         <posy>-120</posy>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>645</posy>
                             <width>255</width>
                             <height>52</height>
@@ -2058,7 +2058,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>690</posy>
                             <width>255</width>
                             <height>52</height>
@@ -2068,7 +2068,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
+                            <right>255</right>
                             <posy>735</posy>
                             <width>255</width>
                             <height>52</height>
@@ -2081,7 +2081,7 @@
                             <posy>780</posy>
                             <visible>!IsEmpty(Window.Property(Current.Sunrise))</visible>
                             <control type="label">
-                                <posx>255</posx>
+                                <right>255</right>
                                 <width>255</width>
                                 <height>52</height>
                                 <align>right</align>
@@ -2102,7 +2102,7 @@
                             <dwescription>Sunset</dwescription>
                             <visible>!IsEmpty(Window.Property(Current.Sunset))</visible>
                             <control type="label">
-                                <posx>255</posx>
+                                <right>255</right>
                                 <width>255</width>
                                 <height>52</height>
                                 <align>right</align>
@@ -2122,7 +2122,7 @@
                             <posy>870</posy>
                             <visible>!IsEmpty(Window.Property(Current.Moon.Phase))</visible>
                             <control type="label">
-                                <posx>255</posx>
+                                <right>255</right>
                                 <width>255</width>
                                 <height>52</height>
                                 <align>right</align>
@@ -2371,7 +2371,7 @@
         <!---MEDIA MENU-->
         <control type="group" id="9000">
             <animation type="Conditional" condition="Window.IsActive(1128) | Window.IsActive(1127)">
-                <effect type="slide" end="-600" time="320" easing="in" tween="cubic" />
+                <effect type="slide" end="-600" time="320" easing="in" tween="cubic"/>
             </animation>
             <include>Media_Menu_Furniture</include>
             <control type="group">
@@ -2453,7 +2453,7 @@
                         <onclick>ClearProperty(Weather.CurrentView)</onclick>
                         <selected>IsEmpty(Window.Property(Weather.CurrentView))</selected>
                         <animation type="VisibleChange">
-                            <effect type="fade" end="100" delay="320" time="160" />
+                            <effect type="fade" end="100" delay="320" time="160"/>
                         </animation>
                         <visible>Skin.HasSetting(ExtendedWeatherInfo)</visible>
                     </control>
@@ -2463,7 +2463,7 @@
                         <onclick>SetProperty(Weather.CurrentView,36hour)</onclick>
                         <selected>SubString(Window.Property(Weather.CurrentView),36hour)</selected>
                         <animation type="VisibleChange">
-                            <effect type="fade" end="100" delay="320" time="160" />
+                            <effect type="fade" end="100" delay="320" time="160"/>
                         </animation>
                         <visible>Skin.HasSetting(ExtendedWeatherInfo)</visible>
                     </control>
@@ -2473,7 +2473,7 @@
                         <onclick>SetProperty(Weather.CurrentView,weekend)</onclick>
                         <selected>SubString(Window.Property(Weather.CurrentView),weekend)</selected>
                         <animation type="VisibleChange">
-                            <effect type="fade" end="100" delay="320" time="160" />
+                            <effect type="fade" end="100" delay="320" time="160"/>
                         </animation>
                         <visible>Skin.HasSetting(ExtendedWeatherInfo)</visible>
                     </control>
@@ -2483,7 +2483,7 @@
                         <onclick>SetProperty(Weather.CurrentView,hourly)</onclick>
                         <selected>SubString(Window.Property(Weather.CurrentView),hourly)</selected>
                         <animation type="VisibleChange">
-                            <effect type="fade" end="100" delay="320" time="160" />
+                            <effect type="fade" end="100" delay="320" time="160"/>
                         </animation>
                         <visible>Skin.HasSetting(ExtendedWeatherInfo)</visible>
                     </control>
@@ -2493,7 +2493,7 @@
                         <onclick>SetProperty(Weather.CurrentView,videos)</onclick>
                         <selected>SubString(Window.Property(Weather.CurrentView),videos)</selected>
                         <animation type="VisibleChange">
-                            <effect type="fade" end="100" delay="320" time="160" />
+                            <effect type="fade" end="100" delay="320" time="160"/>
                         </animation>
                         <visible>Skin.HasSetting(ExtendedWeatherInfo)</visible>
                         <visible>![IsEmpty(Window.Property(Video.1.Title)) + IsEmpty(Window.Property(Video.2.Title)) + IsEmpty(Window.Property(Video.3.Title)) + IsEmpty(Window.Property(MapList.1.MapLabel.1)) + IsEmpty(Window.Property(MapList.1.MapLabel.2)) + IsEmpty(Window.Property(MapList.1.MapLabel.3))]</visible>
@@ -2504,7 +2504,7 @@
                         <onclick>SetProperty(Weather.CurrentView,maps)</onclick>
                         <selected>SubString(Window.Property(Weather.CurrentView),maps)</selected>
                         <animation type="VisibleChange">
-                            <effect type="fade" end="100" delay="320" time="160" />
+                            <effect type="fade" end="100" delay="320" time="160"/>
                         </animation>
                         <visible>Skin.HasSetting(ExtendedWeatherInfo)</visible>
                         <visible>SubString(Weather.Plugin,weather.wunderground)</visible>
@@ -2532,7 +2532,7 @@
         </control>
         <control type="button">
             <include>HiddenObject</include>
-            <hitrect x="-1" y="0" w="50" h="1080" />
+            <hitrect x="-1" y="0" w="50" h="1080"/>
             <onfocus>SetFocus(9000)</onfocus>
         </control>
         <include>ContextMenuOverlay</include>

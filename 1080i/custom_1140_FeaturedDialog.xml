@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1140">
     <defaultcontrol always="true">8001</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -35,7 +35,7 @@
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="button" id="8002">
-            <label></label>
+            <label/>
             <onclick>SetProperty(SkinWidgets_RandomItems_Update,true,home)</onclick>
             <onclick>SetFocus(8001)</onclick>
             <posx>93</posx>
@@ -386,12 +386,12 @@
             <onup>8020</onup>
             <ondown>8020</ondown>
             <animation type="Visible" reversible="false">
-                <effect type="zoom" start="150" end="100" center="960,300" time="720" tween="cubic" />
-                <effect type="fade" end="100" time="720" />
+                <effect type="zoom" start="150" end="100" center="960,300" time="720" tween="cubic"/>
+                <effect type="fade" end="100" time="720"/>
             </animation>
             <animation type="Hidden" reversible="false">
-                <effect type="fade" start="100" end="0" time="240" />
-                <effect type="zoom" start="100" end="130" center="960,300" time="240" tween="cubic" easing="in" />
+                <effect type="fade" start="100" end="0" time="240"/>
+                <effect type="zoom" start="100" end="130" center="960,300" time="240" tween="cubic" easing="in"/>
             </animation>
             <visible allowhiddenfocus="true">ControlGroup(8020).HasFocus</visible>
             <onback>SetFocus(8001)</onback>

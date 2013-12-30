@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <allowoverlay>no</allowoverlay>
     <coordinates>
@@ -13,7 +13,7 @@
             <colordiffuse>FF000000</colordiffuse>
         </control>
         <control type="image" id="103">
-            <texture></texture>
+            <texture/>
             <posx>126r</posx>
             <posy>77r</posy>
             <width>117</width>
@@ -23,20 +23,20 @@
         </control>
         <control type="group" id="102">
             <animation type="Visible">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,-186" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,-186" end="0,0" tween="cubic"/>
             </animation>
             <animation type="Hidden">
-                <effect type="fade" time="320" start="100" end="0" />
-                <effect type="slide" time="320" end="0,-186" easing="in" tween="cubic" />
+                <effect type="fade" time="320" start="100" end="0"/>
+                <effect type="slide" time="320" end="0,-186" easing="in" tween="cubic"/>
             </animation>
             <animation type="WindowOpen">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,-186" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,-186" end="0,0" tween="cubic"/>
             </animation>
             <animation type="WindowClose">
-                <effect type="fade" time="320" start="100" end="0" />
-                <effect type="slide" time="320" end="0,-186" easing="in" tween="cubic" />
+                <effect type="fade" time="320" start="100" end="0"/>
+                <effect type="slide" time="320" end="0,-186" easing="in" tween="cubic"/>
             </animation>
             <control type="image">
                 <width>1920</width>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">101</defaultcontrol>
     <animation effect="fade" time="200">WindowOpen</animation>
@@ -15,8 +15,8 @@
             <width>1</width>
             <height>1</height>
             <visible>false</visible>
-            <itemlayout width="1" height="1" />
-            <focusedlayout width="1" height="1" />
+            <itemlayout width="1" height="1"/>
+            <focusedlayout width="1" height="1"/>
         </control>
         <control type="label">
             <posx>580</posx>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="LiveTVChannelView">
         <!-- TV Channel View -->
@@ -61,7 +61,7 @@
                     <info>Container(11).ListItem.Progress</info>
                 </control>
                 <control type="label">
-                    <posx>795</posx>
+                    <right>795</right>
                     <posy>65</posy>
                     <width>100</width>
                     <height>30</height>
@@ -154,7 +154,7 @@
                     <info>Container(12).ListItem.Progress</info>
                 </control>
                 <control type="label">
-                    <posx>795</posx>
+                    <right>795</right>
                     <posy>65</posy>
                     <width>100</width>
                     <height>30</height>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <zorder>1</zorder>
@@ -82,7 +82,7 @@
                 <info>System.Progressbar</info>
             </control>
             <control type="button" id="10">
-                <textoffsety></textoffsety>
+                <textoffsety/>
                 <posx>278</posx>
                 <posy>258</posy>
                 <width>225</width>

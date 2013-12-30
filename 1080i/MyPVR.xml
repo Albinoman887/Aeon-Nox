@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>32</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -173,10 +173,10 @@
                     <include>Animation_VisibleChange400</include>
                     <visible>Skin.HasSetting(ClassicTopBar)</visible>
                     <animation type="WindowClose">
-                        <effect type="slide" end="0,-52" time="240" tween="cubic" easing="in" />
+                        <effect type="slide" end="0,-52" time="240" tween="cubic" easing="in"/>
                     </animation>
                     <animation type="WindowOpen">
-                        <effect type="slide" start="0,-52" end="0,0" time="320" tween="cubic" easing="in" />
+                        <effect type="slide" start="0,-52" end="0,0" time="320" tween="cubic" easing="in"/>
                     </animation>
                     <animation effect="slide" start="750" end="0" time="240">VisibleChange</animation>
                 </control>
@@ -226,7 +226,7 @@
         <include>Media_Menu_Furniture</include>
         <control type="group" id="9000">
             <animation type="Conditional" condition="Window.IsActive(1128) | Window.IsActive(1127)">
-                <effect type="slide" end="-600" time="320" easing="in" tween="cubic" />
+                <effect type="slide" end="-600" time="320" easing="in" tween="cubic"/>
             </animation>
             <control type="group">
                 <include>Animation_MediaMenuSlide2</include>

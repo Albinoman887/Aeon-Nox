@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>-</defaultcontrol>
     <backgroundcolor>backgroundcolor</backgroundcolor>
@@ -113,7 +113,7 @@
                     <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>734</posx>
+                    <right>734</right>
                     <posy>-2</posy>
                     <width>600</width>
                     <height>40</height>
@@ -165,12 +165,12 @@
             <height>226</height>
             <visible>Player.ShowInfo | Skin.HasSetting(showvisinfo) | Window.IsActive(musicosd)</visible>
             <animation type="Visible">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,226" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,226" end="0,0" tween="cubic"/>
             </animation>
             <animation type="Hidden">
-                <effect type="fade" time="320" start="100" end="0" />
-                <effect type="slide" time="320" end="0,226" easing="in" tween="cubic" />
+                <effect type="fade" time="320" start="100" end="0"/>
+                <effect type="slide" time="320" end="0,226" easing="in" tween="cubic"/>
             </animation>
             <control type="image">
                 <posx>704</posx>
@@ -241,9 +241,9 @@
                     <animation effect="slide" end="-180" time="320" tween="cubic">Hidden</animation>
                     <animation effect="slide" start="-180" end="0" time="560" tween="cubic" delay="320">WindowOpen</animation>
                     <animation type="WindowClose">
-                        <effect type="slide" end="-180" time="320" tween="cubic" easing="in" />
-                        <effect type="fade" start="100" end="0" time="0" delay="320" />
-                        <condition type="!Player.Playing" />
+                        <effect type="slide" end="-180" time="320" tween="cubic" easing="in"/>
+                        <effect type="fade" start="100" end="0" time="0" delay="320"/>
+                        <condition type="!Player.Playing"/>
                     </animation>
                     <animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
                     <visible>!Skin.HasSetting(vinylart) + !Skin.HasSetting(blurayart)</visible>
@@ -261,9 +261,9 @@
                     <animation effect="slide" end="-180" time="320" tween="cubic">Hidden</animation>
                     <animation effect="slide" start="-180" end="0" time="560" tween="cubic" delay="320">WindowOpen</animation>
                     <animation type="WindowClose">
-                        <effect type="slide" end="-180" time="320" tween="cubic" easing="in" />
-                        <effect type="fade" start="100" end="0" time="0" delay="320" />
-                        <condition type="!Player.Playing" />
+                        <effect type="slide" end="-180" time="320" tween="cubic" easing="in"/>
+                        <effect type="fade" start="100" end="0" time="0" delay="320"/>
+                        <condition type="!Player.Playing"/>
                     </animation>
                     <animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
                     <include>vinylart</include>
@@ -281,9 +281,9 @@
                     <animation effect="slide" end="-180" time="320" tween="cubic">Hidden</animation>
                     <animation effect="slide" start="-180" end="0" time="560" tween="cubic" delay="320">WindowOpen</animation>
                     <animation type="WindowClose">
-                        <effect type="slide" end="-180" time="320" tween="cubic" easing="in" />
-                        <effect type="fade" start="100" end="0" time="0" delay="320" />
-                        <condition type="!Player.Playing" />
+                        <effect type="slide" end="-180" time="320" tween="cubic" easing="in"/>
+                        <effect type="fade" start="100" end="0" time="0" delay="320"/>
+                        <condition type="!Player.Playing"/>
                     </animation>
                     <animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
                     <include>blurayart</include>
@@ -650,25 +650,25 @@
                 <posx>22</posx>
                 <posy>-597</posy>
                 <animation type="Conditional" condition="Skin.HasSetting(vispanelrotate) + Skin.HasSetting(activatepanelrotation) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarName))" reversible="false">
-                    <effect type="rotatex" center="251" end="90" time="440" tween="cubic" easing="in" />
-                    <effect type="rotatex" center="251" start="90" end="-90" time="0" delay="440" />
-                    <effect type="fade" start="100" end="0" time="0" delay="440" />
-                    <effect type="rotatex" center="251" start="-90" end="0" time="440" delay="440" tween="cubic" />
+                    <effect type="rotatex" center="251" end="90" time="440" tween="cubic" easing="in"/>
+                    <effect type="rotatex" center="251" start="90" end="-90" time="0" delay="440"/>
+                    <effect type="fade" start="100" end="0" time="0" delay="440"/>
+                    <effect type="rotatex" center="251" start="-90" end="0" time="440" delay="440" tween="cubic"/>
                 </animation>
                 <animation type="Conditional" condition="!Skin.HasSetting(vispanelrotate) + Skin.HasSetting(activatepanelrotation) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarName))" reversible="false">
-                    <effect type="rotatex" center="251" end="-90" time="440" tween="cubic" easing="in" />
-                    <effect type="rotatex" center="251" start="-90" end="90" time="0" delay="440" />
-                    <effect type="fade" end="100" time="0" delay="440" />
-                    <effect type="rotatex" center="251" start="90" end="0" time="440" delay="440" tween="cubic" />
+                    <effect type="rotatex" center="251" end="-90" time="440" tween="cubic" easing="in"/>
+                    <effect type="rotatex" center="251" start="-90" end="90" time="0" delay="440"/>
+                    <effect type="fade" end="100" time="0" delay="440"/>
+                    <effect type="rotatex" center="251" start="90" end="0" time="440" delay="440" tween="cubic"/>
                 </animation>
                 <include>Animation_OpenCloseZoom</include>
                 <animation type="Visible">
-                    <effect type="zoom" start="150" end="100" center="960,540" time="400" tween="cubic" />
-                    <effect type="fade" end="100" time="240" />
+                    <effect type="zoom" start="150" end="100" center="960,540" time="400" tween="cubic"/>
+                    <effect type="fade" end="100" time="240"/>
                 </animation>
                 <animation type="Hidden">
-                    <effect type="fade" start="100" end="0" time="240" />
-                    <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+                    <effect type="fade" start="100" end="0" time="240"/>
+                    <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in"/>
                 </animation>
                 <control type="group">
                     <animation effect="fade" time="320">VisibleChange</animation>
@@ -775,16 +775,16 @@
                 <animation effect="fade" time="400">WindowOpen</animation>
                 <animation effect="fade" time="160">WindowClose</animation>
                 <animation type="Visible" reversible="false">
-                    <effect type="rotatex" center="251" end="90" time="440" tween="cubic" easing="in" />
-                    <effect type="rotatex" center="251" start="90" end="-90" time="0" delay="440" />
-                    <effect type="fade" end="100" time="0" delay="440" />
-                    <effect type="rotatex" center="251" start="-90" end="0" time="440" delay="440" tween="cubic" />
+                    <effect type="rotatex" center="251" end="90" time="440" tween="cubic" easing="in"/>
+                    <effect type="rotatex" center="251" start="90" end="-90" time="0" delay="440"/>
+                    <effect type="fade" end="100" time="0" delay="440"/>
+                    <effect type="rotatex" center="251" start="-90" end="0" time="440" delay="440" tween="cubic"/>
                 </animation>
                 <animation type="Hidden" reversible="false">
-                    <effect type="rotatex" center="251" end="-90" time="440" tween="cubic" easing="in" />
-                    <effect type="rotatex" center="251" start="-90" end="90" time="0" delay="440" />
-                    <effect type="fade" start="100" end="0" time="0" delay="440" />
-                    <effect type="rotatex" center="251" start="90" end="0" time="440" delay="440" tween="cubic" />
+                    <effect type="rotatex" center="251" end="-90" time="440" tween="cubic" easing="in"/>
+                    <effect type="rotatex" center="251" start="-90" end="90" time="0" delay="440"/>
+                    <effect type="fade" start="100" end="0" time="0" delay="440"/>
+                    <effect type="rotatex" center="251" start="90" end="0" time="440" delay="440" tween="cubic"/>
                 </animation>
                 <control type="image">
                     <posx>120</posx>

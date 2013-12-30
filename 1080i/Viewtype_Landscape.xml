@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="LandscapeThumbs">
         <control type="image">
@@ -103,8 +103,8 @@
                 <posx>57</posx>
                 <animation effect="zoom" center="auto" start="100" end="122" time="240" tween="quadratic" reversible="false">Focus</animation>
                 <animation type="UnFocus" condition="Control.HasFocus(503)">
-                    <effect type="slide" end="-57" time="0" tween="quadratic" />
-                    <effect type="zoom" center="auto" start="122" end="100" time="240" tween="quadratic" />
+                    <effect type="slide" end="-57" time="0" tween="quadratic"/>
+                    <effect type="zoom" center="auto" start="122" end="100" time="240" tween="quadratic"/>
                 </animation>
                 <include>LandscapeThumbs</include>
             </control>
@@ -119,8 +119,8 @@
                 <include>LandscapeLogoLayout</include>
             </control>
         </focusedlayout>
-        <itemlayout width="516" height="450" condition="Skin.HasSetting(landscapeonelogo) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(artists)]"></itemlayout>
-        <focusedlayout width="516" height="450" condition="Skin.HasSetting(landscapeonelogo) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(artists)]"></focusedlayout>
+        <itemlayout width="516" height="450" condition="Skin.HasSetting(landscapeonelogo) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(artists)]"/>
+        <focusedlayout width="516" height="450" condition="Skin.HasSetting(landscapeonelogo) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(artists)]"/>
         <itemlayout width="495" height="450" condition="[Skin.HasSetting(landscapeclearart) + [Container.Content(tvshows) | Container.Content(movies)]]">
             <include>LandscapeClearArtLayout</include>
         </itemlayout>

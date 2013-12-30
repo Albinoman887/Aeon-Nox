@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <allowoverlay>no</allowoverlay>
     <controls>
@@ -94,7 +94,7 @@
         <control type="group" id="9000">
             <visible>!Skin.HasSetting(kioskmode)</visible>
             <animation type="Conditional" condition="Window.IsActive(1128) | Window.IsActive(1127)">
-                <effect type="slide" end="-600" time="320" easing="in" tween="cubic" />
+                <effect type="slide" end="-600" time="320" easing="in" tween="cubic"/>
             </animation>
             <include>Media_Menu_Furniture</include>
             <control type="group">
@@ -167,7 +167,7 @@
         <control type="button">
             <include>HiddenObject</include>
             <visible>!Skin.HasSetting(kioskmode)</visible>
-            <hitrect x="-1" y="0" w="50" h="1080" />
+            <hitrect x="-1" y="0" w="50" h="1080"/>
             <onfocus>SetFocus(9000)</onfocus>
         </control>
     </controls>

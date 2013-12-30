@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="1115" type="dialog">
     <defaultcontrol>40</defaultcontrol>
     <backgroundcolor>backgroundcolor</backgroundcolor>
@@ -577,20 +577,20 @@
             <orientation>horizontal</orientation>
             <itemgap>-1060</itemgap>
             <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="150" end="100" center="960,540" time="960" tween="cubic" />
-                <effect type="fade" end="100" time="960" />
+                <effect type="zoom" start="150" end="100" center="960,540" time="960" tween="cubic"/>
+                <effect type="fade" end="100" time="960"/>
             </animation>
             <animation type="WindowClose" reversible="false">
-                <effect type="fade" start="100" end="0" time="240" />
-                <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+                <effect type="fade" start="100" end="0" time="240"/>
+                <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in"/>
             </animation>
             <!-- Search -->
             <control type="group" id="3000">
                 <width>2325</width>
                 <height>825</height>
                 <animation type="Conditional" condition="![ControlGroup(3000).HasFocus | Control.HasFocus(3012)]">
-                    <effect type="fade" start="100" end="95" time="400" tween="cubic" easing="inout" />
-                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto" />
+                    <effect type="fade" start="100" end="95" time="400" tween="cubic" easing="inout"/>
+                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto"/>
                 </animation>
                 <control type="button" id="3012">
                     <include>HiddenObject</include>
@@ -707,8 +707,8 @@
                     <include>Animation_PanelFlipDown1</include>
                 </animation>
                 <animation type="Conditional" condition="![ControlGroup(5000).HasFocus | Control.HasFocus(5012)]">
-                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout" />
-                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto" />
+                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout"/>
+                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto"/>
                 </animation>
                 <control type="button" id="5012">
                     <include>HiddenObject</include>
@@ -917,8 +917,8 @@
                     <include>Animation_PanelFlipDown1</include>
                 </animation>
                 <animation type="Conditional" condition="![ControlGroup(6000).HasFocus | Control.HasFocus(6012)]">
-                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout" />
-                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto" />
+                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout"/>
+                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto"/>
                 </animation>
                 <control type="button" id="6012">
                     <include>HiddenObject</include>
@@ -1123,8 +1123,8 @@
                     <include>Animation_PanelFlipDown1</include>
                 </animation>
                 <animation type="Conditional" condition="![ControlGroup(7000).HasFocus | Control.HasFocus(7012)]">
-                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout" />
-                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto" />
+                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout"/>
+                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto"/>
                 </animation>
                 <control type="button" id="7012">
                     <include>HiddenObject</include>
@@ -1372,8 +1372,8 @@
                     <include>Animation_PanelFlipDown1</include>
                 </animation>
                 <animation type="Conditional" condition="![ControlGroup(8000).HasFocus | Control.HasFocus(8012)]">
-                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout" />
-                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="1160,412" />
+                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout"/>
+                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="1160,412"/>
                 </animation>
                 <control type="button" id="8012">
                     <include>HiddenObject</include>
@@ -1412,7 +1412,7 @@
                             <preloaditems>2</preloaditems>
                             <itemlayout width="550" height="550">
                                 <control type="image">
-                                    <texture background="true" />
+                                    <texture background="true"/>
                                     <width>550</width>
                                     <height>550</height>
                                     <aspectratio align="center">scale</aspectratio>
@@ -1429,7 +1429,7 @@
                             </itemlayout>
                             <focusedlayout width="550" height="550">
                                 <control type="image">
-                                    <texture background="true" />
+                                    <texture background="true"/>
                                     <width>550</width>
                                     <height>550</height>
                                     <aspectratio align="center">scale</aspectratio>
@@ -1620,8 +1620,8 @@
                     <include>Animation_PanelFlipDown1</include>
                 </animation>
                 <animation type="Conditional" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9012)]">
-                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout" />
-                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto" />
+                    <effect type="fade" start="100" end="80" time="400" tween="cubic" easing="inout"/>
+                    <effect type="zoom" start="100" end="70" time="400" tween="cubic" easing="inout" center="auto"/>
                 </animation>
                 <control type="button" id="9012">
                     <include>HiddenObject</include>
@@ -1661,7 +1661,7 @@
                             <preloaditems>2</preloaditems>
                             <itemlayout width="550" height="550">
                                 <control type="image">
-                                    <texture background="true" />
+                                    <texture background="true"/>
                                     <width>550</width>
                                     <height>550</height>
                                     <aspectratio align="center">scale</aspectratio>
@@ -1678,7 +1678,7 @@
                             </itemlayout>
                             <focusedlayout width="550" height="550">
                                 <control type="image">
-                                    <texture background="true" />
+                                    <texture background="true"/>
                                     <width>550</width>
                                     <height>550</height>
                                     <aspectratio align="center">scale</aspectratio>
@@ -1862,7 +1862,7 @@
             <posx>135</posx>
             <posy>405</posy>
             <animation type="Conditional" condition="true">
-                <effect type="zoom" start="100" end="97" center="960,540" time="240" tween="cubic" />
+                <effect type="zoom" start="100" end="97" center="960,540" time="240" tween="cubic"/>
             </animation>
             <animation effect="slide" end="0,200" time="0" condition="Window.IsActive(1147)">Conditional</animation>
             <visible>!IsEmpty(Window(home).Property(WidgetType)) + [!IsEmpty(Window(home).Property(PanelWidgetInfo)) | !IsEmpty(Window(home).Property(PanelWidget2Info))]</visible>

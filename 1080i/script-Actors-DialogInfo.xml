@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -385,7 +385,7 @@
                         <visible>Control.IsVisible(150)</visible>
                     </control>
                     <control type="label">
-                        <posx>1866</posx>
+                        <right>1866</right>
                         <posy>988</posy>
                         <width>1000</width>
                         <height>50</height>
@@ -396,7 +396,7 @@
                         <visible>Control.HasFocus(150)</visible>
                     </control>
                     <control type="label">
-                        <posx>1866</posx>
+                        <right>1866</right>
                         <posy>1018</posy>
                         <width>1000</width>
                         <height>50</height>
@@ -413,8 +413,8 @@
                         <onright>9000</onright>
                         <onup>9000</onup>
                         <ondown>9000</ondown>
-                        <itemlayout height="1" width="1" />
-                        <focusedlayout height="1" width="1" />
+                        <itemlayout height="1" width="1"/>
+                        <focusedlayout height="1" width="1"/>
                     </control>
                     <control type="group" id="2500">
                         <posx>827</posx>

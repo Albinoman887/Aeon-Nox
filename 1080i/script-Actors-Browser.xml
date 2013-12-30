@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">450</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -304,12 +304,12 @@
         <control type="group">
             <visible>StringCompare(Window.Property(dialogprogress),1)</visible>
             <animation type="Visible" reversible="false">
-                <effect type="zoom" start="80" end="100" center="960,540" tween="back" time="240" />
-                <effect type="fade" end="100" time="240" />
+                <effect type="zoom" start="80" end="100" center="960,540" tween="back" time="240"/>
+                <effect type="fade" end="100" time="240"/>
             </animation>
             <animation type="Hidden" reversible="false">
-                <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240" />
-                <effect type="fade" start="100" end="0" time="240" />
+                <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240"/>
+                <effect type="fade" start="100" end="0" time="240"/>
             </animation>
             <control type="group">
                 <posx>570</posx>
@@ -373,7 +373,7 @@
                     <height>21</height>
                 </control>
                 <control type="button" id="1010">
-                    <textoffsety></textoffsety>
+                    <textoffsety/>
                     <posx>278</posx>
                     <posy>258</posy>
                     <width>225</width>

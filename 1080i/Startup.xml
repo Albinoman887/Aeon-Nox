@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <backgroundcolor>backgroundcolor</backgroundcolor>
@@ -40,10 +40,10 @@
     <onunload>Skin.SetString(backgroundlist,$INFO[Control.GetLabel(11113)])</onunload>
     <onunload>Skin.SetString(submenulist,$INFO[Control.GetLabel(11114)])</onunload>
     <animation type="WindowClose" reversible="false">
-        <effect type="fade" start="100" end="0" time="640" />
+        <effect type="fade" start="100" end="0" time="640"/>
     </animation>
     <animation type="WindowOpen" reversible="false">
-        <effect type="fade" end="100" delay="800" time="640" />
+        <effect type="fade" end="100" delay="800" time="640"/>
     </animation>
     <controls>
         <control type="group">

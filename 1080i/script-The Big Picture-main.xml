@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="window">
     <backgroundcolor>backgroundcolor</backgroundcolor>
     <controls>
@@ -89,8 +89,8 @@
                     <description>Group for the description</description>
                     <visible>Control.IsVisible(102)</visible>
                     <animation type="Focus">
-                        <effect type="fade" start="0" end="100" time="80" delay="1600" />
-                        <effect type="fade" condition="VisibleChange" time="80" delay="1600" />
+                        <effect type="fade" start="0" end="100" time="80" delay="1600"/>
+                        <effect type="fade" condition="VisibleChange" time="80" delay="1600"/>
                     </animation>
                     <control type="image">
                         <description>Description background</description>
@@ -156,7 +156,7 @@
             </control>
             <control type="label">
                 <description>Label TYPE: (CurrentPage/NumPages)</description>
-                <posx>1910</posx>
+                <right>1910</right>
                 <align>right</align>
                 <label>$INFO[Window.Property(Category)] ($INFO[Container(100).CurrentPage]/$INFO[Container(100).NumPages])</label>
                 <include>BreadcrumbsLabel</include>
@@ -182,7 +182,7 @@
             </control>
         </control>
         <control type="label">
-            <label></label>
+            <label/>
             <description>TEST label</description>
             <posx>240</posx>
             <posy>200</posy>

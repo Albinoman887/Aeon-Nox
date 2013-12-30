@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
     <allowoverlay>no</allowoverlay>
     <zorder>1</zorder>
@@ -82,7 +82,7 @@
                     <label>Channel</label>
                 </control>
                 <control type="label">
-                    <posx>500</posx>
+                    <right>500</right>
                     <posy>7</posy>
                     <width>100</width>
                     <height>49</height>
@@ -186,7 +186,7 @@
                         <font>Font_Reg32</font>
                     </control>
                     <control type="label" id="109">
-                        <posx>820</posx>
+                        <right>820</right>
                         <width>786</width>
                         <height>49</height>
                         <align>right</align>
@@ -209,7 +209,7 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>820</posx>
+                        <right>820</right>
                         <width>786</width>
                         <height>49</height>
                         <align>right</align>
@@ -319,7 +319,7 @@
                             <font>Font_Reg32</font>
                         </control>
                         <control type="label" id="142">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -342,7 +342,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -402,7 +402,7 @@
                             <font>Font_Reg32</font>
                         </control>
                         <control type="label" id="152">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -425,7 +425,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -485,7 +485,7 @@
                             <font>Font_Reg32</font>
                         </control>
                         <control type="label" id="162">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -508,7 +508,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -568,7 +568,7 @@
                             <font>Font_Reg32</font>
                         </control>
                         <control type="label" id="172">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -591,7 +591,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -651,7 +651,7 @@
                             <font>Font_Reg32</font>
                         </control>
                         <control type="label" id="182">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -674,7 +674,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -734,7 +734,7 @@
                             <font>Font_Reg32</font>
                         </control>
                         <control type="label" id="192">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>
@@ -757,7 +757,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>820</posx>
+                            <right>820</right>
                             <width>786</width>
                             <height>49</height>
                             <align>right</align>

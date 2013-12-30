@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="CDArtFlip">
         <control type="group">
@@ -27,16 +27,16 @@
             <posy>165</posy>
             <animation effect="slide" end="90,0" time="240" tween="cubic" easing="inout" condition="Skin.HasSetting(listcdart) + Container.Content(movies)">Conditional</animation>
             <animation type="Conditional" condition="Control.HasFocus(5001)" reversible="false">
-                <effect type="rotatey" center="1530" end="-90" time="360" tween="cubic" easing="in" />
-                <effect type="rotatey" center="1530" start="-90" end="90" time="0" delay="360" />
-                <effect type="fade" start="100" end="0" time="0" delay="360" />
-                <effect type="rotatey" center="1530" start="90" end="0" time="360" delay="360" tween="cubic" />
+                <effect type="rotatey" center="1530" end="-90" time="360" tween="cubic" easing="in"/>
+                <effect type="rotatey" center="1530" start="-90" end="90" time="0" delay="360"/>
+                <effect type="fade" start="100" end="0" time="0" delay="360"/>
+                <effect type="rotatey" center="1530" start="90" end="0" time="360" delay="360" tween="cubic"/>
             </animation>
             <animation type="Conditional" condition="!Control.HasFocus(5001)" reversible="false">
-                <effect type="rotatey" center="1530" end="90" time="0" tween="cubic" easing="in" delay="360" />
-                <effect type="rotatey" center="1530" start="90" end="-90" time="0" delay="360" />
-                <effect type="fade" end="100" time="160" delay="360" />
-                <effect type="rotatey" center="1530" start="-90" end="0" time="360" delay="360" tween="cubic" />
+                <effect type="rotatey" center="1530" end="90" time="0" tween="cubic" easing="in" delay="360"/>
+                <effect type="rotatey" center="1530" start="90" end="-90" time="0" delay="360"/>
+                <effect type="fade" end="100" time="160" delay="360"/>
+                <effect type="rotatey" center="1530" start="-90" end="0" time="360" delay="360" tween="cubic"/>
             </animation>
             <include>Animation_ListSlideRight</include>
             <visible>[Skin.HasSetting(roundedcovers) + !Container.Content(episodes)] | [Skin.HasSetting(listshowposter) + Container.Content(episodes)]</visible>
@@ -160,16 +160,16 @@
             <posx>1370</posx>
             <posy>220</posy>
             <animation type="Visible" reversible="false">
-                <effect type="rotatey" center="1548" end="-90" time="360" tween="cubic" easing="in" />
-                <effect type="rotatey" center="1548" start="-90" end="90" time="0" delay="360" />
-                <effect type="fade" end="100" time="0" delay="360" />
-                <effect type="rotatey" center="1548" start="90" end="0" time="360" delay="360" tween="cubic" />
+                <effect type="rotatey" center="1548" end="-90" time="360" tween="cubic" easing="in"/>
+                <effect type="rotatey" center="1548" start="-90" end="90" time="0" delay="360"/>
+                <effect type="fade" end="100" time="0" delay="360"/>
+                <effect type="rotatey" center="1548" start="90" end="0" time="360" delay="360" tween="cubic"/>
             </animation>
             <animation type="Hidden" reversible="false">
-                <effect type="rotatey" center="1548" end="90" time="360" tween="cubic" easing="in" />
-                <effect type="rotatey" center="1548" start="90" end="-90" time="0" delay="360" />
-                <effect type="fade" start="100" end="0" time="0" delay="360" />
-                <effect type="rotatey" center="1548" start="-90" end="0" time="0" delay="360" tween="cubic" />
+                <effect type="rotatey" center="1548" end="90" time="360" tween="cubic" easing="in"/>
+                <effect type="rotatey" center="1548" start="90" end="-90" time="0" delay="360"/>
+                <effect type="fade" start="100" end="0" time="0" delay="360"/>
+                <effect type="rotatey" center="1548" start="-90" end="0" time="0" delay="360" tween="cubic"/>
             </animation>
             <include>Animation_ListSlideRight</include>
             <visible>Control.HasFocus(5001)</visible>

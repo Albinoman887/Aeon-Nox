@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="Custom1Subs">
         <item>
@@ -1178,7 +1178,7 @@
         <posy>450</posy>
         <width>3069</width>
         <height>225</height>
-        <hitrect x="-238" y="475" w="2400" h="130" />
+        <hitrect x="-238" y="475" w="2400" h="130"/>
         <onleft>9000</onleft>
         <onright>9000</onright>
         <onup condition="Skin.HasSetting(lowermainmenu) + Control.IsVisible(4444)">4444</onup>
@@ -1328,7 +1328,7 @@
         <onright>9010</onright>
         <orientation>horizontal</orientation>
         <focusposition>2</focusposition>
-        <hitrect x="-238" y="0" w="2400" h="130" />
+        <hitrect x="-238" y="0" w="2400" h="130"/>
         <scrolltime tween="quadratic">300</scrolltime>
         <onup>9000</onup>
         <onback>SetFocus(9000)</onback>

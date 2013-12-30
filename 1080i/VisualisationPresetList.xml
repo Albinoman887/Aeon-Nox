@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>2</defaultcontrol>
     <coordinates>
@@ -7,12 +7,12 @@
         <system>1</system>
     </coordinates>
     <animation type="WindowOpen" reversible="false">
-        <effect type="zoom" start="80" end="100" center="960,540" tween="back" time="240" />
-        <effect type="fade" end="100" time="240" />
+        <effect type="zoom" start="80" end="100" center="960,540" tween="back" time="240"/>
+        <effect type="fade" end="100" time="240"/>
     </animation>
     <animation type="WindowClose" reversible="false">
-        <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240" />
-        <effect type="fade" start="100" end="0" time="240" />
+        <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240"/>
+        <effect type="fade" start="100" end="0" time="240"/>
     </animation>
     <control type="image">
         <posx>357</posx>
@@ -101,7 +101,7 @@
             <onup>60</onup>
         </control>
         <control type="label">
-            <posx>1514</posx>
+            <right>1514</right>
             <posy>842</posy>
             <width>315</width>
             <height>60</height>

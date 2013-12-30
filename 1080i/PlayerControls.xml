@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="114">
     <defaultcontrol always="true">9011</defaultcontrol>
     <!--<include>Animation_DialogZoom</include>-->
@@ -167,7 +167,7 @@
         <control type="button">
             <animation effect="slide" end="0,100" time="400" tween="cubic" delay="160" condition="Player.HasMedia">Conditional</animation>
             <include>HiddenObject</include>
-            <hitrect x="0" y="200" w="1920" h="945" />
+            <hitrect x="0" y="200" w="1920" h="945"/>
             <onfocus>Dialog.Close(playercontrols)</onfocus>
         </control>
         <control type="group">

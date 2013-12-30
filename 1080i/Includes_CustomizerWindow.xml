@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="HomePanelWidget_1124">
         <control type="group" id="5000">
@@ -9,8 +9,8 @@
             <visible>[Substring(Control.GetLabel(4321),featured) | Substring(Control.GetLabel(4321),panel)] + !Window.IsActive(1120)</visible>
             <include>Animation_Widgets</include>
             <animation type="Conditional" condition="true">
-                <effect type="fade" start="100" end="90" time="400" tween="cubic" easing="inout" />
-                <effect type="zoom" start="100" end="97" center="960,540" time="240" tween="cubic" />
+                <effect type="fade" start="100" end="90" time="400" tween="cubic" easing="inout"/>
+                <effect type="zoom" start="100" end="97" center="960,540" time="240" tween="cubic"/>
             </animation>
             <animation effect="slide" end="0,-285" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
             <animation effect="slide" end="0,18" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu) + [[Skin.HasSetting(totalshomehigh) + !Skin.HasSetting(DisableLibraryStats)] | [Skin.HasSetting(timehomehigh) + !Skin.HasSetting(DisableTimePanel)]]">Conditional</animation>
@@ -32,7 +32,7 @@
                     <height>402</height>
                     <texture border="50">$VAR[PanelWidgetBackVar]</texture>
                     <animation type="Conditional" condition="true">
-                        <effect type="fade" start="100" end="75" time="400" tween="cubic" easing="inout" />
+                        <effect type="fade" start="100" end="75" time="400" tween="cubic" easing="inout"/>
                     </animation>
                 </control>
             </control>
@@ -366,7 +366,7 @@
                 <control type="group">
                     <posx>1005</posx>
                     <control type="label">
-                        <posx>618</posx>
+                        <right>618</right>
                         <posy>350</posy>
                         <width>607</width>
                         <height>25</height>
@@ -497,8 +497,8 @@
             <visible>[Substring(Control.GetLabel(4325),featured) | Substring(Control.GetLabel(4325),panel)] + !Window.IsActive(1120)</visible>
             <include>Animation_Widgets</include>
             <animation type="Conditional" condition="true">
-                <effect type="fade" start="100" end="90" time="400" tween="cubic" easing="inout" />
-                <effect type="zoom" start="100" end="97" center="960,540" time="240" tween="cubic" />
+                <effect type="fade" start="100" end="90" time="400" tween="cubic" easing="inout"/>
+                <effect type="zoom" start="100" end="97" center="960,540" time="240" tween="cubic"/>
             </animation>
             <control type="group">
                 <visible>Substring(Control.GetLabel(4325),default) | Substring(Control.GetLabel(4325),glass)</visible>
@@ -517,7 +517,7 @@
                     <height>402</height>
                     <texture border="50">$VAR[PanelWidget2BackVar]</texture>
                     <animation type="Conditional" condition="true">
-                        <effect type="fade" start="100" end="75" time="400" tween="cubic" easing="inout" />
+                        <effect type="fade" start="100" end="75" time="400" tween="cubic" easing="inout"/>
                     </animation>
                 </control>
             </control>
@@ -847,7 +847,7 @@
                 <control type="group">
                     <posx>1005</posx>
                     <control type="label">
-                        <posx>618</posx>
+                        <right>618</right>
                         <posy>350</posy>
                         <width>607</width>
                         <height>25</height>
@@ -1108,8 +1108,8 @@
                     <height>280</height>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="quadratic">200</scrolltime>
-                    <itemlayout height="34" width="450" />
-                    <focusedlayout height="34" width="450" />
+                    <itemlayout height="34" width="450"/>
+                    <focusedlayout height="34" width="450"/>
                     <content>
                         <item>
                             <label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
@@ -1530,8 +1530,8 @@
                     <height>280</height>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="quadratic">200</scrolltime>
-                    <itemlayout height="34" width="450" />
-                    <focusedlayout height="34" width="450" />
+                    <itemlayout height="34" width="450"/>
+                    <focusedlayout height="34" width="450"/>
                     <content>
                         <item>
                             <label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
@@ -1835,7 +1835,7 @@
         <posy>450</posy>
         <width>3069</width>
         <height>225</height>
-        <hitrect x="-238" y="475" w="2400" h="130" />
+        <hitrect x="-238" y="475" w="2400" h="130"/>
         <onleft>9000</onleft>
         <onright>9000</onright>
         <onup>ActivateWindow(1120)</onup>
@@ -2000,7 +2000,7 @@
         <posy>-2</posy>
         <width>1150</width>
         <height>50</height>
-        <hitrect x="-238" y="0" w="2400" h="130" />
+        <hitrect x="-238" y="0" w="2400" h="130"/>
         <onleft>9010</onleft>
         <onright>9010</onright>
         <orientation>horizontal</orientation>

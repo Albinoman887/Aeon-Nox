@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="1158" type="window">
     <defaultcontrol always="true">450</defaultcontrol>
     <backgroundcolor>backgroundcolor</backgroundcolor>
@@ -242,7 +242,7 @@
                     <selected>!Skin.HasSetting(ShowBackgroundVideo)</selected>
                 </control>
                 <control type="label" id="332">
-                    <label></label>
+                    <label/>
                     <height>30</height>
                     <include>Objects_NowPlayingSettingsButton</include>
                 </control>
@@ -257,7 +257,7 @@
                     <textcolor>$VAR[TitleColorVar]</textcolor>
                 </control>
                 <control type="label" id="334">
-                    <label></label>
+                    <label/>
                     <height>30</height>
                     <font>Font_Reg32</font>
                     <include>Objects_NowPlayingSettingsButton</include>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <allowoverlay>yes</allowoverlay>
     <backgroundcolor>backgroundcolor</backgroundcolor>
@@ -379,8 +379,8 @@
                             <posx>57</posx>
                             <animation effect="zoom" center="auto" start="100" end="122" time="240" tween="quadratic" reversible="false">Focus</animation>
                             <animation type="UnFocus" condition="Control.HasFocus(50)">
-                                <effect type="slide" end="-57" time="0" tween="quadratic" />
-                                <effect type="zoom" center="auto" start="122" end="100" time="240" tween="quadratic" />
+                                <effect type="slide" end="-57" time="0" tween="quadratic"/>
+                                <effect type="zoom" center="auto" start="122" end="100" time="240" tween="quadratic"/>
                             </animation>
                             <control type="image">
                                 <posx>-3</posx>
@@ -418,7 +418,7 @@
             </control>
             <control type="group">
                 <visible>Control.IsVisible(51)</visible>
-                <camera x="960" y="810" />
+                <camera x="960" y="810"/>
                 <include>Animation_OpenCloseZoom_New</include>
                 <control type="group" id="7007">
                     <posy>580</posy>
@@ -845,12 +845,12 @@
                 <control type="group" id="7003">
                     <posy>580</posy>
                     <animation type="WindowOpen" reversible="false">
-                        <effect type="zoom" start="150" end="100" center="960,540" time="240" tween="cubic" />
-                        <effect type="fade" end="100" time="240" />
+                        <effect type="zoom" start="150" end="100" center="960,540" time="240" tween="cubic"/>
+                        <effect type="fade" end="100" time="240"/>
                     </animation>
                     <animation type="WindowClose" reversible="false">
-                        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
-                        <effect type="fade" start="100" end="0" time="240" delay="240" />
+                        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in"/>
+                        <effect type="fade" start="100" end="0" time="240" delay="240"/>
                     </animation>
                     <visible>Control.IsVisible(51) + !Control.IsVisible(7007) + !Control.IsVisible(7002) + Control.IsVisible(970)</visible>
                     <control type="group">
@@ -859,8 +859,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="818" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="-75" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="-75" end="65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-1192" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="-75" end="65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-1192" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(-5).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -881,8 +881,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="668" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="75" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="75" end="65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-968" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="75" end="65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-968" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(-4).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -903,8 +903,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="518" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="225" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="225" end="65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-742" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="225" end="65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-742" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(-3).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -925,8 +925,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="368" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="375" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="375" end="65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-518" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="375" end="65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-518" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(-2).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -947,8 +947,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="218" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="525" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="525" end="65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-292" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="525" end="65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-292" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(-1).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -969,8 +969,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-818" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1995" start="65" end="65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="1995" end="-65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="1192" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1995" end="-65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="1192" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(5).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -991,8 +991,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-668" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1845" start="65" end="65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="1845" end="-65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="968" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1845" end="-65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="968" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(4).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -1013,8 +1013,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-518" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1695" start="65" end="65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="1695" end="-65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="742" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1695" end="-65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="742" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(3).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -1035,8 +1035,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-368" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1545" start="65" end="65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="1545" end="-65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="518" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1545" end="-65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="518" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(2).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -1057,8 +1057,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-218" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1395" start="65" end="65" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="Skin.HasSetting(noflowalbum)">
-                            <effect type="rotatey" center="1395" end="-65" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="292" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1395" end="-65" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="292" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="group">
                             <visible>!IsEmpty(Container(51).ListItemNoWrap(1).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
@@ -1221,7 +1221,7 @@
                         </control>
                         <control type="group">
                             <control type="label">
-                                <posx>1830</posx>
+                                <right>1830</right>
                                 <posy>1015</posy>
                                 <width>690</width>
                                 <height>20</height>
@@ -1232,7 +1232,7 @@
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <posx>1830</posx>
+                                <right>1830</right>
                                 <posy>1060</posy>
                                 <width>690</width>
                                 <height>20</height>
@@ -1284,7 +1284,7 @@
                 </control>
             </control>
             <control type="group">
-                <camera x="960" y="810" />
+                <camera x="960" y="810"/>
                 <visible>Control.IsVisible(53)</visible>
                 <include>Animation_OpenCloseZoom_New</include>
                 <control type="group" id="6001">
@@ -1723,12 +1723,12 @@
                     <posx>55</posx>
                     <posy>570</posy>
                     <animation type="WindowOpen" reversible="false">
-                        <effect type="zoom" start="150" end="100" center="960,540" time="240" tween="cubic" />
-                        <effect type="fade" end="100" time="240" />
+                        <effect type="zoom" start="150" end="100" center="960,540" time="240" tween="cubic"/>
+                        <effect type="fade" end="100" time="240"/>
                     </animation>
                     <animation type="WindowClose" reversible="false">
-                        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
-                        <effect type="fade" start="100" end="0" time="240" delay="240" />
+                        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in"/>
+                        <effect type="fade" start="100" end="0" time="240" delay="240"/>
                     </animation>
                     <visible>Control.IsVisible(53) + !Control.IsVisible(6001) + !Control.IsVisible(6002) + Control.IsVisible(960)</visible>
                     <control type="group">
@@ -1738,8 +1738,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="818" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="-135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="-135" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-1028" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="-135" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-1028" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(-6).Icon]</texture>
@@ -1758,8 +1758,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="682" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="0" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-866" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="0" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-866" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(-5).Icon]</texture>
@@ -1778,8 +1778,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="548" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="135" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-704" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="135" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-704" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(-4).Icon]</texture>
@@ -1798,8 +1798,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="412" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="270" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-543" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="270" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-543" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(-3).Icon]</texture>
@@ -1818,8 +1818,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="278" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="405" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="405" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-384" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="405" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-384" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(-2).Icon]</texture>
@@ -1838,8 +1838,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="142" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="540" start="-55" end="-55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="540" end="55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="-226" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="540" end="55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="-226" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(-1).Icon]</texture>
@@ -1858,8 +1858,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-818" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="2070" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="2070" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="1028" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="2070" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="1028" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(6).Icon]</texture>
@@ -1878,8 +1878,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-682" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1935" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="1935" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="866" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1935" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="866" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(5).Icon]</texture>
@@ -1898,8 +1898,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-548" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1800" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="1800" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="704" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1800" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="704" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(4).Icon]</texture>
@@ -1918,8 +1918,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-412" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1665" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="1665" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="543" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1665" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="543" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(3).Icon]</texture>
@@ -1938,8 +1938,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-278" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1530" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="1530" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="384" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1530" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="384" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(2).Icon]</texture>
@@ -1958,8 +1958,8 @@
                         <animation effect="slide" time="640" delay="240" end="0" start="-142" tween="cubic">WindowOpen</animation>
                         <animation effect="rotatey" center="1395" start="55" end="55" time="0" condition="true">Conditional</animation>
                         <animation type="Conditional" condition="[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]">
-                            <effect type="rotatey" center="1395" end="-55" time="640" tween="cubic" easing="inout" />
-                            <effect type="slide" end="226" time="640" tween="cubic" easing="inout" />
+                            <effect type="rotatey" center="1395" end="-55" time="640" tween="cubic" easing="inout"/>
+                            <effect type="slide" end="226" time="640" tween="cubic" easing="inout"/>
                         </animation>
                         <control type="image">
                             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem(1).Icon]</texture>
@@ -2468,10 +2468,10 @@
             <control type="group">
                 <posx>-400</posx>
                 <animation type="WindowClose">
-                    <effect type="slide" end="-450" time="320" easing="in" tween="cubic" />
+                    <effect type="slide" end="-450" time="320" easing="in" tween="cubic"/>
                 </animation>
                 <animation type="WindowOpen">
-                    <effect type="slide" start="-450" end="0" time="320" delay="800" tween="cubic" />
+                    <effect type="slide" start="-450" end="0" time="320" delay="800" tween="cubic"/>
                 </animation>
                 <control type="group">
                     <control type="group">
@@ -2514,13 +2514,13 @@
             </control>
             <control type="group">
                 <animation type="Conditional" condition="![ControlGroup(9000).HasFocus | ControlGroup(100).HasFocus]">
-                    <effect type="slide" end="-420,0" time="320" easing="in" tween="cubic" />
+                    <effect type="slide" end="-420,0" time="320" easing="in" tween="cubic"/>
                 </animation>
                 <animation type="WindowClose">
-                    <effect type="slide" end="-450,0" time="320" easing="in" tween="cubic" />
+                    <effect type="slide" end="-450,0" time="320" easing="in" tween="cubic"/>
                 </animation>
                 <animation type="WindowOpen">
-                    <effect type="slide" start="-450" end="0" time="320" delay="800" tween="cubic" />
+                    <effect type="slide" start="-450" end="0" time="320" delay="800" tween="cubic"/>
                 </animation>
                 <control type="group" id="100">
                     <animation effect="slide" end="0,0" time="320" tween="quadratic" condition="ControlGroup(100).HasFocus">Conditional</animation>
@@ -2994,7 +2994,7 @@
         </control>
         <!-- Messages -->
         <control type="label" id="4000">
-            <label></label>
+            <label/>
             <posx>10</posx>
             <posy>560</posy>
             <width>680</width>
@@ -3006,7 +3006,7 @@
         <control type="button">
             <include>HiddenObject</include>
             <visible>!Skin.HasSetting(kioskmode)</visible>
-            <hitrect x="50" y="0" w="1870" h="10" />
+            <hitrect x="50" y="0" w="1870" h="10"/>
             <onfocus>SetFocus(9000)</onfocus>
         </control>
         <include>ContextMenuOverlay</include>

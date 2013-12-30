@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="2901">
     <defaultcontrol>703</defaultcontrol>
     <controls>
@@ -30,7 +30,7 @@
                 <visible>ControlGroup(650).HasFocus | ControlGroup(201).HasFocus</visible>
             </control>
             <control type="label">
-                <posx>400r</posx>
+                <right>400r</right>
                 <width>200</width>
                 <height>125</height>
                 <align>right</align>
@@ -50,12 +50,12 @@
         <control type="group">
             <visible>!Window.IsActive(fullscreeninfo)</visible>
             <animation type="Visible">
-                <effect type="fade" time="160" end="100" />
-                <effect type="slide" time="160" start="0,98" end="0,0" tween="cubic" />
+                <effect type="fade" time="160" end="100"/>
+                <effect type="slide" time="160" start="0,98" end="0,0" tween="cubic"/>
             </animation>
             <animation type="Hidden">
-                <effect type="fade" time="160" start="100" end="0" />
-                <effect type="slide" time="160" end="0,98" easing="in" tween="cubic" />
+                <effect type="fade" time="160" start="100" end="0"/>
+                <effect type="slide" time="160" end="0,98" easing="in" tween="cubic"/>
             </animation>
             <include condition="!VideoPlayer.Content(LiveTV)">BottomProgressBar</include>
         </control>

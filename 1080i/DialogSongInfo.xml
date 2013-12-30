@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>5000</defaultcontrol>
     <animation type="WindowOpen" reversible="false">
-        <effect type="zoom" start="150" end="100" center="960,540" time="400" tween="cubic" />
-        <effect type="fade" end="100" time="200" />
+        <effect type="zoom" start="150" end="100" center="960,540" time="400" tween="cubic"/>
+        <effect type="fade" end="100" time="200"/>
     </animation>
     <animation type="WindowClose" reversible="false">
-        <effect type="fade" start="100" end="0" time="240" />
-        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+        <effect type="fade" start="100" end="0" time="240"/>
+        <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in"/>
     </animation>
     <controls>
         <control type="group">
@@ -45,7 +45,7 @@
                     <posx>8</posx>
                     <posy>20</posy>
                     <animation type="Conditional" condition="Container.Content(artists)">
-                        <effect type="rotatey" center="248" end="180" time="1200" />
+                        <effect type="rotatey" center="248" end="180" time="1200"/>
                     </animation>
                     <control type="image" id="5001">
                         <posx>-1500</posx>
@@ -68,9 +68,9 @@
                         <animation effect="slide" end="0,180" time="320" tween="cubic">Hidden</animation>
                         <animation effect="slide" start="0,180" end="0,0" time="560" tween="cubic" delay="320">WindowOpen</animation>
                         <animation type="WindowClose">
-                            <effect type="slide" end="0,180" time="320" tween="cubic" easing="in" />
-                            <effect type="fade" start="100" end="0" time="0" delay="320" />
-                            <condition type="!Player.Playing" />
+                            <effect type="slide" end="0,180" time="320" tween="cubic" easing="in"/>
+                            <effect type="fade" start="100" end="0" time="0" delay="320"/>
+                            <condition type="!Player.Playing"/>
                         </animation>
                         <!--<animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="Player.HasMedia + !Player.Paused">Conditional</animation>-->
                         <include condition="!Skin.HasSetting(vinylart) + !Skin.HasSetting(blurayart)">cdartlibrary</include>
@@ -431,7 +431,7 @@
       <visible>!IsEmpty(Skin.String(ArtistsLogosPath))</visible>
     </control>-->
             <control type="label">
-                <posx>1905</posx>
+                <right>1905</right>
                 <posy>1030</posy>
                 <width>1920</width>
                 <height>60</height>

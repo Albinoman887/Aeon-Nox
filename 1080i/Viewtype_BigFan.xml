@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="BigFan">
         <control type="group">
@@ -65,20 +65,20 @@
         <control type="group">
             <visible>Control.IsVisible(516)</visible>
             <animation type="Visible">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,135" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,135" end="0,0" tween="cubic"/>
             </animation>
             <animation type="Hidden">
-                <effect type="fade" time="320" start="100" end="0" />
-                <effect type="slide" time="320" end="0,135" easing="in" tween="cubic" />
+                <effect type="fade" time="320" start="100" end="0"/>
+                <effect type="slide" time="320" end="0,135" easing="in" tween="cubic"/>
             </animation>
             <animation type="WindowOpen">
-                <effect type="fade" time="320" end="100" />
-                <effect type="slide" time="320" start="0,135" end="0,0" tween="cubic" />
+                <effect type="fade" time="320" end="100"/>
+                <effect type="slide" time="320" start="0,135" end="0,0" tween="cubic"/>
             </animation>
             <animation type="WindowClose">
-                <effect type="fade" time="240" start="100" end="0" />
-                <effect type="slide" time="240" end="0,135" easing="in" tween="cubic" />
+                <effect type="fade" time="240" start="100" end="0"/>
+                <effect type="slide" time="240" end="0,135" easing="in" tween="cubic"/>
             </animation>
             <control type="image">
                 <posy>188r</posy>

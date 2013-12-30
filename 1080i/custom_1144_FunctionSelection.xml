@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1144">
     <defaultcontrol always="true">4</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -218,7 +218,7 @@
                         <onclick>Skin.SetString(ItemToEdit.Type,7)</onclick>
                         <onclick>Dialog.Close(1144)</onclick>
                         <onclick>Skin.SetString(ItemToEdit.Path,CleanLibrary(music))</onclick>
-                        <visible></visible>
+                        <visible/>
                     </item>
                     <item>
                         <label>31844</label>
@@ -226,7 +226,7 @@
                         <onclick>Skin.SetString(ItemToEdit.Label,$LOCALIZE[31844])</onclick>
                         <onclick>Dialog.Close(1144)</onclick>
                         <onclick>Skin.SetString(ItemToEdit.Path,CleanLibrary(video))</onclick>
-                        <visible></visible>
+                        <visible/>
                     </item>
                     <item>
                         <label>31865</label>
@@ -235,7 +235,7 @@
                         <onclick>Skin.SetString(ItemToEdit.TempPath)</onclick>
                         <onclick>Skin.SetString(ItemToEdit.Path,WakeOnLan($INFO[Skin.String(ItemToEdit.TempPath)]))</onclick>
                         <onclick>Dialog.Close(1144)</onclick>
-                        <visible></visible>
+                        <visible/>
                     </item>
                     <item>
                         <label>31323</label>

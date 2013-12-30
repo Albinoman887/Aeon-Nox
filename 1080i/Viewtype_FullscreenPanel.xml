@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="Viewtype_FullscreenPanel">
         <control type="group">
@@ -764,7 +764,7 @@
                 <font>Font_Reg40</font>
             </control>
             <control type="label">
-                <posx>589</posx>
+                <right>589</right>
                 <posy>74</posy>
                 <width>600</width>
                 <height>30</height>
@@ -903,7 +903,7 @@
                 <font>Font_Reg40</font>
             </control>
             <control type="label">
-                <posx>589</posx>
+                <right>589</right>
                 <posy>74</posy>
                 <width>600</width>
                 <height>30</height>

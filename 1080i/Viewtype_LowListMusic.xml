@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="LowListMusic">
         <control type="group">
@@ -463,7 +463,7 @@
                     <posy>420</posy>
                     <visible>Control.IsVisible(802) + Container.Content(songs)</visible>
                     <animation type="Conditional" condition="Skin.HasSetting(cdartlowlist)">
-                        <effect type="slide" end="0,180" time="640" tween="cubic" easing="inout" />
+                        <effect type="slide" end="0,180" time="640" tween="cubic" easing="inout"/>
                     </animation>
                     <control type="image">
                         <posx>8</posx>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="1112" type="dialog">
     <defaultcontrol always="true">451</defaultcontrol>
     <zorder>4</zorder>
@@ -95,8 +95,8 @@
                 <ondown>451</ondown>
                 <onright>1100</onright>
                 <animation type="WindowClose">
-                    <effect type="fade" start="100" end="0" time="320" />
-                    <effect type="zoom" end="180,100" time="320" tween="cubic" />
+                    <effect type="fade" start="100" end="0" time="320"/>
+                    <effect type="zoom" end="180,100" time="320" tween="cubic"/>
                 </animation>
                 <itemlayout width="250" height="150">
                     <control type="image">
